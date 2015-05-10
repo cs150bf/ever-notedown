@@ -1,0 +1,296 @@
+.ever-notedown-preview .evnd-fenced-code-block {
+  background-color: #fdf6e3;
+  color: #657b83;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible-character {
+  color: #cad0d0;
+}
+.ever-notedown-preview .evnd-fenced-code-block .indent-guide {
+  color: #cad0d0;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter {
+  background-color: #eee8d5;
+  color: #657b83;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number {
+  opacity: 1;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.folded,
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number:after,
+.ever-notedown-preview .evnd-fenced-code-block .fold-marker:after {
+  color: #d33682;
+}
+.ever-notedown-preview .evnd-fenced-code-block .cursor {
+  border-color: #002b36;
+}
+.ever-notedown-preview .evnd-fenced-code-block .selection .region {
+  background-color: #eee8d5;
+}
+.ever-notedown-preview .evnd-fenced-code-block .line-number.cursor-line {
+  background-color: #e7dec3;
+}
+.ever-notedown-preview .bracket-matcher .region {
+  background-color: #93a1a1;
+  opacity: 0.5;
+}
+.ever-notedown-preview .comment {
+  color: #93a1a1;
+  font-style: italic;
+}
+.ever-notedown-preview .entity {
+  color: #b58900;
+}
+.ever-notedown-preview .entity .punctuation {
+  color: #dc322f;
+}
+.ever-notedown-preview .entity.other.attribute-name.placeholder.scss {
+  color: #6c71c4;
+}
+.ever-notedown-preview .entity.other.attribute-name.placeholder.scss .punctuation.definition.entity.scss {
+  color: inherit;
+}
+.ever-notedown-preview .keyword {
+  color: #859900;
+}
+.ever-notedown-preview .keyword.other.special-method {
+  color: #cb4b16;
+}
+.ever-notedown-preview .storage.type {
+  color: #859900;
+}
+.ever-notedown-preview .storage.modifier {
+  color: #859900;
+}
+.ever-notedown-preview .constant {
+  color: #b58900;
+}
+.ever-notedown-preview .constant.numeric,
+.ever-notedown-preview .constant.boolean,
+.ever-notedown-preview .constant.symbol,
+.ever-notedown-preview .constant.symbol .punctuation {
+  color: #2aa198;
+}
+.ever-notedown-preview .constant.symbol.hashkey {
+  color: #dc322f;
+}
+.ever-notedown-preview .constant.symbol.hashkey .punctuation {
+  color: #dc322f;
+}
+.ever-notedown-preview .delimiter,
+.ever-notedown-preview .brace {
+  color: #dc322f;
+}
+.ever-notedown-preview .delimiter.period {
+  color: #859900;
+}
+.ever-notedown-preview .invalid.deprecated {
+  text-decoration: underline;
+  color: #dc322f;
+}
+.ever-notedown-preview .invalid.illegal {
+  color: #dc322f;
+}
+.ever-notedown-preview .method .name {
+  color: #268bd2;
+}
+.ever-notedown-preview .operator.assignment {
+  color: #93a1a1;
+}
+.ever-notedown-preview .parameter {
+  color: #93a1a1;
+}
+.ever-notedown-preview .property-name {
+  color: #859900;
+}
+.ever-notedown-preview .property-value .unit {
+  color: #839496;
+}
+.ever-notedown-preview .string {
+  color: #2aa198;
+}
+.ever-notedown-preview .string .constant.character.escape {
+  color: #dc322f;
+  font-weight: bold;
+}
+.ever-notedown-preview .string .punctuation.string {
+  color: #dc322f;
+}
+.ever-notedown-preview .string.regexp {
+  color: #2aa198;
+}
+.ever-notedown-preview .string.regexp .string.regexp.arbitrary-repetition {
+  color: #dc322f;
+}
+.ever-notedown-preview .variable {
+  color: #268bd2;
+}
+.ever-notedown-preview .variable.constant {
+  color: #b58900;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .markup.italic {
+  font-style: italic;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .markup.bold {
+  font-weight: bold;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .markup.heading {
+  color: #cb4b16;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .link {
+  color: #2aa198;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .link .entity {
+  color: #6c71c4;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .raw {
+  font-style: italic;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm.support {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.ruby .meta.embedded .punctuation.section {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.ruby .string.regexp {
+  color: #dc322f;
+}
+.ever-notedown-preview .terminal {
+  background-color: #fdf6e3;
+}
+.ever-notedown-preview .terminal .color-0 {
+  color: #657b83;
+}
+.ever-notedown-preview .terminal .background-0 {
+  background-color: #fdf6e3;
+}
+.ever-notedown-preview .terminal .color-1 {
+  color: #dc322f;
+}
+.ever-notedown-preview .terminal .background-1 {
+  background-color: #dc322f;
+}
+.ever-notedown-preview .terminal .color-2 {
+  color: #859900;
+}
+.ever-notedown-preview .terminal .background-2 {
+  background-color: #859900;
+}
+.ever-notedown-preview .terminal .color-3 {
+  color: #b58900;
+}
+.ever-notedown-preview .terminal .background-3 {
+  background-color: #b58900;
+}
+.ever-notedown-preview .terminal .color-4 {
+  color: #268bd2;
+}
+.ever-notedown-preview .terminal .background-4 {
+  background-color: #268bd2;
+}
+.ever-notedown-preview .terminal .color-5 {
+  color: #d33682;
+}
+.ever-notedown-preview .terminal .background-5 {
+  background-color: #d33682;
+}
+.ever-notedown-preview .terminal .color-6 {
+  color: #2aa198;
+}
+.ever-notedown-preview .terminal .background-6 {
+  background-color: #2aa198;
+}
+.ever-notedown-preview .terminal .color-7 {
+  color: #002b36;
+}
+.ever-notedown-preview .terminal .background-7 {
+  background-color: #002b36;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .git-line-modified {
+  border-left: 2px solid #b58900;
+  padding-left: calc(0.5em - 2px);
+  color: #657b83;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .git-line-added {
+  border-left: 2px solid #859900;
+  padding-left: calc(0.5em - 2px);
+  color: #657b83;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .git-line-removed {
+  border-left: 2px solid #dc322f;
+  padding-left: calc(0.5em - 2px);
+  color: #657b83;
+}
+.ever-notedown-preview .evnd-fenced-code-block .wrap-guide {
+  background-color: #cad0d0;
+}
+.ever-notedown-preview .source.scala {
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .declaration {
+  color: #93a1a1;
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .comparison {
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .class,
+.ever-notedown-preview .source.scala .type {
+  color: #b58900;
+  font-weight: normal;
+}
+.ever-notedown-preview .source.scala .val {
+  font-weight: normal;
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .variable {
+  font-weight: bold;
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .variable.parameter {
+  color: #6c71c4;
+  font-weight: normal;
+}
+.ever-notedown-preview .source.scala .control.flow {
+  color: #93a1a1;
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .constant.language {
+  color: #93a1a1;
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .function.declaration {
+  color: #6c71c4;
+}
+.ever-notedown-preview .source.scala .modifier.other {
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .package {
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .variable.import {
+  font-weight: normal;
+}
+.ever-notedown-preview .source.scala .type .bounds,
+.ever-notedown-preview .source.scala .type .class {
+  color: #6c71c4;
+}
+.ever-notedown-preview .source.scala .documentation .class,
+.ever-notedown-preview .source.scala .documentation .parameter {
+  color: #586e75;
+}
+.ever-notedown-preview .source.scala .documentation .description {
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .quasiquote {
+  font-style: italic;
+}
+.ever-notedown-preview .source.scala .string-interpolation .expression *:not(.margin),
+.ever-notedown-preview .source.scala .quasiquote .expression *:not(.margin),
+.ever-notedown-preview .source.scala .string-interpolation .variable,
+.ever-notedown-preview .source.scala .quasiquote .variable {
+  font-style: italic;
+}
+.ever-notedown-preview .source.scala .string-interpolation .variable,
+.ever-notedown-preview .source.scala .quasiquote .variable {
+  font-weight: normal;
+}

@@ -1,0 +1,3070 @@
+.ever-notedown-preview {
+  /*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+  /* FONT PATH
+ * -------------------------- */
+  /* makes the font 33% larger relative to the icon container */
+  /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+  min-width: 680px;
+  background-color: #fff;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  box-sizing: border-box;
+  padding: 20px;
+  /*
+  hr {
+    background: transparent url("atom://ever-notedown/assets/hr.png") repeat-x 0 0;
+    border: 0 none;
+    color: #ccc;
+    height: 4px;
+    padding: 0;
+    margin: 15px 0;
+  }
+  */
+  /*
+  kbd {
+    background-color: #dddddd;
+    background-image: linear-gradient(#f1f1f1, #ddd);
+    background-repeat: repeat-x;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    border-right-color: #ccc;
+    padding: 1px 4px;
+    line-height: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  */
+  /*
+  a.footnote {
+    font-size: 10px;
+    vertical-align: top;
+  }
+  */
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('atom://ever-notedown/assets/font-awesome-4.3.0/fonts/fontawesome-webfont.eot');
+  src: url('atom://ever-notedown/assets/font-awesome-4.3.0/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('atom://ever-notedown/assets/font-awesome-4.3.0/fonts/fontawesome-webfont.woff2') format('woff2'), url('atom://ever-notedown/assets/font-awesome-4.3.0/fonts/fontawesome-webfont.woff') format('woff'), url('atom://ever-notedown/assets/font-awesome-4.3.0/fonts/fontawesome-webfont.ttf') format('truetype'), url('atom://ever-notedown/assets/font-awesome-4.3.0/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.ever-notedown-preview .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.ever-notedown-preview .fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.ever-notedown-preview .fa-2x {
+  font-size: 2em;
+}
+.ever-notedown-preview .fa-3x {
+  font-size: 3em;
+}
+.ever-notedown-preview .fa-4x {
+  font-size: 4em;
+}
+.ever-notedown-preview .fa-5x {
+  font-size: 5em;
+}
+.ever-notedown-preview .fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.ever-notedown-preview .fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.ever-notedown-preview .fa-ul > li {
+  position: relative;
+}
+.ever-notedown-preview .fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.ever-notedown-preview .fa-li.fa-lg {
+  left: -1.85714286em;
+}
+.ever-notedown-preview .fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.ever-notedown-preview .pull-right {
+  float: right;
+}
+.ever-notedown-preview .pull-left {
+  float: left;
+}
+.ever-notedown-preview .fa.pull-left {
+  margin-right: .3em;
+}
+.ever-notedown-preview .fa.pull-right {
+  margin-left: .3em;
+}
+.ever-notedown-preview .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.ever-notedown-preview .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.ever-notedown-preview .fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.ever-notedown-preview .fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.ever-notedown-preview .fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.ever-notedown-preview .fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.ever-notedown-preview .fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+.ever-notedown-preview :root .fa-rotate-90,
+.ever-notedown-preview :root .fa-rotate-180,
+.ever-notedown-preview :root .fa-rotate-270,
+.ever-notedown-preview :root .fa-flip-horizontal,
+.ever-notedown-preview :root .fa-flip-vertical {
+  filter: none;
+}
+.ever-notedown-preview .fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.ever-notedown-preview .fa-stack-1x,
+.ever-notedown-preview .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.ever-notedown-preview .fa-stack-1x {
+  line-height: inherit;
+}
+.ever-notedown-preview .fa-stack-2x {
+  font-size: 2em;
+}
+.ever-notedown-preview .fa-inverse {
+  color: #ffffff;
+}
+.ever-notedown-preview .fa-glass:before {
+  content: "\f000";
+}
+.ever-notedown-preview .fa-music:before {
+  content: "\f001";
+}
+.ever-notedown-preview .fa-search:before {
+  content: "\f002";
+}
+.ever-notedown-preview .fa-envelope-o:before {
+  content: "\f003";
+}
+.ever-notedown-preview .fa-heart:before {
+  content: "\f004";
+}
+.ever-notedown-preview .fa-star:before {
+  content: "\f005";
+}
+.ever-notedown-preview .fa-star-o:before {
+  content: "\f006";
+}
+.ever-notedown-preview .fa-user:before {
+  content: "\f007";
+}
+.ever-notedown-preview .fa-film:before {
+  content: "\f008";
+}
+.ever-notedown-preview .fa-th-large:before {
+  content: "\f009";
+}
+.ever-notedown-preview .fa-th:before {
+  content: "\f00a";
+}
+.ever-notedown-preview .fa-th-list:before {
+  content: "\f00b";
+}
+.ever-notedown-preview .fa-check:before {
+  content: "\f00c";
+}
+.ever-notedown-preview .fa-remove:before,
+.ever-notedown-preview .fa-close:before,
+.ever-notedown-preview .fa-times:before {
+  content: "\f00d";
+}
+.ever-notedown-preview .fa-search-plus:before {
+  content: "\f00e";
+}
+.ever-notedown-preview .fa-search-minus:before {
+  content: "\f010";
+}
+.ever-notedown-preview .fa-power-off:before {
+  content: "\f011";
+}
+.ever-notedown-preview .fa-signal:before {
+  content: "\f012";
+}
+.ever-notedown-preview .fa-gear:before,
+.ever-notedown-preview .fa-cog:before {
+  content: "\f013";
+}
+.ever-notedown-preview .fa-trash-o:before {
+  content: "\f014";
+}
+.ever-notedown-preview .fa-home:before {
+  content: "\f015";
+}
+.ever-notedown-preview .fa-file-o:before {
+  content: "\f016";
+}
+.ever-notedown-preview .fa-clock-o:before {
+  content: "\f017";
+}
+.ever-notedown-preview .fa-road:before {
+  content: "\f018";
+}
+.ever-notedown-preview .fa-download:before {
+  content: "\f019";
+}
+.ever-notedown-preview .fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+.ever-notedown-preview .fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+.ever-notedown-preview .fa-inbox:before {
+  content: "\f01c";
+}
+.ever-notedown-preview .fa-play-circle-o:before {
+  content: "\f01d";
+}
+.ever-notedown-preview .fa-rotate-right:before,
+.ever-notedown-preview .fa-repeat:before {
+  content: "\f01e";
+}
+.ever-notedown-preview .fa-refresh:before {
+  content: "\f021";
+}
+.ever-notedown-preview .fa-list-alt:before {
+  content: "\f022";
+}
+.ever-notedown-preview .fa-lock:before {
+  content: "\f023";
+}
+.ever-notedown-preview .fa-flag:before {
+  content: "\f024";
+}
+.ever-notedown-preview .fa-headphones:before {
+  content: "\f025";
+}
+.ever-notedown-preview .fa-volume-off:before {
+  content: "\f026";
+}
+.ever-notedown-preview .fa-volume-down:before {
+  content: "\f027";
+}
+.ever-notedown-preview .fa-volume-up:before {
+  content: "\f028";
+}
+.ever-notedown-preview .fa-qrcode:before {
+  content: "\f029";
+}
+.ever-notedown-preview .fa-barcode:before {
+  content: "\f02a";
+}
+.ever-notedown-preview .fa-tag:before {
+  content: "\f02b";
+}
+.ever-notedown-preview .fa-tags:before {
+  content: "\f02c";
+}
+.ever-notedown-preview .fa-book:before {
+  content: "\f02d";
+}
+.ever-notedown-preview .fa-bookmark:before {
+  content: "\f02e";
+}
+.ever-notedown-preview .fa-print:before {
+  content: "\f02f";
+}
+.ever-notedown-preview .fa-camera:before {
+  content: "\f030";
+}
+.ever-notedown-preview .fa-font:before {
+  content: "\f031";
+}
+.ever-notedown-preview .fa-bold:before {
+  content: "\f032";
+}
+.ever-notedown-preview .fa-italic:before {
+  content: "\f033";
+}
+.ever-notedown-preview .fa-text-height:before {
+  content: "\f034";
+}
+.ever-notedown-preview .fa-text-width:before {
+  content: "\f035";
+}
+.ever-notedown-preview .fa-align-left:before {
+  content: "\f036";
+}
+.ever-notedown-preview .fa-align-center:before {
+  content: "\f037";
+}
+.ever-notedown-preview .fa-align-right:before {
+  content: "\f038";
+}
+.ever-notedown-preview .fa-align-justify:before {
+  content: "\f039";
+}
+.ever-notedown-preview .fa-list:before {
+  content: "\f03a";
+}
+.ever-notedown-preview .fa-dedent:before,
+.ever-notedown-preview .fa-outdent:before {
+  content: "\f03b";
+}
+.ever-notedown-preview .fa-indent:before {
+  content: "\f03c";
+}
+.ever-notedown-preview .fa-video-camera:before {
+  content: "\f03d";
+}
+.ever-notedown-preview .fa-photo:before,
+.ever-notedown-preview .fa-image:before,
+.ever-notedown-preview .fa-picture-o:before {
+  content: "\f03e";
+}
+.ever-notedown-preview .fa-pencil:before {
+  content: "\f040";
+}
+.ever-notedown-preview .fa-map-marker:before {
+  content: "\f041";
+}
+.ever-notedown-preview .fa-adjust:before {
+  content: "\f042";
+}
+.ever-notedown-preview .fa-tint:before {
+  content: "\f043";
+}
+.ever-notedown-preview .fa-edit:before,
+.ever-notedown-preview .fa-pencil-square-o:before {
+  content: "\f044";
+}
+.ever-notedown-preview .fa-share-square-o:before {
+  content: "\f045";
+}
+.ever-notedown-preview .fa-check-square-o:before {
+  content: "\f046";
+}
+.ever-notedown-preview .fa-arrows:before {
+  content: "\f047";
+}
+.ever-notedown-preview .fa-step-backward:before {
+  content: "\f048";
+}
+.ever-notedown-preview .fa-fast-backward:before {
+  content: "\f049";
+}
+.ever-notedown-preview .fa-backward:before {
+  content: "\f04a";
+}
+.ever-notedown-preview .fa-play:before {
+  content: "\f04b";
+}
+.ever-notedown-preview .fa-pause:before {
+  content: "\f04c";
+}
+.ever-notedown-preview .fa-stop:before {
+  content: "\f04d";
+}
+.ever-notedown-preview .fa-forward:before {
+  content: "\f04e";
+}
+.ever-notedown-preview .fa-fast-forward:before {
+  content: "\f050";
+}
+.ever-notedown-preview .fa-step-forward:before {
+  content: "\f051";
+}
+.ever-notedown-preview .fa-eject:before {
+  content: "\f052";
+}
+.ever-notedown-preview .fa-chevron-left:before {
+  content: "\f053";
+}
+.ever-notedown-preview .fa-chevron-right:before {
+  content: "\f054";
+}
+.ever-notedown-preview .fa-plus-circle:before {
+  content: "\f055";
+}
+.ever-notedown-preview .fa-minus-circle:before {
+  content: "\f056";
+}
+.ever-notedown-preview .fa-times-circle:before {
+  content: "\f057";
+}
+.ever-notedown-preview .fa-check-circle:before {
+  content: "\f058";
+}
+.ever-notedown-preview .fa-question-circle:before {
+  content: "\f059";
+}
+.ever-notedown-preview .fa-info-circle:before {
+  content: "\f05a";
+}
+.ever-notedown-preview .fa-crosshairs:before {
+  content: "\f05b";
+}
+.ever-notedown-preview .fa-times-circle-o:before {
+  content: "\f05c";
+}
+.ever-notedown-preview .fa-check-circle-o:before {
+  content: "\f05d";
+}
+.ever-notedown-preview .fa-ban:before {
+  content: "\f05e";
+}
+.ever-notedown-preview .fa-arrow-left:before {
+  content: "\f060";
+}
+.ever-notedown-preview .fa-arrow-right:before {
+  content: "\f061";
+}
+.ever-notedown-preview .fa-arrow-up:before {
+  content: "\f062";
+}
+.ever-notedown-preview .fa-arrow-down:before {
+  content: "\f063";
+}
+.ever-notedown-preview .fa-mail-forward:before,
+.ever-notedown-preview .fa-share:before {
+  content: "\f064";
+}
+.ever-notedown-preview .fa-expand:before {
+  content: "\f065";
+}
+.ever-notedown-preview .fa-compress:before {
+  content: "\f066";
+}
+.ever-notedown-preview .fa-plus:before {
+  content: "\f067";
+}
+.ever-notedown-preview .fa-minus:before {
+  content: "\f068";
+}
+.ever-notedown-preview .fa-asterisk:before {
+  content: "\f069";
+}
+.ever-notedown-preview .fa-exclamation-circle:before {
+  content: "\f06a";
+}
+.ever-notedown-preview .fa-gift:before {
+  content: "\f06b";
+}
+.ever-notedown-preview .fa-leaf:before {
+  content: "\f06c";
+}
+.ever-notedown-preview .fa-fire:before {
+  content: "\f06d";
+}
+.ever-notedown-preview .fa-eye:before {
+  content: "\f06e";
+}
+.ever-notedown-preview .fa-eye-slash:before {
+  content: "\f070";
+}
+.ever-notedown-preview .fa-warning:before,
+.ever-notedown-preview .fa-exclamation-triangle:before {
+  content: "\f071";
+}
+.ever-notedown-preview .fa-plane:before {
+  content: "\f072";
+}
+.ever-notedown-preview .fa-calendar:before {
+  content: "\f073";
+}
+.ever-notedown-preview .fa-random:before {
+  content: "\f074";
+}
+.ever-notedown-preview .fa-comment:before {
+  content: "\f075";
+}
+.ever-notedown-preview .fa-magnet:before {
+  content: "\f076";
+}
+.ever-notedown-preview .fa-chevron-up:before {
+  content: "\f077";
+}
+.ever-notedown-preview .fa-chevron-down:before {
+  content: "\f078";
+}
+.ever-notedown-preview .fa-retweet:before {
+  content: "\f079";
+}
+.ever-notedown-preview .fa-shopping-cart:before {
+  content: "\f07a";
+}
+.ever-notedown-preview .fa-folder:before {
+  content: "\f07b";
+}
+.ever-notedown-preview .fa-folder-open:before {
+  content: "\f07c";
+}
+.ever-notedown-preview .fa-arrows-v:before {
+  content: "\f07d";
+}
+.ever-notedown-preview .fa-arrows-h:before {
+  content: "\f07e";
+}
+.ever-notedown-preview .fa-bar-chart-o:before,
+.ever-notedown-preview .fa-bar-chart:before {
+  content: "\f080";
+}
+.ever-notedown-preview .fa-twitter-square:before {
+  content: "\f081";
+}
+.ever-notedown-preview .fa-facebook-square:before {
+  content: "\f082";
+}
+.ever-notedown-preview .fa-camera-retro:before {
+  content: "\f083";
+}
+.ever-notedown-preview .fa-key:before {
+  content: "\f084";
+}
+.ever-notedown-preview .fa-gears:before,
+.ever-notedown-preview .fa-cogs:before {
+  content: "\f085";
+}
+.ever-notedown-preview .fa-comments:before {
+  content: "\f086";
+}
+.ever-notedown-preview .fa-thumbs-o-up:before {
+  content: "\f087";
+}
+.ever-notedown-preview .fa-thumbs-o-down:before {
+  content: "\f088";
+}
+.ever-notedown-preview .fa-star-half:before {
+  content: "\f089";
+}
+.ever-notedown-preview .fa-heart-o:before {
+  content: "\f08a";
+}
+.ever-notedown-preview .fa-sign-out:before {
+  content: "\f08b";
+}
+.ever-notedown-preview .fa-linkedin-square:before {
+  content: "\f08c";
+}
+.ever-notedown-preview .fa-thumb-tack:before {
+  content: "\f08d";
+}
+.ever-notedown-preview .fa-external-link:before {
+  content: "\f08e";
+}
+.ever-notedown-preview .fa-sign-in:before {
+  content: "\f090";
+}
+.ever-notedown-preview .fa-trophy:before {
+  content: "\f091";
+}
+.ever-notedown-preview .fa-github-square:before {
+  content: "\f092";
+}
+.ever-notedown-preview .fa-upload:before {
+  content: "\f093";
+}
+.ever-notedown-preview .fa-lemon-o:before {
+  content: "\f094";
+}
+.ever-notedown-preview .fa-phone:before {
+  content: "\f095";
+}
+.ever-notedown-preview .fa-square-o:before {
+  content: "\f096";
+}
+.ever-notedown-preview .fa-bookmark-o:before {
+  content: "\f097";
+}
+.ever-notedown-preview .fa-phone-square:before {
+  content: "\f098";
+}
+.ever-notedown-preview .fa-twitter:before {
+  content: "\f099";
+}
+.ever-notedown-preview .fa-facebook-f:before,
+.ever-notedown-preview .fa-facebook:before {
+  content: "\f09a";
+}
+.ever-notedown-preview .fa-github:before {
+  content: "\f09b";
+}
+.ever-notedown-preview .fa-unlock:before {
+  content: "\f09c";
+}
+.ever-notedown-preview .fa-credit-card:before {
+  content: "\f09d";
+}
+.ever-notedown-preview .fa-rss:before {
+  content: "\f09e";
+}
+.ever-notedown-preview .fa-hdd-o:before {
+  content: "\f0a0";
+}
+.ever-notedown-preview .fa-bullhorn:before {
+  content: "\f0a1";
+}
+.ever-notedown-preview .fa-bell:before {
+  content: "\f0f3";
+}
+.ever-notedown-preview .fa-certificate:before {
+  content: "\f0a3";
+}
+.ever-notedown-preview .fa-hand-o-right:before {
+  content: "\f0a4";
+}
+.ever-notedown-preview .fa-hand-o-left:before {
+  content: "\f0a5";
+}
+.ever-notedown-preview .fa-hand-o-up:before {
+  content: "\f0a6";
+}
+.ever-notedown-preview .fa-hand-o-down:before {
+  content: "\f0a7";
+}
+.ever-notedown-preview .fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+.ever-notedown-preview .fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+.ever-notedown-preview .fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+.ever-notedown-preview .fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+.ever-notedown-preview .fa-globe:before {
+  content: "\f0ac";
+}
+.ever-notedown-preview .fa-wrench:before {
+  content: "\f0ad";
+}
+.ever-notedown-preview .fa-tasks:before {
+  content: "\f0ae";
+}
+.ever-notedown-preview .fa-filter:before {
+  content: "\f0b0";
+}
+.ever-notedown-preview .fa-briefcase:before {
+  content: "\f0b1";
+}
+.ever-notedown-preview .fa-arrows-alt:before {
+  content: "\f0b2";
+}
+.ever-notedown-preview .fa-group:before,
+.ever-notedown-preview .fa-users:before {
+  content: "\f0c0";
+}
+.ever-notedown-preview .fa-chain:before,
+.ever-notedown-preview .fa-link:before {
+  content: "\f0c1";
+}
+.ever-notedown-preview .fa-cloud:before {
+  content: "\f0c2";
+}
+.ever-notedown-preview .fa-flask:before {
+  content: "\f0c3";
+}
+.ever-notedown-preview .fa-cut:before,
+.ever-notedown-preview .fa-scissors:before {
+  content: "\f0c4";
+}
+.ever-notedown-preview .fa-copy:before,
+.ever-notedown-preview .fa-files-o:before {
+  content: "\f0c5";
+}
+.ever-notedown-preview .fa-paperclip:before {
+  content: "\f0c6";
+}
+.ever-notedown-preview .fa-save:before,
+.ever-notedown-preview .fa-floppy-o:before {
+  content: "\f0c7";
+}
+.ever-notedown-preview .fa-square:before {
+  content: "\f0c8";
+}
+.ever-notedown-preview .fa-navicon:before,
+.ever-notedown-preview .fa-reorder:before,
+.ever-notedown-preview .fa-bars:before {
+  content: "\f0c9";
+}
+.ever-notedown-preview .fa-list-ul:before {
+  content: "\f0ca";
+}
+.ever-notedown-preview .fa-list-ol:before {
+  content: "\f0cb";
+}
+.ever-notedown-preview .fa-strikethrough:before {
+  content: "\f0cc";
+}
+.ever-notedown-preview .fa-underline:before {
+  content: "\f0cd";
+}
+.ever-notedown-preview .fa-table:before {
+  content: "\f0ce";
+}
+.ever-notedown-preview .fa-magic:before {
+  content: "\f0d0";
+}
+.ever-notedown-preview .fa-truck:before {
+  content: "\f0d1";
+}
+.ever-notedown-preview .fa-pinterest:before {
+  content: "\f0d2";
+}
+.ever-notedown-preview .fa-pinterest-square:before {
+  content: "\f0d3";
+}
+.ever-notedown-preview .fa-google-plus-square:before {
+  content: "\f0d4";
+}
+.ever-notedown-preview .fa-google-plus:before {
+  content: "\f0d5";
+}
+.ever-notedown-preview .fa-money:before {
+  content: "\f0d6";
+}
+.ever-notedown-preview .fa-caret-down:before {
+  content: "\f0d7";
+}
+.ever-notedown-preview .fa-caret-up:before {
+  content: "\f0d8";
+}
+.ever-notedown-preview .fa-caret-left:before {
+  content: "\f0d9";
+}
+.ever-notedown-preview .fa-caret-right:before {
+  content: "\f0da";
+}
+.ever-notedown-preview .fa-columns:before {
+  content: "\f0db";
+}
+.ever-notedown-preview .fa-unsorted:before,
+.ever-notedown-preview .fa-sort:before {
+  content: "\f0dc";
+}
+.ever-notedown-preview .fa-sort-down:before,
+.ever-notedown-preview .fa-sort-desc:before {
+  content: "\f0dd";
+}
+.ever-notedown-preview .fa-sort-up:before,
+.ever-notedown-preview .fa-sort-asc:before {
+  content: "\f0de";
+}
+.ever-notedown-preview .fa-envelope:before {
+  content: "\f0e0";
+}
+.ever-notedown-preview .fa-linkedin:before {
+  content: "\f0e1";
+}
+.ever-notedown-preview .fa-rotate-left:before,
+.ever-notedown-preview .fa-undo:before {
+  content: "\f0e2";
+}
+.ever-notedown-preview .fa-legal:before,
+.ever-notedown-preview .fa-gavel:before {
+  content: "\f0e3";
+}
+.ever-notedown-preview .fa-dashboard:before,
+.ever-notedown-preview .fa-tachometer:before {
+  content: "\f0e4";
+}
+.ever-notedown-preview .fa-comment-o:before {
+  content: "\f0e5";
+}
+.ever-notedown-preview .fa-comments-o:before {
+  content: "\f0e6";
+}
+.ever-notedown-preview .fa-flash:before,
+.ever-notedown-preview .fa-bolt:before {
+  content: "\f0e7";
+}
+.ever-notedown-preview .fa-sitemap:before {
+  content: "\f0e8";
+}
+.ever-notedown-preview .fa-umbrella:before {
+  content: "\f0e9";
+}
+.ever-notedown-preview .fa-paste:before,
+.ever-notedown-preview .fa-clipboard:before {
+  content: "\f0ea";
+}
+.ever-notedown-preview .fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+.ever-notedown-preview .fa-exchange:before {
+  content: "\f0ec";
+}
+.ever-notedown-preview .fa-cloud-download:before {
+  content: "\f0ed";
+}
+.ever-notedown-preview .fa-cloud-upload:before {
+  content: "\f0ee";
+}
+.ever-notedown-preview .fa-user-md:before {
+  content: "\f0f0";
+}
+.ever-notedown-preview .fa-stethoscope:before {
+  content: "\f0f1";
+}
+.ever-notedown-preview .fa-suitcase:before {
+  content: "\f0f2";
+}
+.ever-notedown-preview .fa-bell-o:before {
+  content: "\f0a2";
+}
+.ever-notedown-preview .fa-coffee:before {
+  content: "\f0f4";
+}
+.ever-notedown-preview .fa-cutlery:before {
+  content: "\f0f5";
+}
+.ever-notedown-preview .fa-file-text-o:before {
+  content: "\f0f6";
+}
+.ever-notedown-preview .fa-building-o:before {
+  content: "\f0f7";
+}
+.ever-notedown-preview .fa-hospital-o:before {
+  content: "\f0f8";
+}
+.ever-notedown-preview .fa-ambulance:before {
+  content: "\f0f9";
+}
+.ever-notedown-preview .fa-medkit:before {
+  content: "\f0fa";
+}
+.ever-notedown-preview .fa-fighter-jet:before {
+  content: "\f0fb";
+}
+.ever-notedown-preview .fa-beer:before {
+  content: "\f0fc";
+}
+.ever-notedown-preview .fa-h-square:before {
+  content: "\f0fd";
+}
+.ever-notedown-preview .fa-plus-square:before {
+  content: "\f0fe";
+}
+.ever-notedown-preview .fa-angle-double-left:before {
+  content: "\f100";
+}
+.ever-notedown-preview .fa-angle-double-right:before {
+  content: "\f101";
+}
+.ever-notedown-preview .fa-angle-double-up:before {
+  content: "\f102";
+}
+.ever-notedown-preview .fa-angle-double-down:before {
+  content: "\f103";
+}
+.ever-notedown-preview .fa-angle-left:before {
+  content: "\f104";
+}
+.ever-notedown-preview .fa-angle-right:before {
+  content: "\f105";
+}
+.ever-notedown-preview .fa-angle-up:before {
+  content: "\f106";
+}
+.ever-notedown-preview .fa-angle-down:before {
+  content: "\f107";
+}
+.ever-notedown-preview .fa-desktop:before {
+  content: "\f108";
+}
+.ever-notedown-preview .fa-laptop:before {
+  content: "\f109";
+}
+.ever-notedown-preview .fa-tablet:before {
+  content: "\f10a";
+}
+.ever-notedown-preview .fa-mobile-phone:before,
+.ever-notedown-preview .fa-mobile:before {
+  content: "\f10b";
+}
+.ever-notedown-preview .fa-circle-o:before {
+  content: "\f10c";
+}
+.ever-notedown-preview .fa-quote-left:before {
+  content: "\f10d";
+}
+.ever-notedown-preview .fa-quote-right:before {
+  content: "\f10e";
+}
+.ever-notedown-preview .fa-spinner:before {
+  content: "\f110";
+}
+.ever-notedown-preview .fa-circle:before {
+  content: "\f111";
+}
+.ever-notedown-preview .fa-mail-reply:before,
+.ever-notedown-preview .fa-reply:before {
+  content: "\f112";
+}
+.ever-notedown-preview .fa-github-alt:before {
+  content: "\f113";
+}
+.ever-notedown-preview .fa-folder-o:before {
+  content: "\f114";
+}
+.ever-notedown-preview .fa-folder-open-o:before {
+  content: "\f115";
+}
+.ever-notedown-preview .fa-smile-o:before {
+  content: "\f118";
+}
+.ever-notedown-preview .fa-frown-o:before {
+  content: "\f119";
+}
+.ever-notedown-preview .fa-meh-o:before {
+  content: "\f11a";
+}
+.ever-notedown-preview .fa-gamepad:before {
+  content: "\f11b";
+}
+.ever-notedown-preview .fa-keyboard-o:before {
+  content: "\f11c";
+}
+.ever-notedown-preview .fa-flag-o:before {
+  content: "\f11d";
+}
+.ever-notedown-preview .fa-flag-checkered:before {
+  content: "\f11e";
+}
+.ever-notedown-preview .fa-terminal:before {
+  content: "\f120";
+}
+.ever-notedown-preview .fa-code:before {
+  content: "\f121";
+}
+.ever-notedown-preview .fa-mail-reply-all:before,
+.ever-notedown-preview .fa-reply-all:before {
+  content: "\f122";
+}
+.ever-notedown-preview .fa-star-half-empty:before,
+.ever-notedown-preview .fa-star-half-full:before,
+.ever-notedown-preview .fa-star-half-o:before {
+  content: "\f123";
+}
+.ever-notedown-preview .fa-location-arrow:before {
+  content: "\f124";
+}
+.ever-notedown-preview .fa-crop:before {
+  content: "\f125";
+}
+.ever-notedown-preview .fa-code-fork:before {
+  content: "\f126";
+}
+.ever-notedown-preview .fa-unlink:before,
+.ever-notedown-preview .fa-chain-broken:before {
+  content: "\f127";
+}
+.ever-notedown-preview .fa-question:before {
+  content: "\f128";
+}
+.ever-notedown-preview .fa-info:before {
+  content: "\f129";
+}
+.ever-notedown-preview .fa-exclamation:before {
+  content: "\f12a";
+}
+.ever-notedown-preview .fa-superscript:before {
+  content: "\f12b";
+}
+.ever-notedown-preview .fa-subscript:before {
+  content: "\f12c";
+}
+.ever-notedown-preview .fa-eraser:before {
+  content: "\f12d";
+}
+.ever-notedown-preview .fa-puzzle-piece:before {
+  content: "\f12e";
+}
+.ever-notedown-preview .fa-microphone:before {
+  content: "\f130";
+}
+.ever-notedown-preview .fa-microphone-slash:before {
+  content: "\f131";
+}
+.ever-notedown-preview .fa-shield:before {
+  content: "\f132";
+}
+.ever-notedown-preview .fa-calendar-o:before {
+  content: "\f133";
+}
+.ever-notedown-preview .fa-fire-extinguisher:before {
+  content: "\f134";
+}
+.ever-notedown-preview .fa-rocket:before {
+  content: "\f135";
+}
+.ever-notedown-preview .fa-maxcdn:before {
+  content: "\f136";
+}
+.ever-notedown-preview .fa-chevron-circle-left:before {
+  content: "\f137";
+}
+.ever-notedown-preview .fa-chevron-circle-right:before {
+  content: "\f138";
+}
+.ever-notedown-preview .fa-chevron-circle-up:before {
+  content: "\f139";
+}
+.ever-notedown-preview .fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+.ever-notedown-preview .fa-html5:before {
+  content: "\f13b";
+}
+.ever-notedown-preview .fa-css3:before {
+  content: "\f13c";
+}
+.ever-notedown-preview .fa-anchor:before {
+  content: "\f13d";
+}
+.ever-notedown-preview .fa-unlock-alt:before {
+  content: "\f13e";
+}
+.ever-notedown-preview .fa-bullseye:before {
+  content: "\f140";
+}
+.ever-notedown-preview .fa-ellipsis-h:before {
+  content: "\f141";
+}
+.ever-notedown-preview .fa-ellipsis-v:before {
+  content: "\f142";
+}
+.ever-notedown-preview .fa-rss-square:before {
+  content: "\f143";
+}
+.ever-notedown-preview .fa-play-circle:before {
+  content: "\f144";
+}
+.ever-notedown-preview .fa-ticket:before {
+  content: "\f145";
+}
+.ever-notedown-preview .fa-minus-square:before {
+  content: "\f146";
+}
+.ever-notedown-preview .fa-minus-square-o:before {
+  content: "\f147";
+}
+.ever-notedown-preview .fa-level-up:before {
+  content: "\f148";
+}
+.ever-notedown-preview .fa-level-down:before {
+  content: "\f149";
+}
+.ever-notedown-preview .fa-check-square:before {
+  content: "\f14a";
+}
+.ever-notedown-preview .fa-pencil-square:before {
+  content: "\f14b";
+}
+.ever-notedown-preview .fa-external-link-square:before {
+  content: "\f14c";
+}
+.ever-notedown-preview .fa-share-square:before {
+  content: "\f14d";
+}
+.ever-notedown-preview .fa-compass:before {
+  content: "\f14e";
+}
+.ever-notedown-preview .fa-toggle-down:before,
+.ever-notedown-preview .fa-caret-square-o-down:before {
+  content: "\f150";
+}
+.ever-notedown-preview .fa-toggle-up:before,
+.ever-notedown-preview .fa-caret-square-o-up:before {
+  content: "\f151";
+}
+.ever-notedown-preview .fa-toggle-right:before,
+.ever-notedown-preview .fa-caret-square-o-right:before {
+  content: "\f152";
+}
+.ever-notedown-preview .fa-euro:before,
+.ever-notedown-preview .fa-eur:before {
+  content: "\f153";
+}
+.ever-notedown-preview .fa-gbp:before {
+  content: "\f154";
+}
+.ever-notedown-preview .fa-dollar:before,
+.ever-notedown-preview .fa-usd:before {
+  content: "\f155";
+}
+.ever-notedown-preview .fa-rupee:before,
+.ever-notedown-preview .fa-inr:before {
+  content: "\f156";
+}
+.ever-notedown-preview .fa-cny:before,
+.ever-notedown-preview .fa-rmb:before,
+.ever-notedown-preview .fa-yen:before,
+.ever-notedown-preview .fa-jpy:before {
+  content: "\f157";
+}
+.ever-notedown-preview .fa-ruble:before,
+.ever-notedown-preview .fa-rouble:before,
+.ever-notedown-preview .fa-rub:before {
+  content: "\f158";
+}
+.ever-notedown-preview .fa-won:before,
+.ever-notedown-preview .fa-krw:before {
+  content: "\f159";
+}
+.ever-notedown-preview .fa-bitcoin:before,
+.ever-notedown-preview .fa-btc:before {
+  content: "\f15a";
+}
+.ever-notedown-preview .fa-file:before {
+  content: "\f15b";
+}
+.ever-notedown-preview .fa-file-text:before {
+  content: "\f15c";
+}
+.ever-notedown-preview .fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+.ever-notedown-preview .fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+.ever-notedown-preview .fa-sort-amount-asc:before {
+  content: "\f160";
+}
+.ever-notedown-preview .fa-sort-amount-desc:before {
+  content: "\f161";
+}
+.ever-notedown-preview .fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+.ever-notedown-preview .fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+.ever-notedown-preview .fa-thumbs-up:before {
+  content: "\f164";
+}
+.ever-notedown-preview .fa-thumbs-down:before {
+  content: "\f165";
+}
+.ever-notedown-preview .fa-youtube-square:before {
+  content: "\f166";
+}
+.ever-notedown-preview .fa-youtube:before {
+  content: "\f167";
+}
+.ever-notedown-preview .fa-xing:before {
+  content: "\f168";
+}
+.ever-notedown-preview .fa-xing-square:before {
+  content: "\f169";
+}
+.ever-notedown-preview .fa-youtube-play:before {
+  content: "\f16a";
+}
+.ever-notedown-preview .fa-dropbox:before {
+  content: "\f16b";
+}
+.ever-notedown-preview .fa-stack-overflow:before {
+  content: "\f16c";
+}
+.ever-notedown-preview .fa-instagram:before {
+  content: "\f16d";
+}
+.ever-notedown-preview .fa-flickr:before {
+  content: "\f16e";
+}
+.ever-notedown-preview .fa-adn:before {
+  content: "\f170";
+}
+.ever-notedown-preview .fa-bitbucket:before {
+  content: "\f171";
+}
+.ever-notedown-preview .fa-bitbucket-square:before {
+  content: "\f172";
+}
+.ever-notedown-preview .fa-tumblr:before {
+  content: "\f173";
+}
+.ever-notedown-preview .fa-tumblr-square:before {
+  content: "\f174";
+}
+.ever-notedown-preview .fa-long-arrow-down:before {
+  content: "\f175";
+}
+.ever-notedown-preview .fa-long-arrow-up:before {
+  content: "\f176";
+}
+.ever-notedown-preview .fa-long-arrow-left:before {
+  content: "\f177";
+}
+.ever-notedown-preview .fa-long-arrow-right:before {
+  content: "\f178";
+}
+.ever-notedown-preview .fa-apple:before {
+  content: "\f179";
+}
+.ever-notedown-preview .fa-windows:before {
+  content: "\f17a";
+}
+.ever-notedown-preview .fa-android:before {
+  content: "\f17b";
+}
+.ever-notedown-preview .fa-linux:before {
+  content: "\f17c";
+}
+.ever-notedown-preview .fa-dribbble:before {
+  content: "\f17d";
+}
+.ever-notedown-preview .fa-skype:before {
+  content: "\f17e";
+}
+.ever-notedown-preview .fa-foursquare:before {
+  content: "\f180";
+}
+.ever-notedown-preview .fa-trello:before {
+  content: "\f181";
+}
+.ever-notedown-preview .fa-female:before {
+  content: "\f182";
+}
+.ever-notedown-preview .fa-male:before {
+  content: "\f183";
+}
+.ever-notedown-preview .fa-gittip:before,
+.ever-notedown-preview .fa-gratipay:before {
+  content: "\f184";
+}
+.ever-notedown-preview .fa-sun-o:before {
+  content: "\f185";
+}
+.ever-notedown-preview .fa-moon-o:before {
+  content: "\f186";
+}
+.ever-notedown-preview .fa-archive:before {
+  content: "\f187";
+}
+.ever-notedown-preview .fa-bug:before {
+  content: "\f188";
+}
+.ever-notedown-preview .fa-vk:before {
+  content: "\f189";
+}
+.ever-notedown-preview .fa-weibo:before {
+  content: "\f18a";
+}
+.ever-notedown-preview .fa-renren:before {
+  content: "\f18b";
+}
+.ever-notedown-preview .fa-pagelines:before {
+  content: "\f18c";
+}
+.ever-notedown-preview .fa-stack-exchange:before {
+  content: "\f18d";
+}
+.ever-notedown-preview .fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+.ever-notedown-preview .fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+.ever-notedown-preview .fa-toggle-left:before,
+.ever-notedown-preview .fa-caret-square-o-left:before {
+  content: "\f191";
+}
+.ever-notedown-preview .fa-dot-circle-o:before {
+  content: "\f192";
+}
+.ever-notedown-preview .fa-wheelchair:before {
+  content: "\f193";
+}
+.ever-notedown-preview .fa-vimeo-square:before {
+  content: "\f194";
+}
+.ever-notedown-preview .fa-turkish-lira:before,
+.ever-notedown-preview .fa-try:before {
+  content: "\f195";
+}
+.ever-notedown-preview .fa-plus-square-o:before {
+  content: "\f196";
+}
+.ever-notedown-preview .fa-space-shuttle:before {
+  content: "\f197";
+}
+.ever-notedown-preview .fa-slack:before {
+  content: "\f198";
+}
+.ever-notedown-preview .fa-envelope-square:before {
+  content: "\f199";
+}
+.ever-notedown-preview .fa-wordpress:before {
+  content: "\f19a";
+}
+.ever-notedown-preview .fa-openid:before {
+  content: "\f19b";
+}
+.ever-notedown-preview .fa-institution:before,
+.ever-notedown-preview .fa-bank:before,
+.ever-notedown-preview .fa-university:before {
+  content: "\f19c";
+}
+.ever-notedown-preview .fa-mortar-board:before,
+.ever-notedown-preview .fa-graduation-cap:before {
+  content: "\f19d";
+}
+.ever-notedown-preview .fa-yahoo:before {
+  content: "\f19e";
+}
+.ever-notedown-preview .fa-google:before {
+  content: "\f1a0";
+}
+.ever-notedown-preview .fa-reddit:before {
+  content: "\f1a1";
+}
+.ever-notedown-preview .fa-reddit-square:before {
+  content: "\f1a2";
+}
+.ever-notedown-preview .fa-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+.ever-notedown-preview .fa-stumbleupon:before {
+  content: "\f1a4";
+}
+.ever-notedown-preview .fa-delicious:before {
+  content: "\f1a5";
+}
+.ever-notedown-preview .fa-digg:before {
+  content: "\f1a6";
+}
+.ever-notedown-preview .fa-pied-piper:before {
+  content: "\f1a7";
+}
+.ever-notedown-preview .fa-pied-piper-alt:before {
+  content: "\f1a8";
+}
+.ever-notedown-preview .fa-drupal:before {
+  content: "\f1a9";
+}
+.ever-notedown-preview .fa-joomla:before {
+  content: "\f1aa";
+}
+.ever-notedown-preview .fa-language:before {
+  content: "\f1ab";
+}
+.ever-notedown-preview .fa-fax:before {
+  content: "\f1ac";
+}
+.ever-notedown-preview .fa-building:before {
+  content: "\f1ad";
+}
+.ever-notedown-preview .fa-child:before {
+  content: "\f1ae";
+}
+.ever-notedown-preview .fa-paw:before {
+  content: "\f1b0";
+}
+.ever-notedown-preview .fa-spoon:before {
+  content: "\f1b1";
+}
+.ever-notedown-preview .fa-cube:before {
+  content: "\f1b2";
+}
+.ever-notedown-preview .fa-cubes:before {
+  content: "\f1b3";
+}
+.ever-notedown-preview .fa-behance:before {
+  content: "\f1b4";
+}
+.ever-notedown-preview .fa-behance-square:before {
+  content: "\f1b5";
+}
+.ever-notedown-preview .fa-steam:before {
+  content: "\f1b6";
+}
+.ever-notedown-preview .fa-steam-square:before {
+  content: "\f1b7";
+}
+.ever-notedown-preview .fa-recycle:before {
+  content: "\f1b8";
+}
+.ever-notedown-preview .fa-automobile:before,
+.ever-notedown-preview .fa-car:before {
+  content: "\f1b9";
+}
+.ever-notedown-preview .fa-cab:before,
+.ever-notedown-preview .fa-taxi:before {
+  content: "\f1ba";
+}
+.ever-notedown-preview .fa-tree:before {
+  content: "\f1bb";
+}
+.ever-notedown-preview .fa-spotify:before {
+  content: "\f1bc";
+}
+.ever-notedown-preview .fa-deviantart:before {
+  content: "\f1bd";
+}
+.ever-notedown-preview .fa-soundcloud:before {
+  content: "\f1be";
+}
+.ever-notedown-preview .fa-database:before {
+  content: "\f1c0";
+}
+.ever-notedown-preview .fa-file-pdf-o:before {
+  content: "\f1c1";
+}
+.ever-notedown-preview .fa-file-word-o:before {
+  content: "\f1c2";
+}
+.ever-notedown-preview .fa-file-excel-o:before {
+  content: "\f1c3";
+}
+.ever-notedown-preview .fa-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+.ever-notedown-preview .fa-file-photo-o:before,
+.ever-notedown-preview .fa-file-picture-o:before,
+.ever-notedown-preview .fa-file-image-o:before {
+  content: "\f1c5";
+}
+.ever-notedown-preview .fa-file-zip-o:before,
+.ever-notedown-preview .fa-file-archive-o:before {
+  content: "\f1c6";
+}
+.ever-notedown-preview .fa-file-sound-o:before,
+.ever-notedown-preview .fa-file-audio-o:before {
+  content: "\f1c7";
+}
+.ever-notedown-preview .fa-file-movie-o:before,
+.ever-notedown-preview .fa-file-video-o:before {
+  content: "\f1c8";
+}
+.ever-notedown-preview .fa-file-code-o:before {
+  content: "\f1c9";
+}
+.ever-notedown-preview .fa-vine:before {
+  content: "\f1ca";
+}
+.ever-notedown-preview .fa-codepen:before {
+  content: "\f1cb";
+}
+.ever-notedown-preview .fa-jsfiddle:before {
+  content: "\f1cc";
+}
+.ever-notedown-preview .fa-life-bouy:before,
+.ever-notedown-preview .fa-life-buoy:before,
+.ever-notedown-preview .fa-life-saver:before,
+.ever-notedown-preview .fa-support:before,
+.ever-notedown-preview .fa-life-ring:before {
+  content: "\f1cd";
+}
+.ever-notedown-preview .fa-circle-o-notch:before {
+  content: "\f1ce";
+}
+.ever-notedown-preview .fa-ra:before,
+.ever-notedown-preview .fa-rebel:before {
+  content: "\f1d0";
+}
+.ever-notedown-preview .fa-ge:before,
+.ever-notedown-preview .fa-empire:before {
+  content: "\f1d1";
+}
+.ever-notedown-preview .fa-git-square:before {
+  content: "\f1d2";
+}
+.ever-notedown-preview .fa-git:before {
+  content: "\f1d3";
+}
+.ever-notedown-preview .fa-hacker-news:before {
+  content: "\f1d4";
+}
+.ever-notedown-preview .fa-tencent-weibo:before {
+  content: "\f1d5";
+}
+.ever-notedown-preview .fa-qq:before {
+  content: "\f1d6";
+}
+.ever-notedown-preview .fa-wechat:before,
+.ever-notedown-preview .fa-weixin:before {
+  content: "\f1d7";
+}
+.ever-notedown-preview .fa-send:before,
+.ever-notedown-preview .fa-paper-plane:before {
+  content: "\f1d8";
+}
+.ever-notedown-preview .fa-send-o:before,
+.ever-notedown-preview .fa-paper-plane-o:before {
+  content: "\f1d9";
+}
+.ever-notedown-preview .fa-history:before {
+  content: "\f1da";
+}
+.ever-notedown-preview .fa-genderless:before,
+.ever-notedown-preview .fa-circle-thin:before {
+  content: "\f1db";
+}
+.ever-notedown-preview .fa-header:before {
+  content: "\f1dc";
+}
+.ever-notedown-preview .fa-paragraph:before {
+  content: "\f1dd";
+}
+.ever-notedown-preview .fa-sliders:before {
+  content: "\f1de";
+}
+.ever-notedown-preview .fa-share-alt:before {
+  content: "\f1e0";
+}
+.ever-notedown-preview .fa-share-alt-square:before {
+  content: "\f1e1";
+}
+.ever-notedown-preview .fa-bomb:before {
+  content: "\f1e2";
+}
+.ever-notedown-preview .fa-soccer-ball-o:before,
+.ever-notedown-preview .fa-futbol-o:before {
+  content: "\f1e3";
+}
+.ever-notedown-preview .fa-tty:before {
+  content: "\f1e4";
+}
+.ever-notedown-preview .fa-binoculars:before {
+  content: "\f1e5";
+}
+.ever-notedown-preview .fa-plug:before {
+  content: "\f1e6";
+}
+.ever-notedown-preview .fa-slideshare:before {
+  content: "\f1e7";
+}
+.ever-notedown-preview .fa-twitch:before {
+  content: "\f1e8";
+}
+.ever-notedown-preview .fa-yelp:before {
+  content: "\f1e9";
+}
+.ever-notedown-preview .fa-newspaper-o:before {
+  content: "\f1ea";
+}
+.ever-notedown-preview .fa-wifi:before {
+  content: "\f1eb";
+}
+.ever-notedown-preview .fa-calculator:before {
+  content: "\f1ec";
+}
+.ever-notedown-preview .fa-paypal:before {
+  content: "\f1ed";
+}
+.ever-notedown-preview .fa-google-wallet:before {
+  content: "\f1ee";
+}
+.ever-notedown-preview .fa-cc-visa:before {
+  content: "\f1f0";
+}
+.ever-notedown-preview .fa-cc-mastercard:before {
+  content: "\f1f1";
+}
+.ever-notedown-preview .fa-cc-discover:before {
+  content: "\f1f2";
+}
+.ever-notedown-preview .fa-cc-amex:before {
+  content: "\f1f3";
+}
+.ever-notedown-preview .fa-cc-paypal:before {
+  content: "\f1f4";
+}
+.ever-notedown-preview .fa-cc-stripe:before {
+  content: "\f1f5";
+}
+.ever-notedown-preview .fa-bell-slash:before {
+  content: "\f1f6";
+}
+.ever-notedown-preview .fa-bell-slash-o:before {
+  content: "\f1f7";
+}
+.ever-notedown-preview .fa-trash:before {
+  content: "\f1f8";
+}
+.ever-notedown-preview .fa-copyright:before {
+  content: "\f1f9";
+}
+.ever-notedown-preview .fa-at:before {
+  content: "\f1fa";
+}
+.ever-notedown-preview .fa-eyedropper:before {
+  content: "\f1fb";
+}
+.ever-notedown-preview .fa-paint-brush:before {
+  content: "\f1fc";
+}
+.ever-notedown-preview .fa-birthday-cake:before {
+  content: "\f1fd";
+}
+.ever-notedown-preview .fa-area-chart:before {
+  content: "\f1fe";
+}
+.ever-notedown-preview .fa-pie-chart:before {
+  content: "\f200";
+}
+.ever-notedown-preview .fa-line-chart:before {
+  content: "\f201";
+}
+.ever-notedown-preview .fa-lastfm:before {
+  content: "\f202";
+}
+.ever-notedown-preview .fa-lastfm-square:before {
+  content: "\f203";
+}
+.ever-notedown-preview .fa-toggle-off:before {
+  content: "\f204";
+}
+.ever-notedown-preview .fa-toggle-on:before {
+  content: "\f205";
+}
+.ever-notedown-preview .fa-bicycle:before {
+  content: "\f206";
+}
+.ever-notedown-preview .fa-bus:before {
+  content: "\f207";
+}
+.ever-notedown-preview .fa-ioxhost:before {
+  content: "\f208";
+}
+.ever-notedown-preview .fa-angellist:before {
+  content: "\f209";
+}
+.ever-notedown-preview .fa-cc:before {
+  content: "\f20a";
+}
+.ever-notedown-preview .fa-shekel:before,
+.ever-notedown-preview .fa-sheqel:before,
+.ever-notedown-preview .fa-ils:before {
+  content: "\f20b";
+}
+.ever-notedown-preview .fa-meanpath:before {
+  content: "\f20c";
+}
+.ever-notedown-preview .fa-buysellads:before {
+  content: "\f20d";
+}
+.ever-notedown-preview .fa-connectdevelop:before {
+  content: "\f20e";
+}
+.ever-notedown-preview .fa-dashcube:before {
+  content: "\f210";
+}
+.ever-notedown-preview .fa-forumbee:before {
+  content: "\f211";
+}
+.ever-notedown-preview .fa-leanpub:before {
+  content: "\f212";
+}
+.ever-notedown-preview .fa-sellsy:before {
+  content: "\f213";
+}
+.ever-notedown-preview .fa-shirtsinbulk:before {
+  content: "\f214";
+}
+.ever-notedown-preview .fa-simplybuilt:before {
+  content: "\f215";
+}
+.ever-notedown-preview .fa-skyatlas:before {
+  content: "\f216";
+}
+.ever-notedown-preview .fa-cart-plus:before {
+  content: "\f217";
+}
+.ever-notedown-preview .fa-cart-arrow-down:before {
+  content: "\f218";
+}
+.ever-notedown-preview .fa-diamond:before {
+  content: "\f219";
+}
+.ever-notedown-preview .fa-ship:before {
+  content: "\f21a";
+}
+.ever-notedown-preview .fa-user-secret:before {
+  content: "\f21b";
+}
+.ever-notedown-preview .fa-motorcycle:before {
+  content: "\f21c";
+}
+.ever-notedown-preview .fa-street-view:before {
+  content: "\f21d";
+}
+.ever-notedown-preview .fa-heartbeat:before {
+  content: "\f21e";
+}
+.ever-notedown-preview .fa-venus:before {
+  content: "\f221";
+}
+.ever-notedown-preview .fa-mars:before {
+  content: "\f222";
+}
+.ever-notedown-preview .fa-mercury:before {
+  content: "\f223";
+}
+.ever-notedown-preview .fa-transgender:before {
+  content: "\f224";
+}
+.ever-notedown-preview .fa-transgender-alt:before {
+  content: "\f225";
+}
+.ever-notedown-preview .fa-venus-double:before {
+  content: "\f226";
+}
+.ever-notedown-preview .fa-mars-double:before {
+  content: "\f227";
+}
+.ever-notedown-preview .fa-venus-mars:before {
+  content: "\f228";
+}
+.ever-notedown-preview .fa-mars-stroke:before {
+  content: "\f229";
+}
+.ever-notedown-preview .fa-mars-stroke-v:before {
+  content: "\f22a";
+}
+.ever-notedown-preview .fa-mars-stroke-h:before {
+  content: "\f22b";
+}
+.ever-notedown-preview .fa-neuter:before {
+  content: "\f22c";
+}
+.ever-notedown-preview .fa-facebook-official:before {
+  content: "\f230";
+}
+.ever-notedown-preview .fa-pinterest-p:before {
+  content: "\f231";
+}
+.ever-notedown-preview .fa-whatsapp:before {
+  content: "\f232";
+}
+.ever-notedown-preview .fa-server:before {
+  content: "\f233";
+}
+.ever-notedown-preview .fa-user-plus:before {
+  content: "\f234";
+}
+.ever-notedown-preview .fa-user-times:before {
+  content: "\f235";
+}
+.ever-notedown-preview .fa-hotel:before,
+.ever-notedown-preview .fa-bed:before {
+  content: "\f236";
+}
+.ever-notedown-preview .fa-viacoin:before {
+  content: "\f237";
+}
+.ever-notedown-preview .fa-train:before {
+  content: "\f238";
+}
+.ever-notedown-preview .fa-subway:before {
+  content: "\f239";
+}
+.ever-notedown-preview .fa-medium:before {
+  content: "\f23a";
+}
+@font-face {
+  font-family: 'Font Awesome';
+  font-weight: normal;
+  font-style: normal;
+  src: url(atom://ever-notedown/assets/font-awesome-4.3.0/fonts/fontawesome-webfont.woff) format('woff');
+}
+.ever-notedown-preview .fa {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.ever-notedown-preview .fa::before {
+  font-family: 'Font Awesome';
+}
+.ever-notedown-preview code,
+.ever-notedown-preview tt,
+.ever-notedown-preview .evnd-fenced-code-block {
+  font-size: 16px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  line-height: 1.6;
+  font-weight: inherit;
+  color: #000000;
+}
+.ever-notedown-preview a,
+.ever-notedown-preview a code {
+  color: #4183c4;
+}
+.ever-notedown-preview ol > li {
+  list-style-type: decimal;
+}
+.ever-notedown-preview ol > li > ul li {
+  list-style-type: circle;
+}
+.ever-notedown-preview ol > li > ul li > ul li {
+  list-style-type: square;
+}
+.ever-notedown-preview ol > li > ul li > ol li {
+  list-style-type: lower-roman;
+}
+.ever-notedown-preview ol > li > ul li > ol li ol li {
+  list-style-type: decimal;
+}
+.ever-notedown-preview ol > li > ol li {
+  list-style-type: lower-latin;
+}
+.ever-notedown-preview ol > li > ol li > ul li {
+  list-style-type: square;
+}
+.ever-notedown-preview ol > li > ol li > ol li {
+  list-style-type: lower-roman;
+}
+.ever-notedown-preview ol > li > ol li > ol li ol li {
+  list-style-type: decimal;
+}
+.ever-notedown-preview ul > li {
+  list-style-type: disc;
+}
+.ever-notedown-preview ul > li > ul li {
+  list-style-type: circle;
+}
+.ever-notedown-preview ul > li > ul li > ul li {
+  list-style-type: square;
+}
+.ever-notedown-preview ul > li > ul li > ol li {
+  list-style-type: lower-roman;
+}
+.ever-notedown-preview ul > li > ul li > ol li ol li {
+  list-style-type: decimal;
+}
+.ever-notedown-preview ul > li > ol li {
+  list-style-type: lower-latin;
+}
+.ever-notedown-preview ul > li > ol li > ul li {
+  list-style-type: square;
+}
+.ever-notedown-preview ul > li > ol li > ol li {
+  list-style-type: lower-roman;
+}
+.ever-notedown-preview ul > li > ol li > ol li ol li {
+  list-style-type: decimal;
+}
+.ever-notedown-preview li > .evnd-fenced-code-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.ever-notedown-preview li:last-child > .evnd-fenced-code-block {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.ever-notedown-preview > *:first-child {
+  margin-top: 0 !important;
+}
+.ever-notedown-preview > *:last-child {
+  margin-bottom: 0 !important;
+}
+.ever-notedown-preview a.absent {
+  color: #c00;
+}
+.ever-notedown-preview a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.ever-notedown-preview h1,
+.ever-notedown-preview h2,
+.ever-notedown-preview h3,
+.ever-notedown-preview h4,
+.ever-notedown-preview h5,
+.ever-notedown-preview h6 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 20px 0 10px;
+  padding: 0 0 10px 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+.ever-notedown-preview h1 .octicon-link,
+.ever-notedown-preview h2 .octicon-link,
+.ever-notedown-preview h3 .octicon-link,
+.ever-notedown-preview h4 .octicon-link,
+.ever-notedown-preview h5 .octicon-link,
+.ever-notedown-preview h6 .octicon-link {
+  display: none;
+  color: #000;
+}
+.ever-notedown-preview h1:hover a.anchor,
+.ever-notedown-preview h2:hover a.anchor,
+.ever-notedown-preview h3:hover a.anchor,
+.ever-notedown-preview h4:hover a.anchor,
+.ever-notedown-preview h5:hover a.anchor,
+.ever-notedown-preview h6:hover a.anchor {
+  text-decoration: none;
+  line-height: 1;
+  padding-left: 0;
+  margin-left: -22px;
+  top: 15%;
+}
+.ever-notedown-preview h1:hover a.anchor .octicon-link,
+.ever-notedown-preview h2:hover a.anchor .octicon-link,
+.ever-notedown-preview h3:hover a.anchor .octicon-link,
+.ever-notedown-preview h4:hover a.anchor .octicon-link,
+.ever-notedown-preview h5:hover a.anchor .octicon-link,
+.ever-notedown-preview h6:hover a.anchor .octicon-link {
+  display: inline-block;
+}
+.ever-notedown-preview h1 tt,
+.ever-notedown-preview h2 tt,
+.ever-notedown-preview h3 tt,
+.ever-notedown-preview h4 tt,
+.ever-notedown-preview h5 tt,
+.ever-notedown-preview h6 tt,
+.ever-notedown-preview h1 code,
+.ever-notedown-preview h2 code,
+.ever-notedown-preview h3 code,
+.ever-notedown-preview h4 code,
+.ever-notedown-preview h5 code,
+.ever-notedown-preview h6 code {
+  font-size: inherit;
+}
+.ever-notedown-preview h1 {
+  font-size: 30px;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+.ever-notedown-preview h2 {
+  font-size: 26px;
+  border-bottom: 1px solid #eee;
+  color: #000;
+}
+.ever-notedown-preview h3 {
+  font-size: 22px;
+}
+.ever-notedown-preview h4 {
+  font-size: 20px;
+}
+.ever-notedown-preview h5 {
+  font-size: 17px;
+}
+.ever-notedown-preview h6 {
+  color: #777;
+  font-size: 16px;
+}
+.ever-notedown-preview p,
+.ever-notedown-preview ul,
+.ever-notedown-preview ol,
+.ever-notedown-preview dl,
+.ever-notedown-preview table,
+.ever-notedown-preview .evnd-fenced-code-block {
+  margin: 15px 10px 15px 0;
+}
+.ever-notedown-preview hr {
+  margin: 25px 0 25px 0;
+  border-top: 1px solid #eeeeee;
+  color: #eeeeee;
+}
+.ever-notedown-preview hr.fancy-line {
+  border: 0;
+  height: 1px;
+  position: relative;
+  margin: 0.5em 0;
+  /* Keep other elements away from pseudo elements*/
+}
+.ever-notedown-preview hr.fancy-line:before {
+  top: -0.5em;
+  height: 1em;
+}
+.ever-notedown-preview hr.fancy-line:after {
+  content: '';
+  height: 0.5em;
+  /* half the height of :before */
+  top: 1px;
+  /* height of hr*/
+}
+.ever-notedown-preview hr.fancy-line:before,
+.ever-notedown-preview hr.fancy-line:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+}
+.ever-notedown-preview hr.fancy-line,
+.ever-notedown-preview hr.fancy-line:before {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
+}
+.ever-notedown-preview hr.fancy-line:after {
+  background: initial;
+}
+.ever-notedown-preview > h2:first-child,
+.ever-notedown-preview > h1:first-child,
+.ever-notedown-preview > h1:first-child + h2,
+.ever-notedown-preview > h3:first-child,
+.ever-notedown-preview > h4:first-child,
+.ever-notedown-preview > h5:first-child,
+.ever-notedown-preview > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.ever-notedown-preview a:first-child h1,
+.ever-notedown-preview a:first-child h2,
+.ever-notedown-preview a:first-child h3,
+.ever-notedown-preview a:first-child h4,
+.ever-notedown-preview a:first-child h5,
+.ever-notedown-preview a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.ever-notedown-preview h1 + p,
+.ever-notedown-preview h2 + p,
+.ever-notedown-preview h3 + p,
+.ever-notedown-preview h4 + p,
+.ever-notedown-preview h5 + p,
+.ever-notedown-preview h6 + p {
+  margin-top: 0;
+}
+.ever-notedown-preview li p.first {
+  display: inline-block;
+}
+.ever-notedown-preview ul,
+.ever-notedown-preview ol {
+  padding-left: 30px;
+}
+.ever-notedown-preview ul.no-list,
+.ever-notedown-preview ol.no-list {
+  list-style-type: none;
+  padding: 0;
+}
+.ever-notedown-preview ul li > :first-child,
+.ever-notedown-preview ol li > :first-child,
+.ever-notedown-preview ul li ul:first-of-type,
+.ever-notedown-preview ol li ul:first-of-type {
+  margin-top: 0;
+}
+.ever-notedown-preview ul ul,
+.ever-notedown-preview ul ol,
+.ever-notedown-preview ol ol,
+.ever-notedown-preview ol ul {
+  margin-bottom: 0;
+}
+.ever-notedown-preview dl {
+  padding: 0;
+}
+.ever-notedown-preview dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+.ever-notedown-preview dl dt:first-child {
+  padding: 0;
+}
+.ever-notedown-preview dl dt > :first-child {
+  margin-top: 0;
+}
+.ever-notedown-preview dl dt > :last-child {
+  margin-bottom: 0;
+}
+.ever-notedown-preview dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+.ever-notedown-preview dl dd > :first-child {
+  margin-top: 0;
+}
+.ever-notedown-preview dl dd > :last-child {
+  margin-bottom: 0;
+}
+.ever-notedown-preview table th {
+  font-weight: bold;
+}
+.ever-notedown-preview table th,
+.ever-notedown-preview table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+.ever-notedown-preview table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+.ever-notedown-preview table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.ever-notedown-preview img {
+  max-width: 100%;
+}
+.ever-notedown-preview span.frame {
+  display: block;
+  overflow: hidden;
+}
+.ever-notedown-preview span.frame > span {
+  border: 1px solid #ddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+.ever-notedown-preview span.frame span img {
+  display: block;
+  float: left;
+}
+.ever-notedown-preview span.frame span span {
+  clear: both;
+  color: #333;
+  display: block;
+  padding: 5px 0 0;
+}
+.ever-notedown-preview span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.ever-notedown-preview span.align-center > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+.ever-notedown-preview span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+.ever-notedown-preview span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.ever-notedown-preview span.align-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+.ever-notedown-preview span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+.ever-notedown-preview span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+.ever-notedown-preview span.float-left span {
+  margin: 13px 0 0;
+}
+.ever-notedown-preview span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+.ever-notedown-preview span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+.ever-notedown-preview tt,
+.ever-notedown-preview code {
+  color: #c7254e;
+  margin: 0 2px;
+  padding: 0 5px;
+  border: 1px solid #f3e4ea;
+  background-color: #fbf6f8;
+  border-radius: 3px;
+  text-shadow: none;
+}
+.ever-notedown-preview code {
+  white-space: nowrap;
+}
+.ever-notedown-preview .evnd-fenced-code-block {
+  background-color: #ececec;
+  border-radius: 2px;
+  padding: 10px 20px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.ever-notedown-preview .evnd-fenced-code-block .line {
+  display: block;
+}
+.ever-notedown-preview .emoji {
+  height: 20px;
+  width: 20px;
+}
+.ever-notedown-preview kbd {
+  padding: 3px 5px;
+  line-height: 10px;
+  font-size: 11px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 #bbbbbb;
+  box-shadow: inset 0 -1px 0 #bbbbbb;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ever-notedown-preview .table-of-contents {
+  list-style-type: none;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.ever-notedown-preview .table-of-contents ul {
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 0;
+  border-left: 1px solid #ccc;
+}
+.ever-notedown-preview .table-of-contents li {
+  list-style-type: none;
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px dashed #ccc;
+}
+.ever-notedown-preview .table-of-contents li:last-child {
+  border-bottom: 1px dashed #ccc;
+}
+.ever-notedown-preview .table-of-contents span a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 80%;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.ever-notedown-preview .table-of-contents span a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+.ever-notedown-preview .evnd-toc-div {
+  display: block;
+  width: 100%;
+}
+.ever-notedown-preview .toc-level-1 > li {
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+}
+.ever-notedown-preview ul.toc-level-1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ever-notedown-preview .footnotes {
+  margin-top: 60px;
+}
+.ever-notedown-preview .footnotes hr {
+  border-top: 1px solid #000000;
+  color: #000000;
+}
+.ever-notedown-preview table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.ever-notedown-preview table {
+  max-width: 100%;
+  background-color: transparent;
+}
+.ever-notedown-preview th {
+  text-align: left;
+}
+.ever-notedown-preview table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+.ever-notedown-preview table td[class*="col-"],
+.ever-notedown-preview table th[class*="col-"] {
+  float: none;
+  display: table-cell;
+}
+.ever-notedown-preview .evnd-function-buttons {
+  display: inline-block;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 470px;
+  height: 50px;
+  padding-left: 20px;
+  margin: 15px 10px 20px 0px;
+  vertical-align: middle;
+  background: transparent;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div > span {
+  font-style: normal;
+  text-align: center;
+  color: #fcfcfc;
+  background: #33373c;
+  background-clip: padding-box;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  min-width: 110px;
+  right: 20%;
+  padding: 5px 0;
+  top: 87%;
+  margin-top: 5px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s linear;
+  -moz-transition: opacity 0.25s linear;
+  -ms-transition: opacity 0.25s linear;
+  -o-transition: opacity 0.25s linear;
+  transition: opacity 0.25s linear;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div > span:before,
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div > i:after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 100%;
+  left: 80%;
+  margin-left: -10px;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div > span:before {
+  border-bottom: 10px solid #33373c;
+  z-index: 1;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div:hover > span {
+  visibility: visible;
+  opacity: 0.85;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div-disabled:hover > span {
+  opacity: 0.5;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div-hidden {
+  visibility: hidden;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div-hidden > button {
+  visibility: hidden;
+}
+.ever-notedown-preview .evnd-function-buttons button {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  padding: 8px 9px;
+  color: #6e7681;
+}
+.ever-notedown-preview .evnd-function-buttons button:hover {
+  background: rgba(211, 216, 220, 0.7);
+  border: 1px solid rgba(211, 216, 220, 0.85);
+  opacity: 0.95;
+  color: #3F4142;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-yellow {
+  color: #fadb60;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-yellow:hover {
+  color: #edbe07;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-red {
+  color: #b25656;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-red:hover {
+  color: #6f3333;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div {
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div .button-icon {
+  font-size: 100%;
+  opacity: 0.85;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-evernote {
+  font-size: 120%;
+  position: absolute;
+  top: -18%;
+  left: -18%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-pull {
+  font-size: 125%;
+  position: absolute;
+  top: 17%;
+  left: 18%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-info::before {
+  font-size: 20px;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-eye::before,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-home::before {
+  font-size: 19px;
+  position: absolute;
+  top: 18%;
+  left: 15%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-html::before,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-enml::before,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-folder::before {
+  font-size: 19px;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-html,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-enml,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-folder {
+  position: absolute;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-html {
+  left: 18%;
+  top: 0%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-enml {
+  left: 10%;
+  top: 15%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-folder {
+  left: 15%;
+  top: 20%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div .faded {
+  opacity: 0.3;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-button-disabled {
+  color: #b2b6bd;
+  background: rgba(255, 255, 255, 0.5);
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-button-disabled:hover {
+  color: #b2b6bd;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.ever-notedown-preview .evnd-function-buttons #evernote-syncing,
+.ever-notedown-preview .evnd-function-buttons #pull-syncing {
+  visibility: hidden;
+}
+.ever-notedown-preview .note-meta-info {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+.ever-notedown-preview .note-meta-info .note-meta-info-content {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+}
+.ever-notedown-preview .note-meta-info .note-tag {
+  background-color: #6e7681;
+  color: #fcfcfc;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+.ever-notedown-preview .note-meta-info .note-title {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border-bottom: 1px dashed;
+}
+.ever-notedown-preview .en-media,
+.ever-notedown-preview .attachments {
+  display: inline-block;
+  width: 350px;
+  height: 50px;
+  padding: 0 0;
+  margin: 5px 5px;
+  text-align: left;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: #f6f6f6;
+  white-space: normal;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.ever-notedown-preview .en-media span.icon:before,
+.ever-notedown-preview .attachments span.icon:before {
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  float: left;
+  margin: 12px 2px 12px 10px;
+}
+.ever-notedown-preview .en-media embed,
+.ever-notedown-preview .attachments embed {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin: 2px 3px;
+}
+.ever-notedown-preview .en-media span.file-path,
+.ever-notedown-preview .attachments span.file-path,
+.ever-notedown-preview .en-media p,
+.ever-notedown-preview .attachments p {
+  vertical-align: middle;
+  margin-top: 2px;
+  margin-left: 40px;
+  margin-bottom: 2px;
+  padding: 0 0;
+  width: 250px;
+  height: 30px;
+  white-space: normal;
+  word-wrap: break-word;
+  position: absolute;
+}
+.ever-notedown-preview .en-media span.file-path a,
+.ever-notedown-preview .attachments span.file-path a,
+.ever-notedown-preview .en-media p a,
+.ever-notedown-preview .attachments p a {
+  white-space: normal;
+  word-wrap: break-word;
+  width: 250px;
+}
+.ever-notedown-preview [tooltip]:before {
+  content: attr(tooltip);
+  position: absolute;
+  opacity: 0;
+  height: 30px;
+  min-width: 110px;
+  width: auto;
+  transition: all 0.15s ease;
+  padding: 5px;
+  color: #fcfcfc;
+  border-radius: 5px;
+}
+.ever-notedown-preview [tooltip]:hover:before {
+  opacity: 1;
+  background: #575d65;
+  margin-top: 20px;
+  margin-left: -80px;
+}
+.ever-notedown-preview [tooltip]:not([tooltip-persistent]):before {
+  pointer-events: none;
+}
+.ever-notedown-preview blockquote {
+  margin: 15px 10px 15px 0;
+  padding: 15px 15px;
+  color: #2c2c2c;
+}
+.ever-notedown-preview blockquote > :first-child {
+  margin-top: 0;
+}
+.ever-notedown-preview blockquote > :last-child {
+  margin-bottom: 0;
+}
+.ever-notedown-preview blockquote p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.ever-notedown-preview blockquote {
+  border-left: 10px solid #e5ecf0;
+  background-color: #f4f7f9;
+}
+.ever-notedown-preview blockquote blockquote {
+  border-left: 10px solid #dbe5ea;
+  background-color: #eaf0f4;
+}
+.ever-notedown-preview blockquote blockquote blockquote {
+  border-left: 10px solid #d2dee5;
+  background-color: #e0e9ee;
+}
+.ever-notedown-preview blockquote blockquote blockquote blockquote {
+  border-left: 10px solid #d2dee5;
+  background-color: #e0e9ee;
+}
+.ever-notedown-preview > blockquote.pull-right {
+  margin-right: 10px;
+  float: right !important;
+}
+.ever-notedown-preview > blockquote.reverse {
+  margin-right: 10px;
+}
+.ever-notedown-preview blockquote.pull-right,
+.ever-notedown-preview blockquote.reverse {
+  border-right: 10px solid #e5ecf0;
+  border-left: 0px none;
+  background-color: #f4f7f9;
+  text-align: right;
+}
+.ever-notedown-preview blockquote.pull-right blockquote.pull-right,
+.ever-notedown-preview blockquote.reverse blockquote.pull-right {
+  border-right: 10px solid #dbe5ea;
+  border-left: 0px none;
+  background-color: #eaf0f4;
+}
+.ever-notedown-preview blockquote.pull-right blockquote.pull-right blockquote.pull-right,
+.ever-notedown-preview blockquote.reverse blockquote.pull-right blockquote.pull-right {
+  border-right: 10px solid #d2dee5;
+  border-left: 0px none;
+  background-color: #e0e9ee;
+}
+.ever-notedown-preview blockquote.pull-right blockquote.pull-right blockquote.pull-right blockquote.pull-right,
+.ever-notedown-preview blockquote.reverse blockquote.pull-right blockquote.pull-right blockquote.pull-right {
+  border-right: 10px solid #d2dee5;
+  border-left: 0px none;
+  background-color: #e0e9ee;
+}
+.ever-notedown-preview blockquote small:before,
+.ever-notedown-preview blockquote.pull-right small:before {
+  content: none;
+}
+.ever-notedown-preview blockquote small:after,
+.ever-notedown-preview blockquote.pull-right small:after {
+  content: none;
+}
+.ever-notedown-preview blockquote small,
+.ever-notedown-preview blockquote.pull-right small {
+  color: #a0a0a0;
+  text-indent: 0;
+  font-style: italic;
+}
+.ever-notedown-preview blockquote cite,
+.ever-notedown-preview blockquote.pull-right cite {
+  font-style: normal;
+}
+.ever-notedown-preview > blockquote.text-quote {
+  text-indent: 1.8em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #666666;
+}
+.ever-notedown-preview .evnd-fenced-code-block {
+  font-size: 16px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  line-height: 1.6;
+  font-weight: inherit;
+  color: #000000;
+  margin: 5px 10px 5px 0;
+  background-color: #ececec;
+  padding: 10px 20px;
+}
+.ever-notedown-preview .evnd-fenced-code-block .line.cursor-line {
+  background-color: rgba(56, 75, 112, 0.07);
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible {
+  color: #545454;
+}
+.ever-notedown-preview .evnd-fenced-code-block .cursor {
+  border-left: 2px solid #528bff;
+}
+.ever-notedown-preview .evnd-fenced-code-block .selection .region {
+  background-color: #e5e5e6;
+}
+.ever-notedown-preview .evnd-fenced-code-block .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+  background-color: #eaeaeb;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible-character {
+  color: rgba(84, 84, 84, 0.4);
+}
+.ever-notedown-preview .evnd-fenced-code-block .indent-guide {
+  color: rgba(84, 84, 84, 0.4);
+}
+.ever-notedown-preview .evnd-fenced-code-block .wrap-guide {
+  background-color: rgba(84, 84, 84, 0.4);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number {
+  color: #969696;
+  -webkit-font-smoothing: antialiased;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.git-line-removed:before {
+  bottom: -3px;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.git-line-removed:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(255, 20, 20, 0.5);
+  pointer-events: none;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line {
+  color: #545454;
+  background-color: #efeff0;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number .icon-right {
+  color: #545454;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number .icon-right {
+  color: #545454;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.folded,
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number:after,
+.ever-notedown-preview .evnd-fenced-code-block .fold-marker:after {
+  color: #545454;
+}
+.ever-notedown-preview .source.ruby.embedded.source .punctuation.section.embedded.ruby {
+  color: #CF1040;
+}
+.ever-notedown-preview .comment {
+  font-style: italic;
+  color: #999988;
+}
+.ever-notedown-preview .comment .xxx,
+.ever-notedown-preview .comment .yard,
+.ever-notedown-preview .comment .todo,
+.ever-notedown-preview .comment .fixme,
+.ever-notedown-preview .comment .changed,
+.ever-notedown-preview .comment .idea,
+.ever-notedown-preview .comment .hack,
+.ever-notedown-preview .comment .note {
+  color: #727262;
+}
+.ever-notedown-preview .keyword,
+.ever-notedown-preview .storage {
+  font-weight: bold;
+  color: #000000;
+}
+.ever-notedown-preview .entity {
+  color: #000000;
+}
+.ever-notedown-preview .entity.name {
+  font-weight: bold;
+  color: #445588;
+}
+.ever-notedown-preview .entity.name.tag.doctype {
+  font-weight: bold;
+  color: #999999;
+}
+.ever-notedown-preview .entity.name.tag {
+  font-weight: normal;
+  color: #bf1212;
+}
+.ever-notedown-preview .entity.name.function {
+  font-weight: bold;
+  color: #990000;
+}
+.ever-notedown-preview .entity.other.inherited-class,
+.ever-notedown-preview .entity.other.inherited-class.punctuation {
+  color: #0F8787;
+}
+.ever-notedown-preview .entity.other.attribute-name {
+  color: #0A8585;
+}
+.ever-notedown-preview .entity.other.attribute-name.pseudo-class {
+  color: #000000;
+}
+.ever-notedown-preview .entity.other.attribute-name.class {
+  font-weight: bold;
+  color: #445588;
+}
+.ever-notedown-preview .entity.other.attribute-name.id {
+  font-weight: bold;
+  color: #990000;
+}
+.ever-notedown-preview .support {
+  color: #000000;
+}
+.ever-notedown-preview .support.function,
+.ever-notedown-preview .support.contant,
+.ever-notedown-preview .support.class,
+.ever-notedown-preview .support.type {
+  color: #0086B3;
+}
+.ever-notedown-preview .support.class.ruby {
+  color: #008080;
+}
+.ever-notedown-preview .support.type.property-name.css {
+  font-weight: bold;
+}
+.ever-notedown-preview .support.constant.font-name {
+  color: #000000;
+}
+.ever-notedown-preview .support.constant.property-value {
+  font-weight: bold;
+  color: #000000;
+}
+.ever-notedown-preview .constant.numeric {
+  color: #009999;
+}
+.ever-notedown-preview .constant.language {
+  font-weight: bold;
+  color: #000000;
+}
+.ever-notedown-preview .constant.character {
+  color: #F7A357;
+}
+.ever-notedown-preview .constant.other {
+  color: #333333;
+}
+.ever-notedown-preview .constant.other.symbol {
+  color: #AA2C8C;
+}
+.ever-notedown-preview .variable {
+  color: #333333;
+}
+.ever-notedown-preview .variable.language,
+.ever-notedown-preview .variable.other {
+  color: #108888;
+}
+.ever-notedown-preview .variable.other.constant.ruby {
+  color: #0F8787;
+}
+.ever-notedown-preview .variable.parameter,
+.ever-notedown-preview .variable.punctuation.separator,
+.ever-notedown-preview .variable.other.block,
+.ever-notedown-preview .variable.other.object > .punctuation {
+  color: #333333;
+}
+.ever-notedown-preview .keyword,
+.ever-notedown-preview .keyword.other,
+.ever-notedown-preview .keyword.control,
+.ever-notedown-preview .keyword,
+.ever-notedown-preview .keyword.special-method,
+.ever-notedown-preview .keyword.operator,
+.ever-notedown-preview .keyword.unit {
+  color: #A71D5D;
+}
+.ever-notedown-preview .keyword.operator.assignment {
+  color: #000000;
+}
+.ever-notedown-preview .keyword.other.special-method.ruby {
+  font-weight: bold;
+}
+.ever-notedown-preview .keyword.other.name-of-parameter.objc {
+  font-weight: bold;
+  color: #990000;
+}
+.ever-notedown-preview .keyword.other.unit {
+  color: #009999;
+}
+.ever-notedown-preview .string {
+  color: #DD1144;
+}
+.ever-notedown-preview .string.regexp {
+  color: #009926;
+}
+.ever-notedown-preview .string.quoted .source {
+  color: #000000;
+}
+.ever-notedown-preview .string.quoted.double.doctype {
+  font-weight: bold;
+  color: #999999;
+}
+.ever-notedown-preview .punctuation.separator.inheritance {
+  font-weight: bold;
+  color: #000000;
+}
+.ever-notedown-preview .punctuation.separator.variable {
+  font-weight: bold;
+  color: #000000;
+}
+.ever-notedown-preview .punctuation.section.array {
+  font-weight: bold;
+  color: #000000;
+}
+.ever-notedown-preview .punctuation.separator.key-value {
+  font-weight: bold;
+  color: #000000;
+}
+.ever-notedown-preview .punctuation.section.function {
+  color: #000000;
+}
+.ever-notedown-preview .punctuation.section.scope {
+  color: #000000;
+}
+.ever-notedown-preview .punctuation.definition.tag {
+  color: #121289;
+}
+.ever-notedown-preview .punctuation.section.embedded.ruby {
+  font-weight: bold;
+  color: #999999;
+}
+.ever-notedown-preview .punctuation.separator.key-value.css {
+  color: #000000;
+}
+.ever-notedown-preview .punctuation.terminator.rule.css {
+  color: #000000;
+}
+.ever-notedown-preview .css.meta.selector,
+.ever-notedown-preview .less.meta.selector,
+.ever-notedown-preview .scss.meta.selector,
+.ever-notedown-preview .css.support.function,
+.ever-notedown-preview .less.support.function,
+.ever-notedown-preview .scss.support.function {
+  size: 100px;
+  color: #945277;
+}
+.ever-notedown-preview .yaml.entity.name {
+  color: #0086b3;
+}
+.ever-notedown-preview .html.entity.tag {
+  color: #63a35c;
+}
+.ever-notedown-preview .slim.entity.name.tag,
+.ever-notedown-preview .haml.entity.name.tag {
+  color: #63a35c;
+}
+.ever-notedown-preview .bracket-matcher .region {
+  border-bottom: 0 none;
+  background-color: #dddddd;
+}
+.ever-notedown-preview .meta.tag {
+  color: #000000;
+}
+.ever-notedown-preview .meta.structure.dictionary.json > .string.quoted.double.json,
+.ever-notedown-preview .meta.structure.dictionary.json > .string.quoted.double.json .punctuation.string {
+  color: #0086b3;
+}
+.ever-notedown-preview .meta.structure.dictionary.value.json > .string.quoted.double.json,
+.ever-notedown-preview .meta.structure.dictionary.value.json > .string.quoted.double.json > .punctuation {
+  color: #df5000;
+}
+.ever-notedown-preview .meta.diff,
+.ever-notedown-preview .meta.diff.header {
+  color: #969896;
+}
+.ever-notedown-preview .meta.tag.sgml.html {
+  font-weight: bold;
+  color: #999999;
+}
+.ever-notedown-preview .meta.property-value,
+.ever-notedown-preview .constant.other.color {
+  color: #009999;
+}
+.ever-notedown-preview .meta.diff.header.from-file {
+  color: #000000;
+  background-color: #FFDDDD;
+}
+.ever-notedown-preview .meta.diff.header.to-file {
+  color: #000000;
+  background-color: #DDFFDD;
+}
+.ever-notedown-preview .markup.inserted {
+  color: #80c875;
+  background-color: #ddffe0;
+}
+.ever-notedown-preview .markup.inserted.diff {
+  background-color: #DDFFDD;
+}
+.ever-notedown-preview .markup.deleted {
+  background-color: #ffdddd;
+  color: #ffaaaa;
+}
+.ever-notedown-preview .markup.deleted.diff {
+  color: #000000;
+  background-color: #FFDDDD;
+}
+.ever-notedown-preview .invalid {
+  background-color: #ffdddd;
+  color: #ffaaaa;
+}
+.ever-notedown-preview .invalid.deprecated {
+  color: #fff3ac;
+  background-color: #fbf7cd;
+}
+.ever-notedown-preview > .evnd-fenced-code-block {
+  margin: 15px 10px 15px 0;
+}

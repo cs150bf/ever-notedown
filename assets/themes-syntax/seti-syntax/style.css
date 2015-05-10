@@ -1,0 +1,429 @@
+.ever-notedown-preview .evnd-fenced-code-block {
+  background-color: #151718;
+  color: #d4d7d6;
+}
+.ever-notedown-preview .evnd-fenced-code-block {
+  background-color: #151718;
+  color: #d4d7d6;
+}
+.ever-notedown-preview .evnd-fenced-code-block .wrap-guide {
+  background: rgba(245, 250, 255, 0.04);
+}
+.ever-notedown-preview .evnd-fenced-code-block .indent-guide {
+  color: rgba(245, 250, 255, 0.04);
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible-character {
+  color: rgba(255, 255, 255, 0.1);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter {
+  background-color: #0e1112;
+  color: #404b53;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number {
+  background: #0e1112;
+  color: #404b53;
+  padding-left: 10px;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line {
+  background-color: #060708;
+  color: #55b5db;
+  font-weight: 100;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line-no-selection {
+  background-color: #060708 !important;
+  color: #55b5db;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number:hover {
+  background-color: #0e1112 !important;
+  color: #55b5db;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.folded,
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number:after,
+.ever-notedown-preview .evnd-fenced-code-block .fold-marker:after {
+  color: #FFF;
+  background: #404b53;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible {
+  color: rgba(255, 255, 255, 0.1);
+}
+.ever-notedown-preview .evnd-fenced-code-block .cursor {
+  border-color: #d4d7d6 !important;
+  border-left: solid 2px;
+}
+.ever-notedown-preview .evnd-fenced-code-block .selection .region {
+  background-color: rgba(85, 181, 219, 0.6);
+  border: solid 1px rgba(85, 181, 219, 0.9);
+}
+.ever-notedown-preview .evnd-fenced-code-block .scroll-view {
+  padding-left: 10px;
+}
+.ever-notedown-preview .evnd-fenced-code-block .line.cursor-line {
+  background: rgba(0, 0, 0, 0.2) !important;
+  padding-left: 10px;
+  margin-left: -10px;
+}
+.ever-notedown-preview .comment {
+  color: #41535b;
+  background: none;
+}
+.ever-notedown-preview .keyword {
+  color: #9fca56;
+}
+.ever-notedown-preview .keyword.control {
+  color: #9fca56;
+}
+.ever-notedown-preview .keyword.operator {
+  color: #9fca56;
+}
+.ever-notedown-preview .keyword.other.special-method {
+  color: #9fca56;
+}
+.ever-notedown-preview .keyword.other.unit {
+  color: #9fca56;
+}
+.ever-notedown-preview .storage {
+  color: #e6cd69;
+}
+.ever-notedown-preview .storage.modifier {
+  color: #e6cd69;
+}
+.ever-notedown-preview .constant {
+  color: #cd3f45;
+}
+.ever-notedown-preview .constant.character.escape {
+  color: #cd3f45;
+}
+.ever-notedown-preview .constant.numeric {
+  color: #cd3f45;
+}
+.ever-notedown-preview .constant.other.color {
+  color: #cd3f45;
+}
+.ever-notedown-preview .constant.other.symbol {
+  color: #cd3f45;
+}
+.ever-notedown-preview .variable {
+  color: #9fca56;
+}
+.ever-notedown-preview .variable.interpolation {
+  color: #9fca56;
+}
+.ever-notedown-preview .variable.parameter.function {
+  color: #55b5db;
+}
+.ever-notedown-preview .invalid.illegal,
+.ever-notedown-preview .invalid.deprecated {
+  background: none;
+  color: #cd3f45;
+}
+.ever-notedown-preview .string {
+  color: #55b5db;
+}
+.ever-notedown-preview .string .constant {
+  color: #55b5db;
+}
+.ever-notedown-preview .string.regexp {
+  color: #55b5db;
+}
+.ever-notedown-preview .string.regexp .constant.character.escape,
+.ever-notedown-preview .string.regexp .source.ruby.embedded,
+.ever-notedown-preview .string.regexp .string.regexp.arbitrary-repitition {
+  color: #55b5db;
+}
+.ever-notedown-preview .string.regexp.group {
+  color: #55b5db;
+}
+.ever-notedown-preview .string.regexp.character-class {
+  color: #55b5db;
+}
+.ever-notedown-preview .string.regexp .source.ruby.embedded {
+  color: #55b5db;
+}
+.ever-notedown-preview .string .variable {
+  color: #9fca56;
+}
+.ever-notedown-preview .string.other.link {
+  color: #55b5db;
+}
+.ever-notedown-preview .source .string .source,
+.ever-notedown-preview .source .string .meta.embedded.line {
+  color: #55b5db;
+}
+.ever-notedown-preview .source .string .punctuation.section.embedded {
+  color: #55b5db;
+}
+.ever-notedown-preview .source .string .punctuation.section.embedded .source {
+  color: #55b5db;
+}
+.ever-notedown-preview .punctuation.terminator {
+  color: #858d8a;
+}
+.ever-notedown-preview .punctuation.separator {
+  color: #858d8a;
+}
+.ever-notedown-preview .punctuation.definition {
+  color: #858d8a;
+}
+.ever-notedown-preview .punctuation.definition.comment {
+  color: #41535b;
+}
+.ever-notedown-preview .punctuation.definition.string,
+.ever-notedown-preview .punctuation.definition.variable,
+.ever-notedown-preview .punctuation.definition.array {
+  color: #55b5db;
+}
+.ever-notedown-preview .punctuation.definition.parameters {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .punctuation.definition.heading,
+.ever-notedown-preview .punctuation.definition.identity {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .punctuation.definition.bold {
+  color: #d4d7d6;
+  font-weight: bold;
+}
+.ever-notedown-preview .punctuation.definition.italic {
+  color: #d4d7d6;
+  font-style: italic;
+}
+.ever-notedown-preview .punctuation.section.embedded {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .support {
+  color: #a074c4;
+}
+.ever-notedown-preview .support.class {
+  color: #a074c4;
+}
+.ever-notedown-preview .support.function {
+  color: #a074c4;
+}
+.ever-notedown-preview .support.function.any-method {
+  color: #a074c4;
+}
+.ever-notedown-preview .support.constant {
+  color: #cd3f45;
+}
+.ever-notedown-preview .support.type.property-name.css {
+  color: #a074c4;
+}
+.ever-notedown-preview .source .entity.name.tag,
+.ever-notedown-preview .source .entity.other.attribute-name,
+.ever-notedown-preview .meta.tag.inline,
+.ever-notedown-preview .meta.tag.inline .entity {
+  color: #9fca56;
+}
+.ever-notedown-preview.tag,
+.ever-notedown-preview.tag .entity {
+  color: #55b5db;
+}
+.ever-notedown-preview .html .string {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .html .punctuation.definition.tag {
+  color: #55b5db;
+}
+.ever-notedown-preview .html .entity.name.tag {
+  text-decoration: done;
+}
+.ever-notedown-preview .html .entity.name.tag.structure {
+  color: #55b5db;
+}
+.ever-notedown-preview .html .entity.name.tag.block {
+  color: #55b5db;
+}
+.ever-notedown-preview .html .entity.other.attribute-name {
+  color: #9fca56;
+}
+.ever-notedown-preview .entity {
+  color: #55b5db;
+}
+.ever-notedown-preview .entity.name.type {
+  color: #55b5db;
+  text-decoration: none;
+}
+.ever-notedown-preview .entity.other.inherited-class {
+  color: #55b5db;
+}
+.ever-notedown-preview .entity.name.function {
+  color: #55b5db;
+}
+.ever-notedown-preview .entity.name.class,
+.ever-notedown-preview .entity.name.type.class {
+  color: #55b5db;
+}
+.ever-notedown-preview .entity.name.section {
+  color: #55b5db;
+}
+.ever-notedown-preview .entity.name.tag {
+  color: #55b5db;
+  text-decoration: done;
+}
+.ever-notedown-preview .entity.other.attribute-name {
+  color: #9fca56;
+}
+.ever-notedown-preview .entity.other.attribute-name.id {
+  color: #9fca56;
+}
+.ever-notedown-preview .meta.link {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .meta.require {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .meta.brace.curly {
+  color: #858d8a;
+}
+.ever-notedown-preview .meta.brace.round {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .meta.comma {
+  color: #858d8a;
+}
+.ever-notedown-preview .meta.selector {
+  color: #858d8a;
+}
+.ever-notedown-preview .meta.separator {
+  background-color: #858d8a;
+  color: #858d8a;
+}
+.ever-notedown-preview .none {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .markup.bold {
+  color: #d4d7d6;
+  font-weight: bold;
+}
+.ever-notedown-preview .markup.changed {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .markup.deleted {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .markup.italic {
+  color: #d4d7d6;
+  font-style: italic;
+}
+.ever-notedown-preview .markup.heading .punctuation.definition.heading {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .markup.inserted {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .markup.list {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .markup.quote {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .markup.raw.inline {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.ever-notedown-preview .source.gfm .markup.heading {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .evnd-fenced-code-block[mini] .scroll-view {
+  padding-left: 1px;
+}
+.ever-notedown-preview .bracket-matcher .region {
+  border-bottom: 1px solid #55b5db;
+  margin-top: 2px;
+}
+.ever-notedown-preview .html .meta.tag.any {
+  color: #9fca56;
+}
+.ever-notedown-preview .html .entity.name.tag.block,
+.ever-notedown-preview .html .entity.name.tag.inline,
+.ever-notedown-preview .html .entity.name.tag.name {
+  color: #55b5db;
+}
+.ever-notedown-preview .html .entity.other.attribute-name.id.html {
+  color: #9fca56;
+}
+.ever-notedown-preview .html .punctuation.separator.key-value {
+  color: #9fca56;
+}
+.ever-notedown-preview .html .string.quoted.double {
+  color: #cbe2a4;
+}
+.ever-notedown-preview .html .string.quoted.double .punctuation.definition.string.begin,
+.ever-notedown-preview .html .string.quoted.double .punctuation.definition.string.end {
+  color: #9fca56;
+}
+.ever-notedown-preview .html .string.quoted.double .punctuation.definition.string .separator.key-value.html {
+  color: #9fca56;
+}
+.ever-notedown-preview .jade {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .jade .comment.jade {
+  color: #41535b;
+}
+.ever-notedown-preview .jade .storage.type.function.jade {
+  color: #9fca56;
+}
+.ever-notedown-preview .jade .meta.control.flow.jade {
+  color: #cd3f45;
+}
+.ever-notedown-preview .jade .source.script .meta.brace.round.js,
+.ever-notedown-preview .jade .source.script .meta.brace.curly.js {
+  color: #858d8a;
+}
+.ever-notedown-preview .jade .entity.name.tag.jade {
+  color: #55b5db;
+}
+.ever-notedown-preview .jade .storage.type.import.include.jade {
+  color: #cbe2a4;
+}
+.ever-notedown-preview .jade .variable.control.import.include.jade {
+  color: #9fca56;
+}
+.ever-notedown-preview .jade .constant.id {
+  color: #e6cd69;
+}
+.ever-notedown-preview .jade .constant.language.js {
+  color: #a074c4;
+}
+.ever-notedown-preview .jade .text.jade {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .jade .punctuation.separator.key-value.jade {
+  color: #55b5db;
+}
+.ever-notedown-preview .jade .string.quoted.jade {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .source.json .constant.language {
+  color: #cd3f45;
+}
+.ever-notedown-preview .source.json .meta.structure.dictionary.json .string.quoted.json {
+  color: #55b5db;
+}
+.ever-notedown-preview .source.json .meta.structure.dictionary.json .meta.structure.dictionary.value.json .string.quoted.json {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .source.json .meta.structure.dictionary.json .meta.structure.dictionary.value.json .string.quoted.json .punctuation.definition.string {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .source.json .meta.structure.dictionary.json .meta.structure.dictionary.value.json .meta.structure.dictionary.json .string.quoted.json {
+  color: #55b5db;
+}
+.ever-notedown-preview .source.json .meta.structure.dictionary.json .meta.structure.dictionary.value.json .meta.structure.dictionary.json .string.quoted.json .punctuation.definition.string {
+  color: #55b5db;
+}
+.ever-notedown-preview .source.json .meta.structure.dictionary.json .meta.structure.dictionary.value.json .meta.structure.dictionary.json .meta.structure.dictionary.value.json .string.quoted.json {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .source.json .meta.structure.dictionary.json .meta.structure.dictionary.value.json .meta.structure.dictionary.json .meta.structure.dictionary.value.json .string.quoted.json .punctuation.definition.string {
+  color: #d4d7d6;
+}
+.ever-notedown-preview .mustache .meta.tag.template {
+  color: #9fca56;
+}
+.ever-notedown-preview .mustache .meta.tag.template .entity.name.tag {
+  color: #cbe2a4;
+}

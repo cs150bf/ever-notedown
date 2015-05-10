@@ -1,0 +1,100 @@
+.source.python {
+  .entity {
+    color: @syntax-text-color;
+
+    &.name {
+      color: @blue;
+    }
+    &.other {
+      color: @blue;
+    }
+  }
+
+  .function {
+    color: @blue;
+
+    &.magic {
+      color: @blue;
+    }
+  }
+
+  .punctuation.string {
+    color: @cyan;
+  }
+  .keyword {
+    &.operator {
+      color: @syntax-text-color;
+      &.quantifier {
+        color: @cyan;
+      }
+      &.logical {
+        color: @green;
+      }
+    }
+    &.control.import {
+      color: @orange;
+    }
+    &.other {
+      color: @green;
+    }
+  }
+  .constant {
+    &.language {
+      color: @blue;
+    }
+    &.character {
+      color: @cyan;
+    }
+    &.other {
+      color: @red;
+    }
+  }
+
+  .entity.name.type.class {
+    color: @blue;
+  }
+  .variable {
+    color: @syntax-text-color;
+  }
+  .support {
+    &.function.builtin {
+      color: @blue;
+    }
+    &.type {
+      &.exception.python {
+        color: @yellow;
+      }
+      &.python {
+        color: @blue;
+      }
+    }
+  }
+  .storage.type.string {
+    color: @cyan;
+  }
+
+  .storage.type.class {
+    color: @green;
+    &.todo {
+      color: @magenta;
+    }
+  }
+
+  .storage.type.function {
+    color: @green;
+  }
+
+  .punctuation.definition.parameters {
+    color: @syntax-text-color;
+  }
+
+  .punctuation.section.function.begin {
+    color: @syntax-text-color;
+  }
+
+  .punctuation.separator.parameters {
+    color: @syntax-text-color;
+  }
+
+
+}

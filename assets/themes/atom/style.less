@@ -1,0 +1,902 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+// @import "ui-variables";
+
+// Based on atom/markdown-preview/style/
+//@import "syntax-variables";
+
+
+@font-family: "Helvetica Neue", Helvetica, sans-serif;
+@font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+
+// This is styling for generic markdownized text. Anything you put in a
+// container with .markdown-preview on it should render generally well. It also
+// includes some GitHub Flavored Markdown specific styling (like @mentions)
+
+.ever-notedown-preview {
+  font-family: @font-family;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #fff;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 20px;
+
+  code {
+    color: #333;
+  }
+
+  code,
+  tt,
+  .evnd-fenced-code-block {
+    font-size: 12px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+  }
+
+  a, a code {
+    color: #4183c4;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+  ul > li {
+    list-style-type: disc;
+  }
+
+  li > .evnd-fenced-code-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  li:last-child > .evnd-fenced-code-block {
+    margin-bottom: 0;
+  }
+
+  & > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  // Link Colors
+  a.absent {
+    color: #c00;
+  }
+
+  a.anchor {
+    display: block;
+    padding-left: 30px;
+    margin-left: -30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  // Headings
+  h1, h2, h3, h4, h5, h6 {
+    font-family: @font-family;
+    margin: 20px 0 10px;
+    padding: 0 0 10px 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+    position: relative;
+
+    .octicon-link {
+      display: none;
+      color: #000;
+    }
+
+    &:hover a.anchor {
+      text-decoration: none;
+      line-height: 1;
+      padding-left: 0;
+      margin-left: -22px;
+      top: 15%;
+
+      .octicon-link {
+        display: inline-block;
+      }
+    }
+    tt, code {
+      font-size: inherit;
+    }
+  }
+
+  h1 {
+    font-size: 28px;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+  }
+
+  h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #eee;
+    color: #000;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    color: #777;
+    font-size: 14px;
+  }
+
+  p,
+  blockquote,
+  ul, ol, dl,
+  table,
+  .evnd-fenced-code-block {
+    margin: 15px 0;
+  }
+
+  hr {
+    background: transparent url("atom://markdown-preview/assets/hr.png") repeat-x 0 0;
+    border: 0 none;
+    color: #ccc;
+    height: 4px;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  & > h2:first-child,
+  & > h1:first-child,
+  & > h1:first-child + h2,
+  & > h3:first-child,
+  & > h4:first-child,
+  & > h5:first-child,
+  & > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  // fixes margin on shit like:
+  // <a name='the-heading'>
+  // <h1>The Heading</h1></a>
+  a:first-child {
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    margin-top: 0;
+  }
+
+  // ReST first graf in nested list
+  li p.first {
+    display: inline-block;
+  }
+
+  // Lists, Blockquotes & Such
+  ul, ol {
+    padding-left: 30px;
+
+    &.no-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li > :first-child,
+    li ul:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-bottom: 0;
+  }
+
+  dl {
+    padding: 0;
+  }
+
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px;
+
+    &:first-child {
+      padding: 0;
+    }
+    & > :first-child {
+      margin-top: 0;
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px;
+    & > :first-child {
+      margin-top: 0;
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  blockquote {
+    border-left: 4px solid #DDD;
+    padding: 0 15px;
+    color: #777;
+
+    & > :first-child {
+      margin-top: 0;
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  // Tables
+  table {
+
+    th {
+      font-weight: bold;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px 13px;
+    }
+
+    tr {
+      border-top: 1px solid #ccc;
+      background-color: #fff;
+
+      &:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+    }
+  }
+
+  // Images & Stuff
+  img {
+    max-width: 100%;
+  }
+
+  // Gollum Image Tags
+
+  // Framed
+  span.frame {
+    display: block;
+    overflow: hidden;
+
+    & > span {
+      border: 1px solid #ddd;
+      display: block;
+      float: left;
+      overflow: hidden;
+      margin: 13px 0 0;
+      padding: 7px;
+      width: auto;
+    }
+
+    span img {
+      display: block;
+      float: left;
+    }
+
+    span span {
+      clear: both;
+      color: #333;
+      display: block;
+      padding: 5px 0 0;
+    }
+  }
+
+  span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+
+    & > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px auto 0;
+      text-align: center;
+    }
+
+    span img {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+
+    & > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px 0 0;
+      text-align: right;
+    }
+
+    span img {
+      margin: 0;
+      text-align: right;
+    }
+  }
+
+  span.float-left {
+    display: block;
+    margin-right: 13px;
+    overflow: hidden;
+    float: left;
+
+    span {
+      margin: 13px 0 0;
+    }
+  }
+
+  span.float-right {
+    display: block;
+    margin-left: 13px;
+    overflow: hidden;
+    float: right;
+
+    & > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px auto 0;
+      text-align: right;
+    }
+  }
+
+  // Inline code snippets
+  code, tt {
+    margin: 0 2px;
+    padding: 0 5px;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius:3px;
+    text-shadow: none;
+  }
+
+  .evnd-fenced-code-block {
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius:3px;
+    background: #ececec;
+
+    .line {
+      display: block;
+    }
+  }
+
+  kbd {
+    background-color: #dddddd;
+    background-image: linear-gradient(#f1f1f1, #ddd);
+    background-repeat: repeat-x;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    border-right-color: #ccc;
+    padding: 1px 4px;
+    line-height: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .emoji {
+    height: 20px;
+    width: 20px;
+  }
+
+  // TOC style
+  // Inspired by:
+  //    http://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/
+  //    http://5thirtyone.com/tutorial/how-to-create-a-table-of-contents-navigation/
+  //
+  .table-of-contents {
+    list-style-type: none;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    ul {
+      list-style-type: none;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-right: 0;
+      border-left: 1px solid #ccc;
+    }
+
+    li {
+      list-style-type: none;
+      font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    li:last-child {
+      border-bottom: 1px dashed #ccc;
+    }
+
+    span a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      width: 80%;
+      -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+      -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+      -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+      -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+      transition: font-size 0.3s ease, background-color 0.3s ease;
+    }
+
+    span a:hover {
+      font-size: 30px;
+      background: #f6f6f6;
+    }
+  }
+
+  .evnd-toc-div {
+    display: block;
+    width: 100%;
+  }
+
+  .toc-level-1 > li {
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  ul.toc-level-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  //
+  // For EVND, Footnotes and footnote references
+  //
+  .footnotes {
+    margin-top: 60px;
+
+    hr {
+      border-top: 1px solid #000000;
+      color: #000000;
+    }
+  }
+  /*
+  a.footnote {
+    font-size: 10px;
+    vertical-align: top;
+  }
+  */
+
+
+  //
+  // For EVND, table styling copied from bootstrap.css
+  //
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  table {
+    max-width: 100%;
+    background-color: transparent;
+  }
+  th {
+    text-align: left;
+  }
+  table col[class*="col-"] {
+    position: static;
+    float: none;
+    display: table-column;
+  }
+  table td[class*="col-"],
+  table th[class*="col-"] {
+    float: none;
+    display: table-cell;
+  }
+
+  //
+  // For Ever Notedown, floating function buttons in Preview windows
+  //
+  .evnd-function-buttons {
+    display: inline-block;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 470px;
+    height: 50px;
+    padding-left: 20px;
+    margin: 15px 10px 20px 0px;
+    vertical-align: middle;
+    background: transparent;
+    font-family: @font-family-sans-serif;
+
+    .evnd-button-div {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding-top: 5px;
+      padding-bottom: 10px;
+
+      // inspired by http://cssdeck.com/labs/pure-css-arrow-with-border-tooltip
+      & > span {
+        font-style: normal;
+        text-align: center;
+        //line-height: 150%;
+        color: #fcfcfc;
+        //text-shadow: white 0 1px;
+        background: darken(#6e7681, 25%);
+        background-clip: padding-box;
+        box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
+        //border: 5px solid #111;
+        //border: 5px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        position: absolute;
+        min-width: 110px;
+        //left: -140%;
+        right: 20%;
+        //margin-left: -85px;
+        padding: 5px 0;
+        top: 87%;
+        margin-top: 5px;
+        visibility:hidden;
+        opacity:0;
+        -webkit-transition: opacity 0.25s linear;
+        -moz-transition: opacity 0.25s linear;
+        -ms-transition: opacity 0.25s linear;
+        -o-transition: opacity 0.25s linear;
+        transition: opacity 0.25s linear;
+      }
+
+      & > span:before, & > i:after {
+        content: "";
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        bottom: 100%;
+        left: 80%;
+        margin-left: -10px;
+      }
+
+      & > span:before {
+        border-bottom: 10px solid darken(#6e7681, 25%);
+        //border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        //margin-top: 5px;
+      }
+
+      //& > i:after{
+      //  border-top: 10px solid #DDD;
+      //  margin-top: -2px;
+      //  z-index: 1;
+      //}
+
+      &:hover > span {
+        visibility: visible;
+        opacity: 0.85;
+      }
+    }
+
+    .evnd-button-div-disabled {
+      &:hover > span {
+        opacity: 0.5;
+      }
+    }
+
+    .evnd-button-div-hidden {
+      //opacity: 0;
+      visibility: hidden;
+
+      & > button {
+        visibility: hidden;
+      }
+    }
+
+    button {
+      //font-size: 14px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 4px;
+      width: 35px;
+      height: 35px;
+      position: relative;
+      display: inline-block;
+      //margin-left: 2px;
+      padding: 8px 9px;
+      color: #6e7681;
+
+      &:hover {
+        background: rgba(211, 216, 220, 0.7);
+        border: 1px solid rgba(211, 216, 220, 0.85);
+        opacity: 0.95;
+        color: #3F4142;
+      }
+
+      &.evnd-yellow {
+        color: #fadb60; //#f8eec7; //#d2b77d; //#caa851; //#b6a67d;//#e2a831; //#F2C80C;
+      }
+
+      &.evnd-yellow:hover {
+        color: darken(#fadb60, 20%); //darken(#b6a67d, 20%);//#c54f07; //#EBA30B;
+      }
+
+      &.evnd-red {
+        color: #b25656; //#b41006;
+      }
+
+      &.evnd-red:hover {
+        color: darken(#b25656, 20%); //#d51700;
+      }
+
+      .button-icon-div {
+        width: 15px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        left: 15%;
+        top: 15%;
+        // left: -25%;
+
+        .button-icon {
+          // font-size: 80%;
+          font-size: 100%;
+          opacity: 0.85;
+        }
+
+        #button-icon-evernote {
+          font-size: 120%;
+          position: absolute;
+          top: -18%;
+          left: -18%;
+        }
+
+        #button-icon-pull {
+          font-size: 125%;
+          position: absolute;
+          top: 17%;
+          left: 18%;
+        }
+
+        #button-icon-info::before {
+          font-size: 20px;
+          position: absolute;
+          top: 2.5px;
+          left: 2.5px;
+        }
+
+        #button-icon-eye::before,
+        #button-icon-home::before {
+          font-size: 19px;
+          position: absolute;
+          top: 18%;
+          left: 15%;
+        }
+
+        #button-icon-html::before,
+        #button-icon-enml::before,
+        #button-icon-folder::before {
+          font-size: 19px;
+        }
+
+        #button-icon-html,
+        #button-icon-enml,
+        #button-icon-folder {
+          position: absolute;
+        }
+
+        #button-icon-html {
+          left: 18%;
+          top: 0%;
+        }
+
+        #button-icon-enml {
+          left: 10%;
+          top: 15%;
+        }
+
+        #button-icon-folder {
+          left: 15%;
+          top: 20%;
+        }
+
+        .faded {
+          opacity: 0.3;
+        }
+
+      }
+
+    }
+
+    button.evnd-button-disabled {
+      color: darken(#6e7681, -25%);
+      background: rgba(255, 255, 255, 0.5);
+
+      &:hover {
+        color: darken(#6e7681, -25%);
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    #evernote-syncing, #pull-syncing {
+      visibility: hidden;
+    }
+
+  }
+
+  //
+  // for Evernote meta-info such as notebook, tags, title, etc.
+  //
+  .note-meta-info {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100px;
+    display: block;
+
+    .note-meta-info-content {
+      margin-left: 10px;
+      margin-bottom: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+    }
+
+    .note-tag {
+      background-color: #6e7681;
+      color: #fcfcfc;
+      //text-shadow: none;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    .note-title {
+      font-family: @font-family-sans-serif;
+      border-bottom: 1px dashed;
+    }
+  }
+
+  //
+  // For Evernote attachments
+  //
+  .en-media, .attachments {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    padding: 0 0;
+    margin: 5px 5px;
+    text-align: left;
+    vertical-align: middle;
+    font-family: @font-family-sans-serif;
+    font-size: 12px;
+    background-color: #f6f6f6;
+    white-space: normal;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+
+    span.icon:before {
+      width: 35px;
+      height: 35px;
+      font-size: 25px;
+      float: left;
+      margin: 12px 2px 12px 10px;
+    }
+
+    embed {
+      width: 40px;
+      height: 40px;
+      float: right;
+      margin: 2px 3px;
+    }
+
+    span.file-path, p {
+      vertical-align: middle;
+      margin-top: 2px;
+      margin-left: 40px;
+      margin-bottom: 2px;
+      padding: 0 0;
+      width: 250px;
+      height: 30px;
+      white-space: normal;
+      word-wrap: break-word;
+      position: absolute;
+
+      a {
+        white-space: normal;
+        word-wrap: break-word;
+        width: 250px;
+      }
+    }
+  }
+  
+  //
+  // For Ever-Notedown
+  //
+  //   Tooptip for images, attachments, buttons, etc.
+  //
+  // Inspired by http://jsfiddle.net/AndreaLigios/jtLbpy62/
+  //
+  [tooltip]:before {
+    //* needed - do not touch */
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+    height: 30px;
+    min-width: 110px;
+    width: auto;
+
+    //* customizable */
+    transition: all 0.15s ease;
+    padding: 5px;
+    color: #fcfcfc;
+    border-radius: 5px;
+    //box-shadow: 2px 2px 1px silver;
+  }
+
+  [tooltip]:hover:before {
+    //* needed - do not touch */
+    opacity: 1;
+
+    //* customizable */
+    background: darken(#6e7681, 10%);
+    margin-top: 20px;
+    margin-left: -80px;
+  }
+
+  [tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+  }
+
+}
+

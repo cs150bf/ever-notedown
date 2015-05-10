@@ -1,0 +1,169 @@
+@import "variables";
+
+.evnd-fenced-code-block {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .invisible-character{
+    color: @syntax-invisible-character-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+  }
+
+  .gutter .line-number {
+    opacity: 1;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @magenta;
+  }
+
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .line-number.cursor-line {
+    background-color: @syntax-gutter-background-color-selected;
+  }
+}
+
+.bracket-matcher .region {
+  background-color: @base1;
+  opacity: 0.5;
+}
+
+.comment {
+  color: @base1;
+  font-style: italic;
+}
+
+.entity {
+  color: @yellow;
+
+  .punctuation {
+    color: @red
+  }
+}
+.entity.other.attribute-name.placeholder.scss {
+  color: @violet;
+  .punctuation.definition.entity.scss {
+    color: inherit;
+  }
+}
+
+.keyword {
+  color: @green;
+
+  &.other {
+    &.special-method {
+      color: @orange;
+    }
+  }
+}
+
+.storage.type {
+  color: @green;
+}
+
+.storage.modifier {
+  color: @green;
+}
+
+.constant {
+  color: @yellow;
+
+  &.numeric,
+  &.boolean,
+  &.symbol, &.symbol .punctuation {
+    color: @cyan;
+  }
+
+  &.symbol.hashkey {
+    color: @red;
+
+    .punctuation {
+      color: @red;
+    }
+  }
+}
+
+.delimiter, .brace {
+  color: @red;
+}
+
+.delimiter.period {
+  color: @green;
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @red;
+}
+
+.invalid.illegal {
+  color: @red;
+}
+
+.method .name {
+  color: @blue;
+}
+
+.operator.assignment {
+  color: @base1;
+}
+
+.parameter {
+  color: @base1;
+}
+
+.property-name {
+  color: @green;
+}
+
+.property-value {
+  .unit {
+    color: @base0;
+  }
+}
+
+.string {
+  color: @cyan;
+
+  .constant.character.escape {
+    color: @red;
+    font-weight: bold;
+  }
+
+  .punctuation.string {
+    color: @red;
+  }
+
+  &.regexp {
+    color: @cyan;
+
+    .string.regexp.arbitrary-repetition {
+      color: @red;
+    }
+  }
+}
+
+.variable {
+  color: @blue;
+
+  &.constant {
+    color: @yellow;
+  }
+}

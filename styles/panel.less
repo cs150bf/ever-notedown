@@ -1,0 +1,634 @@
+@import "ui-variables";
+@import "../assets/font-awesome-4.3.0/less/font-awesome.less";
+
+@font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+.ever-notedown-list-group {
+  color: @text-color-subtle;
+  text-shadow: none;
+  padding: @component-padding;
+  margin-left: 10px;
+  background: @background-color-highlight;
+  border-radius: @component-border-radius;
+
+  .selected & {
+    color: @text-color;
+  }
+
+}
+
+.evnd-function-buttons {
+  color: @text-color;
+
+  &:hover {
+    color: @text-color-subtle;
+    cursor: pointer;
+  }
+}
+
+//
+// inspired by http://stackedit.io/editor#
+//
+atom-panel.modal.ever-notedown-panel-container {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  left: 100%;
+  top: -15px;
+  margin-left: 0px;
+
+  @font-face {
+    font-family: 'Font Awesome';
+    font-weight: normal;
+    font-style: normal;
+    src: url(atom://ever-notedown/assets/font-awesome-4.3.0/fonts/fontawesome-webfont.woff) format('woff');
+  }
+
+  .fa {
+    font-family: @font-family;
+  }
+
+  .fa:before {
+    font-family: 'Font Awesome';
+  }
+
+  .ever-notedown-panel {
+    width: 370px;
+    height: 100%;
+    position: relative;
+    background: #f8f8f8;
+    //border-left: 1px solid #c8c8c8;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.7);
+
+    &.visible {
+      right: 350px;
+    }
+
+    .icon-light-bulb::before {
+      font-size: 30px;
+    }
+
+    .ever-notedown-panel-tag {
+      position: absolute;
+      left: -55px;
+      top: 10px;
+      width: 100px;
+      height: 50px;
+      background: transparent;
+      padding: 0px;
+      border-radius: 8px;
+      opacity: 0.95;
+      border-top: 4px solid #55abc5;
+      //border-left: 5px solid yellow;
+      //border-bottom: 4px solid yellow;
+      z-index: -1;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+
+      button {
+        background: #ffffff;
+        color: #676767;
+        opacity: 0.95;
+        width: 100px;
+        height: 50px;
+        padding: 8px 65px 10px 0px;
+        border-radius: 8px;
+        border: none;
+      }
+
+      &:hover, &:focus, &:active {
+        left: -65px;
+
+        button {
+          color: gray;
+          transition: left 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
+        }
+
+        transition: left 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
+      }
+    }
+
+    .ever-notedown-panel-tag-pulled {
+        left: -55px;
+        z-index: -1;
+
+        button {
+          color: #676767;
+        }
+
+        &:hover, &:focus, &:active {
+          left: -45px;
+
+          button {
+            color: gray;
+            transition: left 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
+          }
+
+          transition: left 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
+        }
+    }
+
+    #evnd-panel-functions {
+      background: #f0f0f0;
+      display: block;
+      position: relative;
+      top: -15px;
+      height: 290px;
+
+      button {
+        display: block;
+        background: transparent;
+        border: none;
+        width: 100%;
+      }
+
+      div#evnd-panel-file-functions {
+        background: #e8e8e8;
+        padding: 20px 10px;
+        display: inline-block;
+        width: 220px;
+        height: 270px;
+        position: relative;
+        top: -15px;
+        left: 5%;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+        padding: 60px 0px 25px 0px;
+
+        li {
+          height: 45px;
+          padding: 12px 0px 5px 0px;
+          vertical-align: middle;
+          font-size: 13px;
+
+          span {
+            color: #007acc;
+            margin-left: 20px;
+            text-align: left;
+            float: left;
+          }
+
+          &:hover {
+            background: #d8d8d8;
+
+            span {
+              color: #005c99;
+            }
+          }
+
+          &:focus, &:active {
+            -moz-box-shadow: inset 0 0 3px 3px #c8c8c8;
+            -webkit-box-shadow: inset 0 0 3px 3px #c8c8c8;
+            box-shadow: inset 0 0 3px 3px #c8c8c8;
+
+            span {
+              color: #005c99;
+            }
+          }
+
+        }
+
+      }
+
+      ul {
+        list-style: none;
+        width: 100%;
+        padding: 0px;
+      }
+
+      div#evnd-panel-function-buttons {
+        position: absolute;
+        right: 55px;
+        top: 45px;
+        width: 50px;
+        height: 250px;
+        display: inline-block;
+        background: transparent;
+
+        li {
+          height: 45px;
+          width: 45px;
+          border: 1px solid transparent;
+          border-radius: 3px;
+          margin-top: 5px;
+          //padding: 12px 8px 12px 8px;
+
+          span, .icon::before {
+            color: #606060;
+            font-size: 22px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+          }
+
+          &:hover {
+            border: 1px solid #d0d0d0;
+            background: #d8d8d8;
+
+            span, .icon::before {
+              color: #383838;
+            }
+          }
+
+          &:focus, &:active {
+            -moz-box-shadow: inset 0 0 3px 3px #c8c8c8;
+            -webkit-box-shadow: inset 0 0 3px 3px #c8c8c8;
+            box-shadow: inset 0 0 3px 3px #c8c8c8;
+          }
+        }
+
+
+        // inspired by http://cssdeck.com/labs/pure-css-arrow-with-border-tooltip
+        button#evnd-panel-close {
+          .icon::before {
+            font-size: 150%;
+            left: 3px;
+            top: -3px;
+          }
+
+          & > span.tooltip {
+            top: -15px;
+          }
+        }
+
+        button#evnd-panel-help {
+          & > span.tooltip {
+            top: -45px;
+          }
+        }
+
+        button#evnd-panel-config {
+          .icon::before {
+            left: 1px;
+          }
+
+          & > span.tooltip {
+            top: -60px;
+          }
+        }
+
+        button#evnd-panel-open-note-list {
+          .icon::before {
+            left: 2px;
+          }
+
+          & > span.tooltip {
+            top: -60px;
+          }
+        }
+
+        button {
+          height: 45px;
+
+          & > span.tooltip {
+            font-family: @font-family;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            color: #fcfcfc;
+            background: darken(#6e7681, 25%);
+            background-clip: padding-box;
+            box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            border-radius: 5px;
+            display: block;
+            position: relative;
+            min-width: 110px;
+            padding: 10px 5px;
+            left: -410%;
+            //top: -87%;
+            margin-top: 5px;
+            visibility: hidden;
+            opacity: 0;
+            white-space: normal;
+            -webkit-transition: opacity 0.25s linear;
+            -moz-transition: opacity 0.25s linear;
+            -ms-transition: opacity 0.25s linear;
+            -o-transition: opacity 0.25s linear;
+            transition: opacity 0.25s linear;
+          }
+
+
+          & > span.tooltip:before, & > i.tooltip:after {
+            content: "";
+            position: absolute;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            bottom: 45%;
+            left: 100%;
+            //margin-bottom: -10px;
+          }
+
+          & > span.tooltip:before {
+            border-left: 10px solid darken(#6e7681, 25%);
+            z-index: 1;
+          }
+
+          &:hover > span.tooltip {
+            visibility: visible;
+            opacity: 0.85;
+          }
+        }
+
+      }
+
+
+    }
+
+    .evnd-note-list {
+      //width: 370px;
+      //height: 170px;
+      //overflow-y: scroll;
+      font-size: 16px;
+      color: #606060;
+      background-color: #f0f0f0;
+      position: relative;
+      top: -15px;
+
+      .evnd-note-list-funcs {
+        background: white;
+        margin-right: 31px;
+        padding-left: 10px;
+        //padding-right: 5px;
+        //padding-right: 35px;
+        //margin-bottom: 10px;
+        height: 35px;
+        //padding-top: 10px;
+        //padding-bottom: 5px;
+        box-shadow: 0px -10px 100px 20px rgba(250, 250, 250, 0.75);
+        border-radius: 6px 6px 0px 0px;
+        //border-bottom: 1px solid #ccc;
+
+
+        & > div {
+          display: inline-block;
+          width: 49%;
+          height: 98%;
+          margin-top: 10px;
+        }
+
+        #evnd-note-list-funcs-title {
+          float: left;
+        }
+
+        #evnd-note-list-funcs-buttons {
+          //float: right;
+          margin-top: 5px;
+        }
+
+        button {
+          float: right;
+          width: 29px;
+          height: 29px;
+          margin-right: 5px;
+          border-radius: 3px;
+          border: 1px solid transparent;
+          background: transparent;
+          color: #707070;
+
+          &:hover {
+            border: 1px solid #d0d0d0;
+            background: #d8d8d8;
+            color: #202020;
+          }
+
+        }
+      }
+
+      // List style inspired by:
+      //    http://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/
+      //
+      .evnd-note-list-tree {
+        //margin-top: 30px;
+        display: block;
+        max-height: 400px;
+        overflow-y: scroll;
+        position: absolute;
+        width: 99%;
+
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+
+        ul {
+          list-style-type: none;
+          //margin-top: 5px;
+          margin-bottom: 5px;
+          margin-left: 0;
+          margin-right: 0;
+          //padding-top: 3px;
+          //padding-bottom: 3px;
+          padding-right: 0;
+          padding-left: 0;
+          // border-left: 1px solid #ccc;
+        }
+
+        ul.evnd-note-list-notebook {
+          //margin-left: 10px;
+          padding-left: 0;
+          background: #f8f8f8;
+          //overflow-y: scroll;
+
+          /*& > li {
+            overflow-y: scroll;
+          }
+          */
+
+          &::-webkit-scrollbar {
+            width: 0;
+          }
+        }
+
+
+        li {
+          //height: 35px;
+          //padding-top: 10px;
+          list-style-type: none;
+          font: 200 15px/1.5 Helvetica, Verdana, sans-serif;
+          //overflow-y: scroll;
+          //border-bottom: 1px dashed #ccc;
+        }
+
+        //li.evnd-menu-item-selected {
+        //  border-bottom: 1px solid black;
+        //}
+
+        span.evnd-menu-item {
+          font-size: 16px;
+          display: inline-block;
+          width: 100%;
+          //height: 35px;
+          height: auto;
+          //margin-top: 10px;
+          //padding-top: 10px;
+          padding-top: 25px;
+          padding-left: 10px;
+          vertical-align: baseline;
+          border-bottom: 1px dashed #ccc;
+        }
+
+        span.notes-count {
+          display: inline-block;
+          position: absolute;
+          right: 15%;
+        }
+
+        span.evnd-menu-item {
+          text-decoration: none;
+          color: #000;
+          display: block;
+          //width: 80%;
+          -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+          -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+          -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+          -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+          transition: font-size 0.3s ease, background-color 0.3s ease;
+
+          span.fa::before {
+            font-size: 14px;
+            margin-right: 5px;
+          }
+        }
+
+        span.evnd-menu-item:hover, .evnd-menu-item-selected > span.evnd-menu-item {
+          cursor: pointer;
+          font-size: 20px;
+          background: darken(#f0f0f0, 5%);
+        }
+
+        span.evnd-menu-item-notebook {
+          width: 80%;
+        }
+
+
+        ul.evnd-note-list-notes {
+          overflow-y: scroll;
+          width: 92%;
+          height: 150px;
+          background: #f4f4f4;
+
+          &::-webkit-scrollbar {
+            width: 10px;
+          }
+
+          &::-webkit-scrollbar-track {
+            //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            //-webkit-border-radius: 2px;
+            background-color: darken(#f4f4f4, 20%);
+          }
+
+          &::-webkit-scrollbar-thumb {
+            //background-color: darken(#f4f4f4, 5%);
+            //outline: 3px solid darken(#f4f4f4, 20%);
+            //border-radius: 3px;
+          }
+
+          & > li {
+            //height: 90px;
+            background: #f4f4f4;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #b21b1b;
+            //cursor: pointer;
+            box-shadow: none;
+
+            & > span {
+              padding-left: 10px;
+            }
+
+            &:hover {
+              background: white;
+              box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.7);
+            }
+          }
+
+
+
+        }
+
+        div.floating-buttons {
+          display: inline-block;
+          float: right;
+          width: 150px;
+          height: 35px;
+          position: relative;
+          top: -50px;
+          padding-right: 10px;
+
+          button {
+            float: right;
+            background: transparent;
+            border: 1px solid transparent;
+            color: #676767;
+            opacity: 0.7;
+
+            &:hover {
+              color: darken(#676767, 20%);
+              opacity: 1.0;
+            }
+          }
+
+          #fl-btn-delete {
+            color: #db6b6b; //#b21b1b;
+
+            &:hover {
+              color: darken(#db6b6b, 20%);
+            }
+          }
+        }
+
+        span.evnd-menu-note-title {
+          //display: inline-block;
+          //position: absolute;
+          font-weight: bold;
+          display: block;
+        }
+
+        span.evnd-menu-note-tags {
+          font-size: 12px;
+          display: block;
+        }
+
+        span.evnd-menu-note-time {
+          font-size: 12px;
+          display: block;
+          height: 15px;
+
+          & > span {
+            display: inline-block;
+          }
+        }
+
+        span.evnd-menu-note-ctime::before {
+          content: "C";
+          color: green;
+          font-weight: bold;
+          margin-right: 3px;
+        }
+
+        span.evnd-menu-note-ctime {
+          float: left;
+          margin-left: 2px;
+        }
+
+        span.evnd-menu-note-mtime {
+          float: right;
+          margin-right: 20px;
+        }
+
+        span.evnd-menu-note-mtime::before {
+          content: "M";
+          color: #005c99;
+          font-weight: bold;
+          margin-right: 3px;
+        }
+
+
+      }
+    }
+  }
+}
+
+

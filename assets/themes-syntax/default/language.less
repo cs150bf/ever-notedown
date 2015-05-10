@@ -1,0 +1,350 @@
+// Github theme
+// Converted from TextMate Github theme using APM
+//   and then manually modified for EVND
+//   using (https://github.com/envygeeks/atom-github-2014-syntax-theme)
+//   as reference
+
+.source {
+  //background-color: #F8F8FF;
+
+  &.ruby.embedded.source .punctuation.section.embedded.ruby {
+    color: #CF1040;
+  }
+}
+
+.comment {
+  font-style: italic;
+  color: #999988;
+
+  .xxx,
+  .yard,
+  .todo,
+  .fixme,
+  .changed,
+  .idea,
+  .hack,
+  .note {
+    color: darken(#999988, 15);
+  }
+}
+
+.keyword, .storage {
+  font-weight: bold;
+  color: #000000;
+}
+
+.entity {
+  color: #000000; // fallback
+
+  &.name {
+    font-weight: bold;
+    color: #445588;
+  }
+
+  &.name.tag.doctype {
+    font-weight: bold;
+    color: #999999;
+  }
+
+  &.name.tag {
+    font-weight: normal;
+    color: #bf1212; // from One-light
+  }
+
+  &.name.function {
+    font-weight: bold;
+    color: #990000;
+  }
+
+  &.other.inherited-class,
+  &.other.inherited-class.punctuation {
+    color: #0F8787;
+  }
+
+  &.other.attribute-name {
+    color: #0A8585;
+  }
+
+  &.other.attribute-name.pseudo-class {
+    color: #000000;
+  }
+
+  &.other.attribute-name.class {
+    font-weight: bold;
+    color: #445588;
+  }
+
+  &.other.attribute-name.id {
+    font-weight: bold;
+    color: #990000;
+  }
+
+}
+
+.support {
+  color: #000000;
+
+  &.function, &.contant, &.class, &.type {
+    color: #0086B3;
+  }
+
+  &.class.ruby {
+    color: #008080;
+  }
+
+  &.type.property-name.css {
+    font-weight: bold;
+  }
+
+  &.constant.font-name {
+    color: #000000;
+  }
+
+  &.constant.property-value {
+    font-weight: bold;
+    color: #000000;
+  }
+}
+
+
+.constant.numeric {
+  color: #009999;
+}
+
+.constant.language {
+  font-weight: bold;
+  color: #000000;
+}
+
+.constant.character {
+  color: #F7A357;
+}
+
+.constant.other {
+  color: #333333;
+}
+
+.constant.other.symbol {
+  color: #AA2C8C;
+}
+
+.variable {
+  color: #333333;
+
+  &.language, &.other {
+    color: #108888;
+  }
+
+  &.other.constant.ruby {
+    color: #0F8787;
+  }
+
+  &.parameter,
+  &.punctuation.separator,
+  &.other.block,
+  &.other.object > .punctuation {
+    color: #333333;
+  }
+}
+
+
+.keyword {
+  &,
+  &.other,
+  &.control,
+  &, &.special-method,
+  &.operator,
+  &.unit {
+    color: #A71D5D;
+  }
+}
+
+.keyword.operator.assignment {
+  color: #000000;
+}
+
+.keyword.other.special-method.ruby {
+  font-weight: bold;
+}
+
+.keyword.other.name-of-parameter.objc {
+  font-weight: bold;
+  color: #990000;
+}
+
+.keyword.other.unit {
+  color: #009999;
+}
+
+
+.string {
+  color: #DD1144;
+}
+
+.string.regexp {
+  color: #009926;
+}
+
+.string.quoted .source {
+  color: #000000;
+}
+
+.string.quoted.double.doctype {
+  font-weight: bold;
+  color: #999999;
+}
+
+
+.punctuation.separator.inheritance {
+  font-weight: bold;
+  color: #000000;
+}
+
+.punctuation.separator.variable {
+  font-weight: bold;
+  color: #000000;
+}
+
+.punctuation.section.array {
+  font-weight: bold;
+  color: #000000;
+}
+
+.punctuation.separator.key-value {
+  font-weight: bold;
+  color: #000000;
+}
+
+.punctuation.section.function {
+  color: #000000;
+}
+
+.punctuation.section.scope {
+  color: #000000;
+}
+
+.punctuation.definition.tag {
+  color: #121289;
+}
+
+.punctuation.section.embedded.ruby {
+  font-weight: bold;
+  color: #999999;
+}
+
+.punctuation.section.property-list.css {
+}
+
+.punctuation.separator.key-value.css {
+  color: #000000;
+}
+
+.punctuation.terminator.rule.css {
+  color: #000000;
+}
+
+.css, .less, .scss {
+  &.meta.selector,
+  &.support.function {
+    size: 100px;
+    color: rgb(148, 82, 119);
+  }
+}
+
+.yaml {
+  &.entity.name {
+    color: rgb(0, 134, 179);
+  }
+}
+
+.html {
+  &.entity.tag {
+    color: rgb(99, 163, 92);
+  }
+}
+
+.slim, .haml {
+  &.entity.name.tag {
+    color: rgb(99, 163, 92);
+  }
+}
+
+.bracket-matcher {
+  .region {
+    border-bottom: 0 none;
+    background-color: rgb(221, 221, 221);
+  }
+}
+
+.meta {
+  &.tag {
+    color: #000000;
+  }
+
+  &.structure.dictionary.json > .string.quoted.double.json,
+  &.structure.dictionary.json > .string.quoted.double.json
+      .punctuation.string {
+    color: rgb(0, 134, 179);
+  }
+
+  &.structure.dictionary.value.json > .string.quoted.double.json,
+  &.structure.dictionary.value.json > .string.quoted.double.json
+      > .punctuation {
+    color: rgb(223, 80, 0);
+  }
+
+  &.diff,
+  &.diff.header {
+    color: rgb(150, 152, 150);
+  }
+}
+
+.meta.tag.sgml.html {
+  font-weight: bold;
+  color: #999999;
+}
+
+.meta.property-value, .constant.other.color {
+  color: #009999;
+}
+
+.meta.diff.header.from-file {
+  color: #000000;
+  background-color: #FFDDDD;
+}
+
+.meta.diff.header.to-file {
+  color: #000000;
+  background-color: #DDFFDD;
+}
+
+.markup {
+  &.inserted {
+    color: rgb(128, 200, 117);
+    background-color: rgb(221, 255, 224);
+  }
+
+  &.inserted.diff {
+    background-color: #DDFFDD;
+  }
+
+  &.deleted {
+    background-color: rgb(255, 221, 221);
+    color: rgb(255, 170, 170);
+  }
+
+  &.deleted.diff {
+    color: #000000;
+    background-color: #FFDDDD;
+  }
+}
+
+.invalid {
+  background-color: rgb(255, 221, 221);
+  color: rgb(255, 170, 170);
+
+  &.deprecated {
+    color: rgb(255, 243, 172);
+    background-color: rgb(251, 247, 205);
+  }
+}

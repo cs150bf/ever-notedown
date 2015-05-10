@@ -1,0 +1,289 @@
+// modified based on https://raw.githubusercontent.com/jacogr/atom-git-control/master/stylesheets/dialog.less
+//
+// Reproduced License Info:
+// Copyright (c) 2014-2015 Jaco Greeff <jacogr@gmail.com>
+// 
+// Permission is hereby granted, free of charge, to any person obtaining
+// a copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to
+// permit persons to whom the Software is furnished to do so, subject to
+// the following conditions:
+// 
+// The above copyright notice and this permission notice shall be
+// included in all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+// LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+// OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+// 
+@import "ui-variables";
+
+@font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+atom-panel.note-info-dialog-panel {
+  font-size: 14px;
+  height: 500px;
+  min-width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  opacity: 0.95;
+  background: @inset-panel-background-color;
+  border: 1px solid @inset-panel-border-color;
+
+  .note-info-dialog {
+
+    &.active {
+      display: block;
+    }
+
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    //bottom: 500px;
+    //right: 20%;
+    //left: 20%;
+    height: 500px;
+    min-width: 600px;
+    border: 1px solid @inset-panel-border-color;
+    border-radius: 4px;
+    padding: 15px;
+    opacity: 0.95;
+    //display: none;
+    z-index: 10;
+  }
+}
+
+.note-info-dialog {
+  background: @inset-panel-background-color;
+
+  .heading {
+    margin-bottom: 15px;
+    padding: 5px 5px 10px 5px;
+    border-bottom: 1px solid @text-color;
+
+    span.note-info-title {
+      font-size: 15px;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+    .clickable {
+      cursor: pointer;
+
+      &:hover {
+        color: @text-color-highlight;
+      }
+    }
+  }
+
+  .body {
+    margin-bottom: 15px;
+
+    .note-time-info {
+      text-align: justify;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    input, select, textarea {
+      width: 98%;
+      margin-bottom: 15px;
+      background: @input-background-color;
+      border-color: @input-border-color;
+      border-radius: 4px;
+      color: @text-color;
+      padding: 10px;
+    }
+
+    input[readonly], textarea[readonly], select[readonly] {
+      color: @text-color-subtle;
+    }
+
+    div.note-preview > table {
+      margin-top: 0;
+      margin-bottom: 0;
+      //height: 215px;
+      overflow-y: scroll;
+      //opacity: 1.0;
+      line-height: 1.5;
+
+      tbody {
+        //height: 215px;
+        //overflow-y: scroll;
+
+        tr {
+          //height: 215px;
+          //overflow-y: scroll;
+
+          td {
+            vertical-align: top;
+            height: 215px;
+            //overflow-y: scroll;
+          }
+        }
+
+      }
+
+      ul {
+        padding-left: 10px;
+      }
+
+      ul.note-tags, ul.note-attachments {
+        padding-left: 0;
+      }
+
+      li.note-tag {
+        display: inline-block;
+        background: transparent;
+        text-decoration: underline;
+        padding-left: 0;
+        margin-left: 0;
+      }
+
+      .fa::before {
+        margin-right: 5px;
+      }
+    }
+
+    td.table-content {
+      padding-top: 15px;
+      padding-bottom: 25px;
+      overflow-y: scroll;
+      font-family: @font-family;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+
+      & > ul {
+        height: 150px;
+      }
+    }
+
+    ul.note-tags {
+      display: inline;
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+
+      li {
+        //float: left;
+        vertical-align: bottom;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      li.note-tag {
+        background-color: darken(@pane-item-background-color, -40%);
+      }
+    }
+
+    span.property-name {
+      width: 270px;
+    }
+
+    ul.attachments-info {
+      list-style: none;
+      font-size: 14px;
+
+      li > span {
+        cursor: pointer;
+      }
+
+    }
+
+    ul.attachments-info-sub {
+      margin-left: 20px;
+      width: 200px;
+    }
+
+    ul.attachments-info > li > ul.attachments-info-sub2 {
+      margin-left: 20px;
+      width: 150px;
+    }
+
+    div.note-info-buttons {
+      //border-top: 1px solid #aaaaaa;
+      padding-top: 8px;
+    }
+  }
+
+}
+
+.note-info-dialog .body, .note-confirm-dialog .inset-panel-body {
+
+  hr.vertical {
+    border : none;
+    height : 100%;
+    min-height: 10px;
+    width : 1px;
+    background-image: -webkit-linear-gradient(top, transparent, white, transparent);
+    background-image: -moz-linear-gradient(top, transparent, white, transparent);
+    background-image: -ms-linear-gradient(top, transparent, white, transparent);
+    background-image: -o-linear-gradient(top, transparent, white, transparent);
+    background-image: linear-gradient(top, transparent, white, transparent);
+  }
+
+  i.icon {
+    float: right;
+    width: 0;
+    margin-right: 15px;
+  }
+
+  i.dialog-button, button {
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: @text-color;
+    margin-right: 18px;
+    margin-top: 0px;
+
+    &:hover {
+      color: @text-color-highlight;
+      //border: 1px solid @text-color-highlight;
+    }
+  }
+
+  button {
+    i.icon {
+      padding-right: 6px;
+      float: left;
+    }
+  }
+
+  #delete-note-button {
+    &:hover {
+      span, i::before{
+        color: darken(@text-color-error, -25%);
+      }
+    }
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .underlined {
+    text-decoration: underline;
+  }
+
+  .big-text {
+    font-size: 15px;
+  }
+
+
+}

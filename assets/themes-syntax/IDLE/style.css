@@ -1,0 +1,81 @@
+.ever-notedown-preview .evnd-fenced-code-block {
+  color: #000000;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter {
+  background-color: #ffffff;
+  color: #000000;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line {
+  background-color: rgba(0, 0, 0, 0.07);
+  color: #000000;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line-no-selection {
+  color: #000000;
+}
+.ever-notedown-preview .evnd-fenced-code-block .wrap-guide {
+  color: #bfbfbf;
+}
+.ever-notedown-preview .evnd-fenced-code-block .indent-guide {
+  color: #bfbfbf;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible-character {
+  color: #bfbfbf;
+}
+.ever-notedown-preview .evnd-fenced-code-block .search-results .marker .region {
+  background-color: transparent;
+  border: #bfbfbf;
+}
+.ever-notedown-preview .evnd-fenced-code-block .search-results .marker.current-result .region {
+  border: #000000;
+}
+.ever-notedown-preview .evnd-fenced-code-block.is-focused .cursor {
+  border-color: #000000;
+}
+.ever-notedown-preview .evnd-fenced-code-block.is-focused .selection .region {
+  background-color: #bad6fd;
+}
+.ever-notedown-preview .evnd-fenced-code-block.is-focused .line-number.cursor-line-no-selection,
+.ever-notedown-preview .evnd-fenced-code-block.is-focused .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+.ever-notedown-preview .comment {
+  color: #919191;
+}
+.ever-notedown-preview .string {
+  color: #00A33F;
+}
+.ever-notedown-preview .constant.language {
+  color: #A535AE;
+}
+.ever-notedown-preview .keyword {
+  color: #FF5600;
+}
+.ever-notedown-preview .storage {
+  color: #FF5600;
+}
+.ever-notedown-preview .entity.name.type {
+  color: #21439C;
+}
+.ever-notedown-preview .entity.name.function {
+  color: #21439C;
+}
+.ever-notedown-preview .support.function {
+  color: #A535AE;
+}
+.ever-notedown-preview .support.constant {
+  color: #A535AE;
+}
+.ever-notedown-preview .support.type,
+.ever-notedown-preview .support.class {
+  color: #A535AE;
+}
+.ever-notedown-preview .support.variable {
+  color: #A535AE;
+}
+.ever-notedown-preview .invalid {
+  color: #FFFFFF;
+  background-color: #990000;
+}
+.ever-notedown-preview .constant.other.placeholder.py {
+  color: #990000;
+}

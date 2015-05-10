@@ -1,0 +1,80 @@
+.source.scala {
+  .variable {
+    color: @syntax-emphasized-color;
+  }
+
+  .declaration {
+    color: @syntax-emphasized-color;
+    font-weight: bold;
+  }
+  .comparison {
+    color: @syntax-emphasized-color;
+  }
+  .class, .type {
+    color: @yellow;
+  }
+  .val {
+    font-weight: normal;
+  }
+  .variable {
+    font-weight: bold;
+  }
+  .variable.parameter {
+    color: @violet;
+    font-weight: normal;
+  }
+  .control.flow {
+    color: @syntax-emphasized-color;
+    font-weight: bold;
+  }
+  .constant.language {
+    color: @syntax-emphasized-color;
+    font-weight: bold;
+  }
+  .function.declaration {
+    color: @violet;
+  }
+  .modifier.other {
+    font-weight: bold;
+  }
+  .package {
+    color: @syntax-emphasized-color;
+  }
+  .variable.import {
+    font-weight: normal;
+  }
+
+  .type {
+    .bounds, .class {
+      color: @violet;
+    }
+  }
+
+  .documentation {
+    :not(.embedded) {
+      // out of scope ?
+      // https://github.com/atom/link
+      &.link.entity {
+        color: @blue;
+        text-decoration: underline;
+      }
+      .class, .parameter {
+        color: @syntax-emphasized-color;
+      }
+      .description {
+        color: @syntax-comment-color;
+      }
+    }
+  }
+
+  .embedded {
+    color: @syntax-emphasized-color;
+
+    // so we dont confused it with normal expressions
+    opacity: 0.8;
+    font-style: italic;
+    .margin, .delimiters {
+      font-style: normal;
+    }
+  }
+}

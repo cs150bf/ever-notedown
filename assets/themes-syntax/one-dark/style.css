@@ -1,0 +1,248 @@
+.ever-notedown-preview .evnd-fenced-code-block {
+  background-color: #272b33;
+  color: #abb2c0;
+}
+.ever-notedown-preview .evnd-fenced-code-block .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible {
+  color: #abb2c0;
+}
+.ever-notedown-preview .evnd-fenced-code-block .cursor {
+  border-left: 2px solid #528bff;
+}
+.ever-notedown-preview .evnd-fenced-code-block .selection .region {
+  background-color: #3d4350;
+}
+.ever-notedown-preview .evnd-fenced-code-block .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+  background-color: #343944;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible-character {
+  color: rgba(171, 178, 192, 0.15);
+}
+.ever-notedown-preview .evnd-fenced-code-block .indent-guide {
+  color: rgba(171, 178, 192, 0.15);
+}
+.ever-notedown-preview .evnd-fenced-code-block .wrap-guide {
+  background-color: rgba(171, 178, 192, 0.15);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number {
+  color: #636e84;
+  -webkit-font-smoothing: antialiased;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.git-line-removed:before {
+  bottom: -3px;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.git-line-removed:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line {
+  color: #abb2c0;
+  background-color: #2b3039;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number .icon-right {
+  color: #abb2c0;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number .icon-right {
+  color: #abb2c0;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.folded,
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number:after,
+.ever-notedown-preview .evnd-fenced-code-block .fold-marker:after {
+  color: #abb2c0;
+}
+.ever-notedown-preview .comment {
+  color: #5b626f;
+  font-style: italic;
+}
+.ever-notedown-preview .entity.name.type {
+  color: #e5c17c;
+}
+.ever-notedown-preview .entity.other.inherited-class {
+  color: #97c378;
+}
+.ever-notedown-preview .keyword {
+  color: #c679dd;
+}
+.ever-notedown-preview .keyword.control {
+  color: #c679dd;
+}
+.ever-notedown-preview .keyword.operator {
+  color: #abb2c0;
+}
+.ever-notedown-preview .keyword.other.special-method {
+  color: #61aeef;
+}
+.ever-notedown-preview .keyword.other.unit {
+  color: #d29b67;
+}
+.ever-notedown-preview .storage {
+  color: #c679dd;
+}
+.ever-notedown-preview .constant {
+  color: #d29b67;
+}
+.ever-notedown-preview .constant.character.escape {
+  color: #57b6c2;
+}
+.ever-notedown-preview .constant.numeric {
+  color: #d29b67;
+}
+.ever-notedown-preview .constant.other.color {
+  color: #57b6c2;
+}
+.ever-notedown-preview .constant.other.symbol {
+  color: #57b6c2;
+}
+.ever-notedown-preview .variable {
+  color: #df6a73;
+}
+.ever-notedown-preview .variable.interpolation {
+  color: #be4f44;
+}
+.ever-notedown-preview .variable.parameter.function {
+  color: #abb2c0;
+}
+.ever-notedown-preview .invalid.illegal {
+  background-color: #df6a73;
+  color: #272b33;
+}
+.ever-notedown-preview .string {
+  color: #97c378;
+}
+.ever-notedown-preview .string.regexp {
+  color: #57b6c2;
+}
+.ever-notedown-preview .string.regexp .source.ruby.embedded {
+  color: #ff8000;
+}
+.ever-notedown-preview .string.other.link {
+  color: #df6a73;
+}
+.ever-notedown-preview .punctuation.definition.comment {
+  color: #5b626f;
+}
+.ever-notedown-preview .punctuation.definition.parameters,
+.ever-notedown-preview .punctuation.definition.array {
+  color: #abb2c0;
+}
+.ever-notedown-preview .punctuation.definition.heading,
+.ever-notedown-preview .punctuation.definition.identity {
+  color: #61aeef;
+}
+.ever-notedown-preview .punctuation.definition.bold {
+  color: #e5c17c;
+  font-weight: bold;
+}
+.ever-notedown-preview .punctuation.definition.italic {
+  color: #c679dd;
+  font-style: italic;
+}
+.ever-notedown-preview .punctuation.section.embedded {
+  color: #be4f44;
+}
+.ever-notedown-preview .support.class {
+  color: #e5c17c;
+}
+.ever-notedown-preview .support.function {
+  color: #57b6c2;
+}
+.ever-notedown-preview .support.function.any-method {
+  color: #61aeef;
+}
+.ever-notedown-preview .entity.name.function {
+  color: #61aeef;
+}
+.ever-notedown-preview .entity.name.class,
+.ever-notedown-preview .entity.name.type.class {
+  color: #e5c17c;
+}
+.ever-notedown-preview .entity.name.section {
+  color: #61aeef;
+}
+.ever-notedown-preview .entity.name.tag {
+  color: #df6a73;
+}
+.ever-notedown-preview .entity.other.attribute-name {
+  color: #d29b67;
+}
+.ever-notedown-preview .entity.other.attribute-name.id {
+  color: #61aeef;
+}
+.ever-notedown-preview .meta.class {
+  color: #e5c17c;
+}
+.ever-notedown-preview .meta.link {
+  color: #d29b67;
+}
+.ever-notedown-preview .meta.require {
+  color: #61aeef;
+}
+.ever-notedown-preview .meta.selector {
+  color: #c679dd;
+}
+.ever-notedown-preview .meta.separator {
+  background-color: #373b41;
+  color: #abb2c0;
+}
+.ever-notedown-preview .meta.tag {
+  color: #abb2c0;
+}
+.ever-notedown-preview .none {
+  color: #abb2c0;
+}
+.ever-notedown-preview .markup.bold {
+  color: #d29b67;
+  font-weight: bold;
+}
+.ever-notedown-preview .markup.changed {
+  color: #c679dd;
+}
+.ever-notedown-preview .markup.deleted {
+  color: #df6a73;
+}
+.ever-notedown-preview .markup.italic {
+  color: #c679dd;
+  font-style: italic;
+}
+.ever-notedown-preview .markup.heading .punctuation.definition.heading {
+  color: #61aeef;
+}
+.ever-notedown-preview .markup.inserted {
+  color: #97c378;
+}
+.ever-notedown-preview .markup.list {
+  color: #df6a73;
+}
+.ever-notedown-preview .markup.quote {
+  color: #d29b67;
+}
+.ever-notedown-preview .markup.raw.inline {
+  color: #97c378;
+}
+.ever-notedown-preview .source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.ever-notedown-preview .source.gfm .markup.heading {
+  color: #df6a73;
+}
+.ever-notedown-preview .source.gfm .markup.link {
+  color: #c679dd;
+}
+.ever-notedown-preview .source.gfm .link .entity {
+  color: #61aeef;
+}
+.ever-notedown-preview .ruby.symbol > .punctuation {
+  color: inherit;
+}

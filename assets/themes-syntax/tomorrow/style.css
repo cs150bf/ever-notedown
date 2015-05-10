@@ -1,0 +1,105 @@
+.ever-notedown-preview .evnd-fenced-code-block {
+  color: #4d4d4c;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter {
+  background-color: #ffffff;
+  color: #4d4d4c;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line {
+  background-color: #efefef;
+  color: #4d4d4c;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line-no-selection {
+  color: #4d4d4c;
+}
+.ever-notedown-preview .evnd-fenced-code-block .wrap-guide {
+  color: #d1d1d1;
+}
+.ever-notedown-preview .evnd-fenced-code-block .indent-guide {
+  color: #d1d1d1;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible-character {
+  color: #d1d1d1;
+}
+.ever-notedown-preview .evnd-fenced-code-block .search-results .marker .region {
+  background-color: transparent;
+  border: #d1d1d1;
+}
+.ever-notedown-preview .evnd-fenced-code-block .search-results .marker.current-result .region {
+  border: #4d4d4c;
+}
+.ever-notedown-preview .evnd-fenced-code-block.is-focused .cursor {
+  border-color: #aeafad;
+}
+.ever-notedown-preview .evnd-fenced-code-block.is-focused .selection .region {
+  background-color: #d6d6d6;
+}
+.ever-notedown-preview .evnd-fenced-code-block.is-focused .line-number.cursor-line-no-selection,
+.ever-notedown-preview .evnd-fenced-code-block.is-focused .line.cursor-line {
+  background-color: #EFEFEF;
+}
+.ever-notedown-preview .comment {
+  color: #8E908C;
+}
+.ever-notedown-preview .keyword.operator.class,
+.ever-notedown-preview .constant.other,
+.ever-notedown-preview .source.php.embedded.line {
+  color: #666969;
+}
+.ever-notedown-preview .variable,
+.ever-notedown-preview .support.other.variable,
+.ever-notedown-preview .string.other.link,
+.ever-notedown-preview .string.regexp,
+.ever-notedown-preview .entity.name.tag,
+.ever-notedown-preview .entity.other.attribute-name {
+  color: #C82829;
+}
+.ever-notedown-preview .constant.numeric,
+.ever-notedown-preview .constant.language,
+.ever-notedown-preview .support.constant,
+.ever-notedown-preview .constant.character,
+.ever-notedown-preview .variable.parameter,
+.ever-notedown-preview .punctuation.section.embedded,
+.ever-notedown-preview .keyword.other.unit {
+  color: #F5871F;
+}
+.ever-notedown-preview .entity.name.class,
+.ever-notedown-preview .entity.name.type.class,
+.ever-notedown-preview .support.type,
+.ever-notedown-preview .support.class {
+  color: #C99E00;
+}
+.ever-notedown-preview .string,
+.ever-notedown-preview .constant.other.symbol,
+.ever-notedown-preview .entity.other.inherited-class,
+.ever-notedown-preview .markup.heading {
+  color: #718C00;
+}
+.ever-notedown-preview .keyword.operator,
+.ever-notedown-preview .constant.other.color {
+  color: #3E999F;
+}
+.ever-notedown-preview .entity.name.function,
+.ever-notedown-preview .meta.function-call,
+.ever-notedown-preview .support.function,
+.ever-notedown-preview .keyword.other.special-method,
+.ever-notedown-preview .meta.block-level {
+  color: #4271AE;
+}
+.ever-notedown-preview .keyword,
+.ever-notedown-preview .storage,
+.ever-notedown-preview .storage.type {
+  color: #8959A8;
+}
+.ever-notedown-preview .invalid {
+  color: #FFFFFF;
+  background-color: #C82829;
+}
+.ever-notedown-preview .meta.separator {
+  color: #FFFFFF;
+  background-color: #4271AE;
+}
+.ever-notedown-preview .invalid.deprecated {
+  color: #FFFFFF;
+  background-color: #8959A8;
+}

@@ -1,0 +1,41 @@
+{
+  "name": "EVND (Ever Notedown)",
+  "main": "./lib/ever-notedown",
+  "version": "0.0.0",
+  "description": "Edit Evernote notes in Atom with Markdown via AppleScript (OSX only)",
+  "repository": "https://github.com/cs150bf/ever-notedown",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.197.0"
+  },
+  "keywords": [
+    "markdown",
+    "markup",
+    "html",
+    "enml",
+    "evernote",
+    "mathjax",
+    "latex",
+    "note-taking",
+    "osx",
+    "mac",
+    "applescript",
+    "workflow",
+    "productivity"
+  ],
+  "dependencies": {
+    "moment" : "^2.9.0",
+    "git-utils": "^3.0.0",
+    "atom-space-pen-views": "^2.0.3",
+    "fs-plus": "^2.0.0",
+    "highlights": "^1.0.0",
+    "pathwatcher": "^3.0",
+    "roaster": "^1.1.2",
+    "temp": "^0.7.0",
+    "underscore-plus": "^1.0.0",
+    "cheerio": "^0.18.0",
+    "inline-css": "cs150bf/inline-css",
+    "mime": "*",
+    "season": "^5.0.2"
+  }
+}

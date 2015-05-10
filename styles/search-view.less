@@ -1,0 +1,163 @@
+// Based on https://github.com/atom/find-and-replace/blob/c7d3ce7e9c47e7f25f54a54254cc720f531756e6/styles/find-and-replace.less
+//
+// Reproduced LICENSE Info:
+// Copyright (c) 2014 GitHub Inc.
+// 
+// Permission is hereby granted, free of charge, to any person obtaining
+// a copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to
+// permit persons to whom the Software is furnished to do so, subject to
+// the following conditions:
+// 
+// The above copyright notice and this permission notice shall be
+// included in all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+// LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+// OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+// 
+@import "ui-variables";
+@import "syntax-variables";
+
+.option-button() {
+  font-size: 12px;
+  font-family: courier, monospace;
+}
+
+
+
+// Both project and buffer FNR styles
+.evnd-search-note {
+  @min-width: 200px; // min width before it starts scrolling
+
+  -webkit-user-select: none;
+  padding: @component-padding/2;
+  overflow-x: scroll;
+
+  .header {
+    padding: @component-padding/4 @component-padding/2;
+    min-width: @min-width;
+  }
+  .header-item {
+    margin: @component-padding/4 0;
+  }
+
+  .input-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: @min-width;
+  }
+  .input-block-item {
+    display: flex;
+    flex: 1;
+    padding: @component-padding / 2;
+  }
+
+  .btn-group {
+    display: flex;
+    flex: 1;
+    .btn {
+      flex: 1;
+    }
+    & + .btn-group {
+      margin-left: @component-padding;
+    }
+  }
+
+  .description {
+    display: inline-block;
+    .subtle-info-message {
+      padding-left: 5px;
+      color: @text-color-subtle;
+      .highlight {
+        color: @text-color;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .options-label {
+    color: @text-color-subtle;
+    position: relative;
+    .options {
+      color: @text-color;
+    }
+  }
+
+  .editor-container {
+    position: relative;
+    atom-text-editor {
+      width: 100%;
+    }
+  }
+
+}
+
+// Buffer find and replace
+.evnd-search-note {
+  @button-width: 120px;        // Find + Replace buttons
+  @option-button-width: 280px; // Replace All + option buttons
+  @item-width: 300px;          // wrap block width
+
+  .input-block-item {
+    flex: 1 1 @item-width;
+  }
+  .input-block-item--flex {
+    flex: 100 1 @item-width;
+  }
+
+  .btn-group-find,
+  .btn-group-replace {
+    flex: 1 1 @button-width;
+  }
+  .btn-group-replace-all,
+  .btn-group-options {
+    flex: 1 1 @option-button-width;
+  }
+
+  .btn-group-options {
+    .btn {
+      .option-button();
+      flex: 1 1 50%;
+      padding: 0;
+      text-align: center;
+      /*
+      &.option-selection {
+        font-family: "Times New Roman";
+        font-size: 12px;
+        padding-top: 3px;
+      }
+      &.option-whole-word {
+        font-size: 12px;
+      }
+      */
+    }
+  }
+
+  .find-container atom-text-editor {
+    padding-right: 64px; // leave some room for the results count
+  }
+
+  // results count
+  .find-meta-container {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    margin: @component-padding/2 @component-padding/2 0 0;
+    z-index: 2;
+    font-size: .9em;
+    line-height: @component-line-height;
+    pointer-events: none;
+    .result-counter {
+      margin-right: @component-padding;
+    }
+  }
+}
+

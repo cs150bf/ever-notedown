@@ -1,0 +1,43 @@
+.source.c, .source.c\+\+ {
+  .meta.preprocessor {
+    color: @red;
+  }
+  .keyword.control.import {
+    color: @red;
+  }
+  .punctuation.string {
+    color: @cyan;
+  }
+  .constant {
+    color: @red;
+
+    &.numeric, &.language.c {
+      color: @cyan;
+    }
+  }
+  .storage {
+    color: @yellow;
+  }
+  .entity {
+    color: @syntax-text-color;
+
+    &.name.function.preprocessor {
+      color: @red;
+    }
+  }
+  .support.type {
+    color: @yellow;
+
+    &.posix-reserved {
+      color: @syntax-text-color;
+    }
+  }
+  .variable {
+    &.other.dot-access {
+      color: @syntax-text-color;
+    }
+    &.parameter.preprocessor {
+      color: @red;
+    }
+  }
+}

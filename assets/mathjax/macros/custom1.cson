@@ -1,0 +1,46 @@
+# Some common macros (calculus, etc.)
+bold: [
+  "{\\bf #1}"
+  1
+]
+# absolute value
+abs: [
+    "\\left| #1 \\right|"
+    1
+]
+# average
+avg: [
+    "\\left\\langle #1 \\right\\rangle"
+    1
+]
+# Derivatives
+d: [
+    "\\frac{\\text{d} #1}{\\text{d} #2}"
+    2
+]
+# Double derivatives
+dd: [
+    "\\frac{\\text{d}^2 #1}{\\text{d} #2^2}"
+    2
+]
+# partial derivatives
+pd: [
+    "\\frac{\\partial #1}{\\partial #2}",
+    2
+]
+# double partial derivatives
+pdd: [
+    "\\frac{\\partial^2 #1}{\\partial #2^2}",
+    2
+]
+# thermodynamic partial derivatives
+pdc: [
+    "\\left( \\frac{\\partial #1}{\\partial #2}\\right)_{#3}",
+    3
+]
+# putting stuff above =
+"=": [
+    "\\stackrel{#1}{=}",
+    1
+]
+

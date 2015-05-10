@@ -1,0 +1,198 @@
+.ever-notedown-preview {
+  @import 'syntax-variables';
+
+  .evnd-fenced-code-block {
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
+
+    .invisible-character {
+      color: @syntax-invisible-character-color;
+    }
+
+    .indent-guide {
+      color: @syntax-indent-guide-color;
+    }
+
+    .wrap-guide {
+      background-color: @syntax-wrap-guide-color;
+    }
+
+    .gutter {
+      background-color: @syntax-gutter-background-color;
+
+      .cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+      }
+    }
+
+    .line-number.cursor-line-no-selection {
+      background-color: @syntax-gutter-background-color-selected;
+    }
+
+    .invisible {
+      color: @syntax-text-color;
+    }
+
+    .cursor {
+      border-color: @syntax-cursor-color;
+    }
+
+    .selection .region {
+      background-color: @syntax-selection-color;
+    }
+
+    .search-results .marker .region {
+      background-color: transparent;
+      border: 1px solid @syntax-result-marker-color;
+    }
+
+    .search-results .marker.current-result .region {
+      border: 1px solid @syntax-result-marker-color-selected;
+    }
+
+    .gfm {
+      .markup {
+        &.heading {
+          color: #A6E22E;
+          font-weight: bold;
+        }
+
+        &.underline {
+          color: #E6DB74;
+          text-decoration: underline;
+        }
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .raw {
+        color: #66D9EF;
+      }
+
+      .variable.list {
+        color: #F92672;
+        font-weight: bold;
+      }
+
+      .link {
+        color: #CCC;
+
+        .entity {
+          color: #AE81FF;
+        }
+      }
+    }
+  }
+
+  .comment {
+    color: #75715E;
+  }
+
+  .string {
+    color: #E6DB74;
+  }
+
+  .constant.numeric {
+    color: #AE81FF;
+  }
+
+  .constant.language {
+    color: #AE81FF;
+  }
+
+  .constant.character,
+  .constant.other {
+    color: #AE81FF;
+  }
+
+  .keyword {
+    color: #F92672;
+  }
+
+  .storage {
+    color: #F92672;
+  }
+
+  .storage.type {
+    font-style: italic;
+    color: #66D9EF;
+  }
+
+  .entity.name.class {
+    text-decoration: none;
+    color: #A6E22E;
+  }
+
+  .entity.other.inherited-class {
+    font-style: italic;
+    text-decoration: none;
+    color: #A6E22E;
+  }
+
+  // Prevent underlines from making their way into whitespace elements
+  .leading-whitespace,
+  .trailing-whitespace {
+    display: inline-block;
+  }
+
+  .entity.name.function {
+    color: #A6E22E;
+  }
+
+  .entity.name.instance {
+    color: #66D9EF;
+  }
+
+  .variable.parameter {
+    font-style: italic;
+    color: #FD971F;
+  }
+
+  .entity.name.tag {
+    color: #F92672;
+  }
+
+  .entity.other.attribute-name {
+    color: #A6E22E;
+  }
+
+  .support.function {
+    color: #66D9EF;
+  }
+
+  .support.constant {
+    color: #66D9EF;
+  }
+
+  .support.type,
+  .support.class {
+    font-style: italic;
+    color: #66D9EF;
+  }
+
+  .invalid {
+    color: #F8F8F0;
+    background-color: #F92672;
+  }
+
+  .invalid.deprecated {
+    color: #F8F8F0;
+    background-color: #AE81FF;
+  }
+
+  // Jade syntax
+  .class.jade {
+    color: #AE81FF;
+  }
+
+  // 'this' Javascript
+  .variable.language.js {
+    color: #F92672;
+  }
+}

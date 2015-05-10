@@ -1,0 +1,96 @@
+# some common macros for physical sciences
+"bold": [
+    "{\\bf #1}"
+    1
+]
+# absolute value
+"abs": [
+    "\\left| #1 \\right|"
+    1
+]
+# average
+"avg": [
+    "\\left\\langle #1 \\right\\rangle"
+    1
+]
+# Derivatives
+"d": [
+    "\\frac{\\text{d} #1}{\\text{d} #2}"
+    2
+]
+# Double derivatives
+"dd": [
+    "\\frac{\\text{d}^2 #1}{\\text{d} #2^2}"
+    2
+]
+# partial derivatives
+"pd": [
+    "\\frac{\\partial #1}{\\partial #2}"
+    2
+]
+# double partial derivatives
+"pdd": [
+    "\\frac{\\partial^2 #1}{\\partial #2^2}"
+    2
+]
+# thermodynamic partial derivatives
+"pdc": [
+    "\\left( \\frac{\\partial #1}{\\partial #2}\\right)_{#3}"
+    3
+]
+# unit vectors
+"uv": [
+    "\\mathbf{\\hat #1}"
+    1
+]
+# vectors
+"vec": [
+    "\\mathbf{ #1}"
+    1
+]
+# Dirac kets
+"ket": [
+    "\\left|#1\\right\\rangle"
+    1
+]
+# Dirac bras
+"bra": [
+    "\\left\\langle #1\\right|"
+    1
+]
+# Dirac ketbra
+"ketbra": [
+    "\\left|#1\\rangle\\!\\langle #2\\right|"
+    2
+]
+# Dirac braket
+"braket": [
+    "\\left\\langle #1\\middle\\vert #2 \\right\\rangle"
+    2
+]
+# Dirac matrix elements
+"matrixel":[
+    "\\left\\langle #1 \\vphantom{#2#3} \\right|#2 \\left| #3 \\vphantom{#1#2} \\right\\rangle"
+    3
+]
+# gradient
+"grad": [
+    "\\bold{\\nabla}#1 "
+    1
+]
+# divergence
+"div": [
+    "\\bold{\\nabla} \\cdot #1"
+    1
+]
+# curl
+"curl": [
+    "\\bold{\\nabla} \\times #1"
+    1
+]
+# putting stuff above =
+"=": [
+    "\\stackrel{#1}{=}"
+    1
+]
+

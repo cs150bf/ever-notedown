@@ -1,0 +1,223 @@
+.ever-notedown-preview .evnd-fenced-code-block {
+  background-color: #f5e6c8;
+  color: #35260a;
+}
+.ever-notedown-preview .evnd-fenced-code-block .wrap-guide {
+  background-color: #35260a;
+}
+.ever-notedown-preview .evnd-fenced-code-block .indent-guide {
+  color: #e5bf72;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible-character {
+  color: #e5bf72;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter {
+  background-color: #f5e6c8;
+  color: #35260a;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line {
+  background-color: #fbf6eb;
+  color: #35260a;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line-no-selection {
+  color: #35260a;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.folded,
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number:after,
+.ever-notedown-preview .evnd-fenced-code-block .fold-marker:after {
+  color: #765615;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible {
+  color: #35260a;
+}
+.ever-notedown-preview .evnd-fenced-code-block .cursor {
+  color: #35260a;
+}
+.ever-notedown-preview .evnd-fenced-code-block .selection .region {
+  background-color: #fbf6eb;
+}
+.ever-notedown-preview .evnd-fenced-code-block .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid #7801c8;
+}
+.ever-notedown-preview .evnd-fenced-code-block .search-results .marker.current-result .region {
+  border: 1px solid #a118fe;
+}
+.ever-notedown-preview .evnd-fenced-code-block[mini] .scroll-view {
+  padding-left: 1px;
+}
+.ever-notedown-preview .comment {
+  color: #765615;
+}
+.ever-notedown-preview .entity.name.type {
+  color: #765615;
+  text-decoration: underline;
+}
+.ever-notedown-preview .entity.other.inherited-class {
+  color: #509600;
+}
+.ever-notedown-preview .keyword {
+  color: #7801c8;
+}
+.ever-notedown-preview .keyword.control {
+  color: #7801c8;
+}
+.ever-notedown-preview .keyword.operator {
+  color: #35260a;
+}
+.ever-notedown-preview .keyword.other.special-method {
+  color: #008cb4;
+}
+.ever-notedown-preview .keyword.other.unit {
+  color: #ff6400;
+}
+.ever-notedown-preview .storage {
+  color: #7801c8;
+}
+.ever-notedown-preview .constant {
+  color: #ff6400;
+}
+.ever-notedown-preview .constant.character.escape {
+  color: #008cb4;
+}
+.ever-notedown-preview .constant.numeric {
+  color: #ff6400;
+}
+.ever-notedown-preview .constant.other.color {
+  color: #008cb4;
+}
+.ever-notedown-preview .constant.other.symbol {
+  color: #7801c8;
+}
+.ever-notedown-preview .variable {
+  color: #c80000;
+}
+.ever-notedown-preview .variable.interpolation {
+  color: #7c0000;
+}
+.ever-notedown-preview .variable.parameter.function {
+  color: #35260a;
+}
+.ever-notedown-preview .invalid.illegal {
+  background-color: #c80000;
+  color: #f5e6c8;
+}
+.ever-notedown-preview .string {
+  color: #509600;
+}
+.ever-notedown-preview .string.regexp {
+  color: #008cb4;
+}
+.ever-notedown-preview .string.regexp .source.ruby.embedded {
+  color: #ff6400;
+}
+.ever-notedown-preview .string.other.link {
+  color: #c80000;
+}
+.ever-notedown-preview .punctuation.definition.comment {
+  color: #e5bf72;
+}
+.ever-notedown-preview .punctuation.definition.string,
+.ever-notedown-preview .punctuation.definition.variable,
+.ever-notedown-preview .punctuation.definition.parameters,
+.ever-notedown-preview .punctuation.definition.array {
+  color: #35260a;
+}
+.ever-notedown-preview .punctuation.definition.heading,
+.ever-notedown-preview .punctuation.definition.identity {
+  color: #008cb4;
+}
+.ever-notedown-preview .punctuation.definition.bold {
+  color: #765615;
+  font-weight: bold;
+}
+.ever-notedown-preview .punctuation.definition.italic {
+  color: #7801c8;
+  font-style: italic;
+}
+.ever-notedown-preview .punctuation.section.embedded {
+  color: #950000;
+}
+.ever-notedown-preview .support.class {
+  color: #765615;
+}
+.ever-notedown-preview .support.function {
+  color: #008cb4;
+}
+.ever-notedown-preview .support.function.any-method {
+  color: #008cb4;
+}
+.ever-notedown-preview .entity.name.function {
+  color: #008cb4;
+}
+.ever-notedown-preview .entity.name.class,
+.ever-notedown-preview .entity.name.type.class {
+  color: #765615;
+}
+.ever-notedown-preview .entity.name.section {
+  color: #008cb4;
+}
+.ever-notedown-preview .entity.name.tag {
+  color: #c80000;
+  text-decoration: underline;
+}
+.ever-notedown-preview .entity.other.attribute-name {
+  color: #ff6400;
+}
+.ever-notedown-preview .entity.other.attribute-name.id {
+  color: #008cb4;
+}
+.ever-notedown-preview .meta.class {
+  color: #765615;
+}
+.ever-notedown-preview .meta.link {
+  color: #ff6400;
+}
+.ever-notedown-preview .meta.require {
+  color: #008cb4;
+}
+.ever-notedown-preview .meta.selector {
+  color: #7801c8;
+}
+.ever-notedown-preview .meta.separator {
+  background-color: #765615;
+  color: #35260a;
+}
+.ever-notedown-preview .none {
+  color: #35260a;
+}
+.ever-notedown-preview .markup.bold {
+  color: #ff6400;
+  font-weight: bold;
+}
+.ever-notedown-preview .markup.changed {
+  color: #7801c8;
+}
+.ever-notedown-preview .markup.deleted {
+  color: #c80000;
+}
+.ever-notedown-preview .markup.italic {
+  color: #7801c8;
+  font-style: italic;
+}
+.ever-notedown-preview .markup.heading .punctuation.definition.heading {
+  color: #008cb4;
+}
+.ever-notedown-preview .markup.inserted {
+  color: #509600;
+}
+.ever-notedown-preview .markup.list {
+  color: #c80000;
+}
+.ever-notedown-preview .markup.quote {
+  color: #ff6400;
+}
+.ever-notedown-preview .markup.raw.inline {
+  color: #509600;
+}
+.ever-notedown-preview .source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.ever-notedown-preview .source.gfm .markup.heading {
+  color: #509600;
+}

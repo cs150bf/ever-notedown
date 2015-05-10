@@ -1,0 +1,203 @@
+.ever-notedown-preview .evnd-fenced-code-block {
+  background-color: #002240;
+  background-color: rgba(0, 34, 64, 0.75);
+  color: #ffffff;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter {
+  background-color: #002240;
+  color: #ffffff;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line {
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.cursor-line-no-selection {
+  color: #ffffff;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .wrap-guide {
+  color: rgba(255, 255, 255, 0.15);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .indent-guide {
+  color: rgba(255, 255, 255, 0.15);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .invisible-character {
+  color: rgba(255, 255, 255, 0.15);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .search-results .marker .region {
+  background-color: transparent;
+  border: rgba(255, 255, 255, 0.15);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .search-results .marker.current-result .region {
+  border: #ffffff;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter.is-focused .cursor {
+  border-color: #ffffff;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter.is-focused .selection .region,
+.ever-notedown-preview .evnd-fenced-code-block .gutter :host(.is-focused) .selection .region {
+  background-color: rgba(179, 101, 57, 0.75);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter.is-focused .line-number.cursor-line-no-selection,
+.ever-notedown-preview .evnd-fenced-code-block .gutter.is-focused .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.ever-notedown-preview .punctuation:not(.punctuation.definition.string, .punctuation.definition.comment) {
+  color: #E1EFFF;
+}
+.ever-notedown-preview .constant {
+  color: #FF628C;
+}
+.ever-notedown-preview .entity {
+  color: #FFDD00;
+}
+.ever-notedown-preview .keyword {
+  color: #FF9D00;
+}
+.ever-notedown-preview .storage {
+  color: #FFEE80;
+}
+.ever-notedown-preview .string {
+  color: #3AD900;
+}
+.ever-notedown-preview .string.string.unquoted.old-plist,
+.ever-notedown-preview .string.string.unquoted.heredoc {
+  color: #ffffff;
+}
+.ever-notedown-preview .string:not(.string.unquoted.old-plist:not(.string.unquoted.heredoc)),
+.ever-notedown-preview .string.unquoted.heredoc .string {
+  color: #3AD900;
+}
+.ever-notedown-preview .comment {
+  font-style: italic;
+  color: #0088FF;
+}
+.ever-notedown-preview .support {
+  color: #80FFBB;
+}
+.ever-notedown-preview .variable {
+  color: #CCCCCC;
+}
+.ever-notedown-preview .variable.language {
+  color: #FF80E1;
+}
+.ever-notedown-preview .meta.function-call {
+  color: #FFEE80;
+}
+.ever-notedown-preview .invalid {
+  color: #F8F8F8;
+  background-color: #800F00;
+}
+.ever-notedown-preview .text .source,
+.ever-notedown-preview .string.unquoted.heredoc,
+.ever-notedown-preview .source .source {
+  color: #FFFFFF;
+  background-color: #223545;
+}
+.ever-notedown-preview .entity.other.inherited-class {
+  font-style: italic;
+  color: #80FCFF;
+}
+.ever-notedown-preview .string.quoted .source {
+  color: #9EFF80;
+}
+.ever-notedown-preview .string .constant {
+  color: #80FF82;
+}
+.ever-notedown-preview .string.regexp {
+  color: #80FFC2;
+}
+.ever-notedown-preview .string .variable {
+  color: #EDEF7D;
+}
+.ever-notedown-preview .support.function {
+  color: #FFB054;
+}
+.ever-notedown-preview .support.constant {
+  color: #EB939A;
+}
+.ever-notedown-preview .support.type.exception {
+  color: #FF1E00;
+}
+.ever-notedown-preview .meta.preprocessor.c {
+  color: #8996A8;
+}
+.ever-notedown-preview .meta.preprocessor.c .keyword {
+  color: #AFC4DB;
+}
+.ever-notedown-preview .meta.sgml.html .meta.doctype,
+.ever-notedown-preview .meta.sgml.html .meta.doctype .entity,
+.ever-notedown-preview .meta.sgml.html .meta.doctype .string,
+.ever-notedown-preview .meta.xml-processing,
+.ever-notedown-preview .meta.xml-processing .entity,
+.ever-notedown-preview .meta.xml-processing .string {
+  color: #73817D;
+}
+.ever-notedown-preview .meta.tag,
+.ever-notedown-preview .meta.tag .entity {
+  color: #9EFFFF;
+}
+.ever-notedown-preview .meta.selector.css .entity.name.tag {
+  color: #9EFFFF;
+}
+.ever-notedown-preview .meta.selector.css .entity.other.attribute-name.id {
+  color: #FFB454;
+}
+.ever-notedown-preview .meta.selector.css .entity.other.attribute-name.class {
+  color: #5FE461;
+}
+.ever-notedown-preview .support.type.property-name.css {
+  color: #9DF39F;
+}
+.ever-notedown-preview .meta.property-group .support.constant.property-value.css,
+.ever-notedown-preview .meta.property-value .support.constant.property-value.css {
+  color: #F6F080;
+}
+.ever-notedown-preview .meta.preprocessor.at-rule .keyword.control.at-rule {
+  color: #F6AA11;
+}
+.ever-notedown-preview .meta.property-value .support.constant.named-color.css,
+.ever-notedown-preview .meta.property-value .constant {
+  color: #EDF080;
+}
+.ever-notedown-preview .meta.constructor.argument.css {
+  color: #EB939A;
+}
+.ever-notedown-preview .meta.diff,
+.ever-notedown-preview .meta.diff.header {
+  color: #F8F8F8;
+  background-color: #000E1A;
+}
+.ever-notedown-preview .markup.deleted {
+  color: #F8F8F8;
+  background-color: #4C0900;
+}
+.ever-notedown-preview .markup.changed {
+  color: #F8F8F8;
+  background-color: #806F00;
+}
+.ever-notedown-preview .markup.inserted {
+  color: #F8F8F8;
+  background-color: #154F00;
+}
+.ever-notedown-preview .markup.raw {
+  background-color: rgba(143, 221, 246, 0.19);
+}
+.ever-notedown-preview .markup.quote {
+  background-color: #004480;
+}
+.ever-notedown-preview .markup.list {
+  background-color: #130D26;
+}
+.ever-notedown-preview .markup.bold {
+  font-weight: bold;
+  color: #C1AFFF;
+}
+.ever-notedown-preview .markup.italic {
+  font-style: italic;
+  color: #B8FFD9;
+}
+.ever-notedown-preview .markup.heading {
+  font-weight: bold;
+  color: #C8E4FD;
+  background-color: #001221;
+}

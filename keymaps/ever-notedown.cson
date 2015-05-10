@@ -1,0 +1,41 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/advanced/keymaps
+'.platform-darwin atom-workspace':
+  'alt-cmd-n': 'ever-notedown:toggle-note-list'
+  'shift-cmd-M': 'ever-notedown:toggle-preview'
+
+'.platform-darwin atom-text-editor:not([mini])':
+  'alt-cmd-n': 'ever-notedown:toggle-note-list'
+  'shift-cmd-E': 'ever-notedown:file-to-evernote'
+  'shift-cmd-M': 'ever-notedown:toggle-preview'
+  #'cmd-v': 'ever-notedown:paste-image-to-markdown-file'
+  'cmd-b': 'ever-notedown:bold-text'
+  'cmd-i': 'ever-notedown:emphasis-text'
+  'shift-cmd-U': 'ever-notedown:underline-text'
+  'shift-cmd-H': 'ever-notedown:highlight-text'
+  'ctrl-~': 'ever-notedown:strikethrough-text'
+  'cmd->': 'ever-notedown:blockquote'
+  'shift-cmd-K': 'ever-notedown:blockquote'
+
+'.platform-darwin .ever-notedown-preview':
+  'cmd-+': 'ever-notedown:zoom-in'
+  'cmd-=': 'ever-notedown:zoom-in'
+  'cmd--': 'ever-notedown:zoom-out'
+  'cmd-_': 'ever-notedown:zoom-out'
+  'cmd-0': 'ever-notedown:reset-zoom'
+  'f5': 'ever-notedown:refresh-preview'
+
+#'.platform-win32 .ever-notedown, .platform-linux .ever-notedown':
+#  'ctrl-+': 'ever-notedown:zoom-in'
+#  'ctrl-=': 'ever-notedown:zoom-in'
+#  'ctrl--': 'ever-notedown:zoom-out'
+#  'ctrl-_': 'ever-notedown:zoom-out'
+#  'ctrl-0': 'ever-notedown:reset-zoom'
+

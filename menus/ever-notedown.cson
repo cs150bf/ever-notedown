@@ -1,0 +1,231 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Ever Notedown'
+      'submenu': [
+        {
+          'label': 'Format: Bold'
+          'command': 'ever-notedown:bold-text'
+        }
+        {
+          'label': 'Format: Italic'
+          'command': 'ever-notedown:emphasis-text'
+        }
+        {
+          'label': 'Format: Underline'
+          'command': 'ever-notedown:underline-text'
+        }
+        {
+          'label': 'Format: Highlight'
+          'command': 'ever-notedown:highlight-text'
+        }
+        {
+          'label': 'Format: Strikethrough'
+          'command': 'ever-notedown:strikethrough-text'
+        }
+        {
+          'label': 'Markdown: Blockquote'
+          'command': 'ever-notedown:blockquote'
+        }
+        {
+          'label': 'Send selection to Evernote'
+          'command': 'ever-notedown:selection-to-evernote'
+        }
+        {
+          'label': 'Send current file to Evernote'
+          'command': 'ever-notedown:file-to-evernote'
+        }
+        #{
+        #  'label': 'Paste image'
+        #  'command': 'ever-notedown:paste-image-to-markdown-file'
+        #}
+      ]
+    }
+  ]
+  '.ever-notedown-preview': [
+    {label: 'Copy As HTML', command: 'core:copy'}
+    {label: 'Save As HTML\u2026', command: 'core:save-as'}
+  ]
+  '.tree-view .file .name[data-name$=\\.markdown]':
+    [{label: 'Ever-Notedown Preview', command:  'ever-notedown:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.md]':
+    [{label: 'Ever-Notedown Preview', command:  'ever-notedown:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.mdown]':
+    [{label: 'Ever-Notedown Preview', command:  'ever-notedown:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.mkd]':
+    [{label: 'Ever-Notedown Preview', command:  'ever-notedown:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.mkdown]':
+    [{label: 'Ever-Notedown Preview', command:  'ever-notedown:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.ron]':
+    [{label: 'Ever-Notedown Preview', command:  'ever-notedown:preview-file'}]
+  '.tree-view .file .name[data-name$=\\.txt]':
+    [{label: 'Ever-Notedown Preview', command:  'ever-notedown:preview-file'}]
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Ever Notedown'
+      'submenu': [
+        {
+          'label': 'Toggle EVND Panel'
+          'command': 'ever-notedown:toggle'
+        }
+        {
+          'label': 'Toggle Note List'
+          'command': 'ever-notedown:toggle-note-list'
+        }
+        {
+          'label': 'Current File'
+          'submenu': [
+            {
+              'label': 'Send selection to Evernote'
+              'command': 'ever-notedown:selection-to-evernote'
+            }
+            {
+              'label': 'Send file to Evernote'
+              'command': 'ever-notedown:file-to-evernote'
+            }
+            {
+              'label': 'Get changes made in Evernote'
+              'command': 'ever-notedown:pull-current-note-from-evernote'
+            }
+          ]
+        }
+        {
+          'label': 'New Note'
+          'submenu': [
+            {
+              'label': 'Create New Note'
+              'command': 'ever-notedown:new-note'
+            }
+            {
+              'label': 'Import Note from Evernote'
+              'command': 'ever-notedown:import-note-from-evernote'
+            }
+          ]
+        }
+        {
+          'label': 'Preview'
+          'submenu': [
+            {
+              'label': 'Toggle Preview'
+              'command': 'ever-notedown:toggle-preview'
+            }
+            {
+              'label': 'Refresh Preview'
+              'command': 'ever-notedown:refresh-preview'
+            }
+            {
+              'label': 'Copy Rendered HTML'
+              'command': 'ever-notedown:copy-rendered-html'
+            }
+            {
+              'label': 'Save Rendered HTML'
+              'command': 'ever-notedown:save-rendered-html'
+            }
+          ]
+        }
+        {
+          'label': 'Settings'
+          'submenu': [
+            {
+              'label': 'Open Package Setting'
+              'command': 'ever-notedown:open-config'
+            }
+            {
+              'label': 'MathJax'
+              'submenu': [
+                {
+                  'label': 'View Current MathJax Macros'
+                  'command': 'ever-notedown:view-mathjax-macros'
+                }
+                {
+                  'label': 'Edit macros: custom1.cson'
+                  'command': 'ever-notedown:edit-macros-custom1'
+                }
+                {
+                  'label': 'Edit macros: custom2.cson'
+                  'command': 'ever-notedown:edit-macros-custom2'
+                }
+              ]
+            }
+            {
+              'label': 'Themes (markdown -> HTML rendering)'
+              'submenu': [
+                {
+                  'label': 'View current theme CSS'
+                  'command': 'ever-notedown:view-current-theme-css'
+                }
+                {
+                  'label': 'Edit theme: custom1.css'
+                  'command': 'ever-notedown:edit-theme-custom1'
+                }
+                {
+                  'label': 'Edit theme: custom2.css'
+                  'command': 'ever-notedown:edit-theme-custom2'
+                }
+              ]
+            }
+            {
+              'label': 'Syntax Themes (for fenced code block)'
+              'submenu': [
+                {
+                  'label': 'View current syntax theme CSS'
+                  'command': 'ever-notedown:view-current-syntax-theme-css'
+                }
+                {
+                  'label': 'Edit syntax theme: custom1.css'
+                  'command': 'ever-notedown:edit-syntax-theme-custom1'
+                }
+                {
+                  'label': 'Edit syntax theme: custom2.css'
+                  'command': 'ever-notedown:edit-syntax-theme-custom2'
+                }
+              ]
+            }
+            {
+              'label': 'Note Templates'
+              'submenu': [
+                {
+                  'label': 'View current note template'
+                  'command': 'ever-notedown:view-current-note-template'
+                }
+                {
+                  'label': 'Edit note template: custom1.markdown'
+                  'command': 'ever-notedown:edit-note-template-custom1'
+                }
+                {
+                  'label': 'Edit note template: custom2.markdown'
+                  'command': 'ever-notedown:edit-note-template-custom2'
+                }
+              ]
+            }
+          ]
+        }
+        {
+          'label': 'Help'
+          'submenu': [
+            {
+              'label': 'EVND Help Document'
+              'command': 'ever-notedown:open-help-document'
+            }
+            {
+              'label': 'Markdown Quick Reference'
+              'command': 'ever-notedown:markdown-quick-ref'
+            }
+            {
+              'label': 'MathJax (LaTeX) Quick Reference'
+              'command': 'ever-notedown:mathjax-quick-ref'
+            }
+            {
+              'label': 'Notes for Developers'
+              'command': 'ever-notedown:notes-for-developers'
+            }
+          ]
+        }
+      ]
+    ]
+  }
+]

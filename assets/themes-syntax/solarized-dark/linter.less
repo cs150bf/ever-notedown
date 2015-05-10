@@ -1,0 +1,22 @@
+.evnd-fenced-code-block {
+  .gutter {
+    .line-number.linter-warning .icon-right:before {
+      color: @syntax-color-modified;
+    }
+    .line-number.linter-error .icon-right:before {
+      color: @syntax-color-removed;
+    }
+  }
+  .highlights {
+    .linter-warning .region {
+      border: 1px solid @syntax-color-modified;
+      background-image: none;
+      background-color: fade(saturate(@syntax-color-modified, 50%), 20%);
+    }
+    .linter-error .region {
+      border: 1px solid @syntax-color-removed;
+      background-image: none;
+      background-color: fade(saturate(@syntax-color-removed, 50%), 20%);
+    }
+  }
+}

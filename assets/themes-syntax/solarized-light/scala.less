@@ -1,0 +1,70 @@
+.source.scala {
+  color: @base1;
+  .declaration {
+    color: @base1;
+    font-weight: bold;
+  }
+  .comparison {
+    color: @base1;
+  }
+  .class, .type {
+    color: @yellow;
+    font-weight: normal;
+  }
+  .val {
+    font-weight: normal;
+    color: @base1;
+  }
+  .variable {
+    font-weight: bold;
+    color: @base1;
+  }
+  .variable.parameter { color: @violet;
+    font-weight: normal;
+  }
+  .control.flow {
+    color: @base1;
+    font-weight: bold;
+  }
+  .constant.language {
+    color: @base1;
+    font-weight: bold;
+  }
+  .function.declaration {
+    color: @violet;
+  }
+  .modifier.other {
+    font-weight: bold;
+  }
+  .package {
+    color: @base1;
+  }
+  .variable.import {
+    font-weight: normal;
+  }
+
+  .type {
+    .bounds, .class {
+      color: @violet;
+    }
+  }
+  .documentation {
+    .class, .parameter {
+      color: @base01;
+    }
+    .description {
+      color: @base1;
+    }
+  }
+  .quasiquote {
+    font-style: italic;
+  }
+  .string-interpolation, .quasiquote {
+    .expression *:not(.margin), .variable{
+      font-style: italic;
+    }
+    .variable {
+      font-weight: normal;
+    }
+  }
+}

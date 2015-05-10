@@ -1,0 +1,721 @@
+.ever-notedown-preview .evnd-fenced-code-block {
+  background-color: #002b36;
+  color: #839496;
+}
+.ever-notedown-preview .evnd-fenced-code-block .invisible-character {
+  color: rgba(101, 123, 131, 0.2);
+}
+.ever-notedown-preview .evnd-fenced-code-block .indent-guide {
+  color: rgba(101, 123, 131, 0.2);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter {
+  background-color: #073642;
+  color: #839496;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number {
+  opacity: 1;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.folded,
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number:after,
+.ever-notedown-preview .evnd-fenced-code-block .fold-marker:after {
+  color: #d33682;
+}
+.ever-notedown-preview .evnd-fenced-code-block .cursor {
+  border-color: #fdf6e3;
+}
+.ever-notedown-preview .evnd-fenced-code-block .selection .region {
+  background-color: #073a47;
+}
+.ever-notedown-preview .evnd-fenced-code-block .line-number.cursor-line-no-selection {
+  background-color: #0a4d5e;
+}
+.ever-notedown-preview .bracket-matcher .region {
+  background-color: rgba(88, 110, 117, 0.8);
+  opacity: 0.3;
+}
+.ever-notedown-preview .comment {
+  color: #586e75;
+  font-style: italic;
+}
+.ever-notedown-preview .entity {
+  color: #839496;
+}
+.ever-notedown-preview .entity .punctuation {
+  color: #dc322f;
+}
+.ever-notedown-preview .entity.name {
+  color: #cb4b16;
+}
+.ever-notedown-preview .entity.name.tag {
+  color: #268bd2;
+}
+.ever-notedown-preview .entity.constant {
+  color: #dc322f;
+}
+.ever-notedown-preview .entity.attribute-name {
+  color: #586e75;
+}
+.ever-notedown-preview .keyword {
+  color: #859900;
+}
+.ever-notedown-preview .keyword.other.special-method {
+  color: #cb4b16;
+}
+.ever-notedown-preview .storage.type {
+  color: #268bd2;
+}
+.ever-notedown-preview .storage.class.type {
+  color: #d33682;
+}
+.ever-notedown-preview .storage.modifier {
+  color: #268bd2;
+}
+.ever-notedown-preview .constant {
+  color: #b58900;
+}
+.ever-notedown-preview .constant.numeric,
+.ever-notedown-preview .constant.boolean,
+.ever-notedown-preview .constant.symbol,
+.ever-notedown-preview .constant.symbol .punctuation {
+  color: #2aa198;
+}
+.ever-notedown-preview .constant.symbol.hashkey {
+  color: #dc322f;
+}
+.ever-notedown-preview .constant.symbol.hashkey .punctuation {
+  color: #dc322f;
+}
+.ever-notedown-preview .delimiter,
+.ever-notedown-preview .brace {
+  color: #268bd2;
+}
+.ever-notedown-preview .delimiter,
+.ever-notedown-preview .round {
+  color: #859900;
+}
+.ever-notedown-preview .delimiter.period {
+  color: #859900;
+}
+.ever-notedown-preview .invalid.deprecated {
+  text-decoration: underline;
+  color: #dc322f;
+}
+.ever-notedown-preview .invalid.illegal {
+  color: #dc322f;
+}
+.ever-notedown-preview .method .name {
+  color: #268bd2;
+}
+.ever-notedown-preview .operator.assignment {
+  color: #93a1a1;
+}
+.ever-notedown-preview .parameter {
+  color: #dc322f;
+}
+.ever-notedown-preview .property-name {
+  color: #859900;
+}
+.ever-notedown-preview .property-value .unit {
+  color: #839496;
+}
+.ever-notedown-preview .string {
+  color: #2aa198;
+}
+.ever-notedown-preview .string .constant.character.escape {
+  color: #dc322f;
+  font-weight: bold;
+}
+.ever-notedown-preview .string .punctuation.string {
+  color: #2aa198;
+}
+.ever-notedown-preview .string.regexp {
+  color: #2aa198;
+}
+.ever-notedown-preview .string.regexp .string.regexp.arbitrary-repetition {
+  color: #2aa198;
+}
+.ever-notedown-preview .variable {
+  color: #2aa198;
+}
+.ever-notedown-preview .variable.instance {
+  color: #268bd2;
+}
+.ever-notedown-preview .variable.constant {
+  color: #586e75;
+}
+.ever-notedown-preview .variable.parameter {
+  color: #dc322f;
+}
+.ever-notedown-preview .support {
+  color: #cb4b16;
+}
+.ever-notedown-preview .support.class {
+  color: #dc322f;
+}
+.ever-notedown-preview .terminator {
+  color: #859900;
+}
+.ever-notedown-preview .source.c .meta.preprocessor,
+.ever-notedown-preview .source.c\+\+ .meta.preprocessor {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.c .keyword.control.import,
+.ever-notedown-preview .source.c\+\+ .keyword.control.import {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.c .punctuation.string,
+.ever-notedown-preview .source.c\+\+ .punctuation.string {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.c .constant,
+.ever-notedown-preview .source.c\+\+ .constant {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.c .constant.numeric,
+.ever-notedown-preview .source.c\+\+ .constant.numeric,
+.ever-notedown-preview .source.c .constant.language.c,
+.ever-notedown-preview .source.c\+\+ .constant.language.c {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.c .storage,
+.ever-notedown-preview .source.c\+\+ .storage {
+  color: #b58900;
+}
+.ever-notedown-preview .source.c .entity,
+.ever-notedown-preview .source.c\+\+ .entity {
+  color: #839496;
+}
+.ever-notedown-preview .source.c .entity.name.function.preprocessor,
+.ever-notedown-preview .source.c\+\+ .entity.name.function.preprocessor {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.c .support.type,
+.ever-notedown-preview .source.c\+\+ .support.type {
+  color: #b58900;
+}
+.ever-notedown-preview .source.c .support.type.posix-reserved,
+.ever-notedown-preview .source.c\+\+ .support.type.posix-reserved {
+  color: #839496;
+}
+.ever-notedown-preview .source.c .variable.other.dot-access,
+.ever-notedown-preview .source.c\+\+ .variable.other.dot-access {
+  color: #839496;
+}
+.ever-notedown-preview .source.c .variable.parameter.preprocessor,
+.ever-notedown-preview .source.c\+\+ .variable.parameter.preprocessor {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.css .entity.name {
+  color: #859900;
+}
+.ever-notedown-preview .source.css .punctuation.section {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.css .punctuation.separator {
+  color: #839496;
+}
+.ever-notedown-preview .source.css .punctuation.terminator {
+  color: #839496;
+}
+.ever-notedown-preview .source.css .punctuation.definition.entity {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.css .punctuation.definition.constant {
+  color: #839496;
+}
+.ever-notedown-preview .source.css .brace {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.css .variable {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.css .attribute-name.class {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.css .property-name {
+  color: #b58900;
+}
+.ever-notedown-preview .source.css .property-value {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.css .unit {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.css .support.function {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.css .rgb-value {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.css .id {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.css .pseudo-element {
+  color: #cb4b16;
+}
+.ever-notedown-preview .source.css .pseudo-class {
+  color: #cb4b16;
+}
+.ever-notedown-preview .source.css .pseudo-class.attribute-name {
+  color: #cb4b16;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .git-line-modified {
+  border-left: 2px solid #b58900;
+  padding-left: calc(0.5em - 2px);
+  color: #839496;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .git-line-added {
+  border-left: 2px solid #859900;
+  padding-left: calc(0.5em - 2px);
+  color: #839496;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .git-line-removed {
+  border-left: 2px solid #dc322f;
+  padding-left: calc(0.5em - 2px);
+  color: #839496;
+}
+.ever-notedown-preview .source.js .constant {
+  color: #859900;
+}
+.ever-notedown-preview .source.js .comma {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .support.class {
+  color: #859900;
+}
+.ever-notedown-preview .source.js .entity.name.type {
+  color: #b58900;
+}
+.ever-notedown-preview .source.js .entity.name {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .meta.brace {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .keyword {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .keyword.operator.new {
+  color: #859900;
+}
+.ever-notedown-preview .source.js .keyword.control {
+  color: #859900;
+}
+.ever-notedown-preview .source.js .keyword.control.regexp {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.js .variable {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.js .variable.parameter {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .regexp {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.js .support.function {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .support.constant {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .constant.numeric {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .punctuation.terminator.statement {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .meta.delimiter.method.period {
+  color: #839496;
+}
+.ever-notedown-preview .source.js .meta.brace.square {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.js .meta.brace.curly {
+  color: #268bd2;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.linter-warning .icon-right:before {
+  color: #b58900;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gutter .line-number.linter-error .icon-right:before {
+  color: #dc322f;
+}
+.ever-notedown-preview .evnd-fenced-code-block .highlights .linter-warning .region {
+  border: 1px solid #b58900;
+  background-image: none;
+  background-color: rgba(181, 137, 0, 0.2);
+}
+.ever-notedown-preview .evnd-fenced-code-block .highlights .linter-error .region {
+  border: 1px solid #dc322f;
+  background-image: none;
+  background-color: rgba(255, 16, 12, 0.2);
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .markup.italic {
+  font-style: italic;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .markup.bold {
+  font-weight: bold;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .markup.heading {
+  color: #cb4b16;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .link {
+  color: #2aa198;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .link .entity {
+  color: #6c71c4;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm .raw {
+  font-style: italic;
+}
+.ever-notedown-preview .evnd-fenced-code-block .gfm.support {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.php .storage.type.class {
+  color: #b58900;
+}
+.ever-notedown-preview .source.php .storage.type.function {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.php .storage.modifier {
+  color: #b58900;
+}
+.ever-notedown-preview .source.php .entity.name.type.class {
+  color: #839496;
+}
+.ever-notedown-preview .source.php .entity.name.function {
+  color: #839496;
+}
+.ever-notedown-preview .source.php .entity.other {
+  color: #839496;
+}
+.ever-notedown-preview .source.php .variable {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.php .punctuation.definition {
+  color: #839496;
+}
+.ever-notedown-preview .source.php .punctuation.definition.comment {
+  color: #586e75;
+}
+.ever-notedown-preview .source.php .punctuation.definition.array {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.php .punctuation.definition.string {
+  color: #839496;
+}
+.ever-notedown-preview .source.php .punctuation.definition.variable {
+  color: #859900;
+}
+.ever-notedown-preview .source.php .punctuation.section.scope {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.php .support.function.construct {
+  color: #b58900;
+}
+.ever-notedown-preview .source.php .support.function.array {
+  color: #859900;
+}
+.ever-notedown-preview .source.php .keyword.operator.class {
+  color: #b58900;
+}
+.ever-notedown-preview .source.php .keyword.operator.assignment {
+  color: #859900;
+}
+.ever-notedown-preview .source.php .keyword.other {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.python .entity {
+  color: #839496;
+}
+.ever-notedown-preview .source.python .entity.name {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.python .entity.other {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.python .function {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.python .function.magic {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.python .punctuation.string {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.python .keyword.operator {
+  color: #839496;
+}
+.ever-notedown-preview .source.python .keyword.operator.quantifier {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.python .keyword.operator.logical {
+  color: #859900;
+}
+.ever-notedown-preview .source.python .keyword.control.import {
+  color: #cb4b16;
+}
+.ever-notedown-preview .source.python .keyword.other {
+  color: #859900;
+}
+.ever-notedown-preview .source.python .constant.language {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.python .constant.character {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.python .constant.other {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.python .entity.name.type.class {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.python .variable {
+  color: #839496;
+}
+.ever-notedown-preview .source.python .support.function.builtin {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.python .support.type.exception.python {
+  color: #b58900;
+}
+.ever-notedown-preview .source.python .support.type.python {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.python .storage.type.string {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.python .storage.type.class {
+  color: #859900;
+}
+.ever-notedown-preview .source.python .storage.type.class.todo {
+  color: #d33682;
+}
+.ever-notedown-preview .source.python .storage.type.function {
+  color: #859900;
+}
+.ever-notedown-preview .source.python .punctuation.definition.parameters {
+  color: #839496;
+}
+.ever-notedown-preview .source.python .punctuation.section.function.begin {
+  color: #839496;
+}
+.ever-notedown-preview .source.python .punctuation.separator.parameters {
+  color: #839496;
+}
+.ever-notedown-preview .source.ruby .meta.embedded .punctuation.section {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.ruby .punctuation.definition {
+  color: #839496;
+}
+.ever-notedown-preview .source.ruby .punctuation.definition.string {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.ruby .punctuation.definition.comment {
+  color: #586e75;
+}
+.ever-notedown-preview .source.ruby .entity.inherited-class {
+  color: #b58900;
+}
+.ever-notedown-preview .source.ruby .variable.parameter {
+  color: #839496;
+}
+.ever-notedown-preview .source.ruby .variable.constant {
+  color: #b58900;
+}
+.ever-notedown-preview .source.ruby .instance .punctuation.definition {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.ruby .class {
+  color: #b58900;
+}
+.ever-notedown-preview .source.ruby .class.control {
+  color: #839496;
+}
+.ever-notedown-preview .source.ruby .module {
+  color: #b58900;
+}
+.ever-notedown-preview .source.ruby .require .keyword.other.special-method {
+  color: #cb4b16;
+}
+.ever-notedown-preview .source.ruby .keyword.other.special-method {
+  color: #cb4b16;
+}
+.ever-notedown-preview .source.ruby .keyword.other {
+  color: #859900;
+}
+.ever-notedown-preview .source.ruby .keyword.control {
+  color: #859900;
+}
+.ever-notedown-preview .source.ruby .special-method {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.ruby .symbol {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.ruby .symbol .punctuation.definition {
+  color: #2aa198;
+}
+.ever-notedown-preview .source.ruby .hashkey {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.ruby .hashkey .punctuation.definition {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.ruby .string.regexp {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.ruby .todo {
+  color: #d33682;
+}
+.ever-notedown-preview .source.ruby .variable.ruby.global {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.ruby .variable.ruby.global .punctuation {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.ruby .variable.block {
+  color: #268bd2;
+}
+.ever-notedown-preview .source.ruby .punctuation.separator {
+  color: #839496;
+}
+.ever-notedown-preview .source.ruby .string.interpolated .embedded.line.ruby .punctuation .source.ruby {
+  color: #dc322f;
+}
+.ever-notedown-preview .source.ruby .string.interpolated .embedded.line.ruby .source.ruby {
+  color: #839496;
+}
+.ever-notedown-preview .source.ruby .string.interpolated .embedded.line.ruby .source.ruby .punctuation.array,
+.ever-notedown-preview .source.ruby .string.interpolated .embedded.line.ruby .source.ruby .punctuation.function {
+  color: #839496;
+}
+.ever-notedown-preview .source.ruby .support.function {
+  color: #839496;
+}
+.ever-notedown-preview .source.ruby .support.function.kernel {
+  color: #859900;
+}
+.ever-notedown-preview .source.scala .variable {
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .declaration {
+  color: #93a1a1;
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .comparison {
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .class,
+.ever-notedown-preview .source.scala .type {
+  color: #b58900;
+}
+.ever-notedown-preview .source.scala .val {
+  font-weight: normal;
+}
+.ever-notedown-preview .source.scala .variable {
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .variable.parameter {
+  color: #6c71c4;
+  font-weight: normal;
+}
+.ever-notedown-preview .source.scala .control.flow {
+  color: #93a1a1;
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .constant.language {
+  color: #93a1a1;
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .function.declaration {
+  color: #6c71c4;
+}
+.ever-notedown-preview .source.scala .modifier.other {
+  font-weight: bold;
+}
+.ever-notedown-preview .source.scala .package {
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .variable.import {
+  font-weight: normal;
+}
+.ever-notedown-preview .source.scala .type .bounds,
+.ever-notedown-preview .source.scala .type .class {
+  color: #6c71c4;
+}
+.ever-notedown-preview .source.scala .documentation :not(.embedded).link.entity {
+  color: #268bd2;
+  text-decoration: underline;
+}
+.ever-notedown-preview .source.scala .documentation :not(.embedded) .class,
+.ever-notedown-preview .source.scala .documentation :not(.embedded) .parameter {
+  color: #93a1a1;
+}
+.ever-notedown-preview .source.scala .documentation :not(.embedded) .description {
+  color: #586e75;
+}
+.ever-notedown-preview .source.scala .embedded {
+  color: #93a1a1;
+  opacity: 0.8;
+  font-style: italic;
+}
+.ever-notedown-preview .source.scala .embedded .margin,
+.ever-notedown-preview .source.scala .embedded .delimiters {
+  font-style: normal;
+}
+.ever-notedown-preview .terminal {
+  background-color: #002b36;
+}
+.ever-notedown-preview .terminal .color-0 {
+  color: #839496;
+}
+.ever-notedown-preview .terminal .background-0 {
+  background-color: #002b36;
+}
+.ever-notedown-preview .terminal .color-1 {
+  color: #dc322f;
+}
+.ever-notedown-preview .terminal .background-1 {
+  background-color: #dc322f;
+}
+.ever-notedown-preview .terminal .color-2 {
+  color: #859900;
+}
+.ever-notedown-preview .terminal .background-2 {
+  background-color: #859900;
+}
+.ever-notedown-preview .terminal .color-3 {
+  color: #b58900;
+}
+.ever-notedown-preview .terminal .background-3 {
+  background-color: #b58900;
+}
+.ever-notedown-preview .terminal .color-4 {
+  color: #268bd2;
+}
+.ever-notedown-preview .terminal .background-4 {
+  background-color: #268bd2;
+}
+.ever-notedown-preview .terminal .color-5 {
+  color: #d33682;
+}
+.ever-notedown-preview .terminal .background-5 {
+  background-color: #d33682;
+}
+.ever-notedown-preview .terminal .color-6 {
+  color: #2aa198;
+}
+.ever-notedown-preview .terminal .background-6 {
+  background-color: #2aa198;
+}
+.ever-notedown-preview .terminal .color-7 {
+  color: #fdf6e3;
+}
+.ever-notedown-preview .terminal .background-7 {
+  background-color: #fdf6e3;
+}
+.ever-notedown-preview .evnd-fenced-code-block .wrap-guide {
+  background-color: #073642;
+}

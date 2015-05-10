@@ -1,0 +1,100 @@
+"bold": [
+    "{\\bf #1}"
+    1
+]
+"e": [
+    "\\mathrm{e}"
+]
+"vf": [
+    "\\varphi"
+]
+"ve": [
+    "\\varepsilon"
+]
+"ZZ": [
+    "\\mathbb{Z}"
+]
+"NN": [
+    "\\mathbb{N}"
+]
+"QQ": [
+    "\\mathbb{Q}"
+]
+"RR": [
+    "\\mathbb{R}"
+]
+"CC": [
+    "\\mathbb{C}"
+]
+"myset": [
+    "\\left\\{ #1 \\ \\middle| \\ #2 \\right\\} "
+    2
+]
+"abs": [
+    "\\left| #1 \\right|"
+    1
+]
+"avg": [
+    "\\left\\langle #1 \\right\\rangle"
+    1
+]
+"diff": [
+    "\\mathrm{d}"
+]
+"ud": [
+    "\\text{d}"
+]
+"defint": [
+    "\\int\\limits_{#1}^{#2} #3 \\\\ud #4"
+    4
+]
+"d": [
+    "\\frac{\\text{d} #1}{\\text{d} #2}"
+    2
+]
+"dd": [
+    "\\frac{\\text{d}^2 #1}{\\text{d} #2^2}"
+    2
+]
+"pd": [
+    "\\frac{\\partial #1}{\\partial #2}"
+    2
+]
+"pdd": [
+    "\\frac{\\partial^2 #1}{\\partial #2^2}"
+    2
+]
+"pdc": [
+    "\\left( \\frac{\\partial #1}{\\partial #2}\\right)_{#3}"
+    3
+]
+"uv": [
+    "\\mathbf{\\hat #1}"
+    1
+]
+"La": [
+    "\\mathscr{L} \\left\\{ #1 \\right\\}"
+    1
+]
+"invLa": [
+    "\\mathscr{L}^{-1}\\left\\{ #1 \\right\\}"
+    1
+]
+"christoffel": [
+    "\\Gamma^{#1#2}_{#3}"
+    3
+]
+"=": [
+    "\\stackrel{#1}{=}"
+    1
+]
+"ul": [
+    "\\underline #1"
+    1
+]
+"ol": [
+    "\\overline #1"
+    1
+]
+
+

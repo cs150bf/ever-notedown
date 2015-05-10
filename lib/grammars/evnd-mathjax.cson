@@ -1,0 +1,63 @@
+'name': 'Ever Notedown - GFM Extended (MathJax)'
+'scopeName': 'text.markdown.evnd.mathjax.source.gfm.inline.html'
+'fileTypes': [
+  'markdown'
+  'md'
+  'mdown'
+  'mkd'
+  'mkdown'
+  'rmd'
+  'ron'
+]
+'patterns': [
+  {
+    'include': 'evnd.inline.html'
+  }
+  {
+    'include': 'source.gfm'
+  }
+  {
+    'match': '!?(\\{)([^\\}]*)(\\})((\\()[^\\)]+(\\)))'
+    'name': 'link'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.begin.gfm'
+      '2':
+        'name': 'entity.gfm'
+      '3':
+        'name': 'punctuation.definition.end.gfm'
+      '4':
+        'name': 'markup.underline.link.gfm'
+      '5':
+        'name': 'punctuation.definition.begin.gfm'
+      '6':
+        'name': 'punctuation.definition.end.gfm'
+  }
+  {
+    'match': '(\\$)(?!=\\$)([^\\$]+?)(\\$)(?!\\$)'
+    'name': 'string.other.math.latex'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.tag'
+      '2':
+        'name': 'markup.mathjax.inline.string.quoted'
+      '3':
+        'name': 'punctuation.definition.tag'
+  }
+  {
+    'begin': '\\$\\$(?!\\$)'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.tag'
+    'end': '\\$\\$(?!\\$)'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.tag'
+    'name': 'markup.mathjax.string.quoted'
+    'contentName': 'markup.math.mathjax.latex.string.quoted'
+  }
+  {
+    'match': '^\\s*?\\[(?:TOC|toc)\\]\\s*?$'
+    'name': 'markup.keyword.bold.heading.toc'
+  }
+]

@@ -1,0 +1,111 @@
+.source.ruby {
+
+  .meta.embedded {
+    .punctuation.section {
+      color: @red;
+    }
+  }
+  .punctuation.definition {
+    color: @syntax-text-color;
+    &.string {
+      color: @red;
+    }
+  }
+  .punctuation.definition.comment {
+    color: @syntax-comment-color;
+  }
+  .entity.inherited-class {
+    color: @yellow;
+  }
+  .variable {
+    &.parameter {
+      color: @syntax-text-color;
+    }
+  }
+  .variable.constant {
+    color: @yellow;
+  }
+  .instance {
+    .punctuation.definition {
+      color: @blue;
+    }
+  }
+  .class {
+    color: @yellow;
+    &.control {
+      color: @syntax-text-color;
+    }
+  }
+  .module {
+    color: @yellow;
+  }
+  .require {
+    .keyword.other.special-method {
+      color: @orange;
+    }
+  }
+  .keyword.other.special-method {
+    color: @orange;
+  }
+  .keyword.other {
+    color: @green;
+  }
+  .keyword.control {
+    color: @green;
+  }
+  .special-method {
+    color: @blue;
+  }
+  .symbol {
+    color: @cyan;
+    .punctuation.definition {
+      color: @cyan;
+    }
+  }
+  .hashkey {
+    color: @red;
+    .punctuation.definition {
+      color: @red;
+    }
+  }
+  .string.regexp {
+    color: @red;
+  }
+  .todo {
+    color: @magenta;
+  }
+  .variable.ruby.global {
+    color: @blue;
+    .punctuation {
+      color: @blue;
+    }
+  }
+  .variable.block {
+    color: @blue;
+  }
+  .punctuation.separator {
+    color: @syntax-text-color;
+  }
+  .string.interpolated {
+    .embedded.line.ruby {
+      .punctuation {
+        .source.ruby {
+          color: @red;
+        }
+      }
+      .source.ruby {
+        .punctuation.array,
+        .punctuation.function {
+          color: @syntax-text-color;
+        }
+        color: @syntax-text-color;
+      }
+    }
+  }
+  .support.function {
+    color: @syntax-text-color;
+  }
+  .support.function.kernel {
+    color: @green;
+  }
+}

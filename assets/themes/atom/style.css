@@ -1,0 +1,739 @@
+.ever-notedown-preview {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #fff;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 20px;
+  /*
+  a.footnote {
+    font-size: 10px;
+    vertical-align: top;
+  }
+  */
+}
+.ever-notedown-preview code {
+  color: #333;
+}
+.ever-notedown-preview code,
+.ever-notedown-preview tt,
+.ever-notedown-preview .evnd-fenced-code-block {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+.ever-notedown-preview a,
+.ever-notedown-preview a code {
+  color: #4183c4;
+}
+.ever-notedown-preview ol > li {
+  list-style-type: decimal;
+}
+.ever-notedown-preview ul > li {
+  list-style-type: disc;
+}
+.ever-notedown-preview li > .evnd-fenced-code-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+.ever-notedown-preview li:last-child > .evnd-fenced-code-block {
+  margin-bottom: 0;
+}
+.ever-notedown-preview > *:first-child {
+  margin-top: 0 !important;
+}
+.ever-notedown-preview > *:last-child {
+  margin-bottom: 0 !important;
+}
+.ever-notedown-preview a.absent {
+  color: #c00;
+}
+.ever-notedown-preview a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.ever-notedown-preview h1,
+.ever-notedown-preview h2,
+.ever-notedown-preview h3,
+.ever-notedown-preview h4,
+.ever-notedown-preview h5,
+.ever-notedown-preview h6 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 20px 0 10px;
+  padding: 0 0 10px 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+.ever-notedown-preview h1 .octicon-link,
+.ever-notedown-preview h2 .octicon-link,
+.ever-notedown-preview h3 .octicon-link,
+.ever-notedown-preview h4 .octicon-link,
+.ever-notedown-preview h5 .octicon-link,
+.ever-notedown-preview h6 .octicon-link {
+  display: none;
+  color: #000;
+}
+.ever-notedown-preview h1:hover a.anchor,
+.ever-notedown-preview h2:hover a.anchor,
+.ever-notedown-preview h3:hover a.anchor,
+.ever-notedown-preview h4:hover a.anchor,
+.ever-notedown-preview h5:hover a.anchor,
+.ever-notedown-preview h6:hover a.anchor {
+  text-decoration: none;
+  line-height: 1;
+  padding-left: 0;
+  margin-left: -22px;
+  top: 15%;
+}
+.ever-notedown-preview h1:hover a.anchor .octicon-link,
+.ever-notedown-preview h2:hover a.anchor .octicon-link,
+.ever-notedown-preview h3:hover a.anchor .octicon-link,
+.ever-notedown-preview h4:hover a.anchor .octicon-link,
+.ever-notedown-preview h5:hover a.anchor .octicon-link,
+.ever-notedown-preview h6:hover a.anchor .octicon-link {
+  display: inline-block;
+}
+.ever-notedown-preview h1 tt,
+.ever-notedown-preview h2 tt,
+.ever-notedown-preview h3 tt,
+.ever-notedown-preview h4 tt,
+.ever-notedown-preview h5 tt,
+.ever-notedown-preview h6 tt,
+.ever-notedown-preview h1 code,
+.ever-notedown-preview h2 code,
+.ever-notedown-preview h3 code,
+.ever-notedown-preview h4 code,
+.ever-notedown-preview h5 code,
+.ever-notedown-preview h6 code {
+  font-size: inherit;
+}
+.ever-notedown-preview h1 {
+  font-size: 28px;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+.ever-notedown-preview h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #eee;
+  color: #000;
+}
+.ever-notedown-preview h3 {
+  font-size: 18px;
+}
+.ever-notedown-preview h4 {
+  font-size: 16px;
+}
+.ever-notedown-preview h5 {
+  font-size: 14px;
+}
+.ever-notedown-preview h6 {
+  color: #777;
+  font-size: 14px;
+}
+.ever-notedown-preview p,
+.ever-notedown-preview blockquote,
+.ever-notedown-preview ul,
+.ever-notedown-preview ol,
+.ever-notedown-preview dl,
+.ever-notedown-preview table,
+.ever-notedown-preview .evnd-fenced-code-block {
+  margin: 15px 0;
+}
+.ever-notedown-preview hr {
+  background: transparent url("atom://markdown-preview/assets/hr.png") repeat-x 0 0;
+  border: 0 none;
+  color: #ccc;
+  height: 4px;
+  padding: 0;
+  margin: 15px 0;
+}
+.ever-notedown-preview > h2:first-child,
+.ever-notedown-preview > h1:first-child,
+.ever-notedown-preview > h1:first-child + h2,
+.ever-notedown-preview > h3:first-child,
+.ever-notedown-preview > h4:first-child,
+.ever-notedown-preview > h5:first-child,
+.ever-notedown-preview > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.ever-notedown-preview a:first-child h1,
+.ever-notedown-preview a:first-child h2,
+.ever-notedown-preview a:first-child h3,
+.ever-notedown-preview a:first-child h4,
+.ever-notedown-preview a:first-child h5,
+.ever-notedown-preview a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.ever-notedown-preview h1 + p,
+.ever-notedown-preview h2 + p,
+.ever-notedown-preview h3 + p,
+.ever-notedown-preview h4 + p,
+.ever-notedown-preview h5 + p,
+.ever-notedown-preview h6 + p {
+  margin-top: 0;
+}
+.ever-notedown-preview li p.first {
+  display: inline-block;
+}
+.ever-notedown-preview ul,
+.ever-notedown-preview ol {
+  padding-left: 30px;
+}
+.ever-notedown-preview ul.no-list,
+.ever-notedown-preview ol.no-list {
+  list-style-type: none;
+  padding: 0;
+}
+.ever-notedown-preview ul li > :first-child,
+.ever-notedown-preview ol li > :first-child,
+.ever-notedown-preview ul li ul:first-of-type,
+.ever-notedown-preview ol li ul:first-of-type {
+  margin-top: 0;
+}
+.ever-notedown-preview ul ul,
+.ever-notedown-preview ul ol,
+.ever-notedown-preview ol ol,
+.ever-notedown-preview ol ul {
+  margin-bottom: 0;
+}
+.ever-notedown-preview dl {
+  padding: 0;
+}
+.ever-notedown-preview dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+.ever-notedown-preview dl dt:first-child {
+  padding: 0;
+}
+.ever-notedown-preview dl dt > :first-child {
+  margin-top: 0;
+}
+.ever-notedown-preview dl dt > :last-child {
+  margin-bottom: 0;
+}
+.ever-notedown-preview dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+.ever-notedown-preview dl dd > :first-child {
+  margin-top: 0;
+}
+.ever-notedown-preview dl dd > :last-child {
+  margin-bottom: 0;
+}
+.ever-notedown-preview blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+.ever-notedown-preview blockquote > :first-child {
+  margin-top: 0;
+}
+.ever-notedown-preview blockquote > :last-child {
+  margin-bottom: 0;
+}
+.ever-notedown-preview blockquote p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.ever-notedown-preview table th {
+  font-weight: bold;
+}
+.ever-notedown-preview table th,
+.ever-notedown-preview table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+.ever-notedown-preview table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+.ever-notedown-preview table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.ever-notedown-preview img {
+  max-width: 100%;
+}
+.ever-notedown-preview span.frame {
+  display: block;
+  overflow: hidden;
+}
+.ever-notedown-preview span.frame > span {
+  border: 1px solid #ddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+.ever-notedown-preview span.frame span img {
+  display: block;
+  float: left;
+}
+.ever-notedown-preview span.frame span span {
+  clear: both;
+  color: #333;
+  display: block;
+  padding: 5px 0 0;
+}
+.ever-notedown-preview span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.ever-notedown-preview span.align-center > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+.ever-notedown-preview span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+.ever-notedown-preview span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.ever-notedown-preview span.align-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+.ever-notedown-preview span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+.ever-notedown-preview span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+.ever-notedown-preview span.float-left span {
+  margin: 13px 0 0;
+}
+.ever-notedown-preview span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+.ever-notedown-preview span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+.ever-notedown-preview code,
+.ever-notedown-preview tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  text-shadow: none;
+}
+.ever-notedown-preview .evnd-fenced-code-block {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+  background: #ececec;
+}
+.ever-notedown-preview .evnd-fenced-code-block .line {
+  display: block;
+}
+.ever-notedown-preview kbd {
+  background-color: #dddddd;
+  background-image: linear-gradient(#f1f1f1, #dddddd);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  border-bottom-color: #ccc;
+  border-right-color: #ccc;
+  padding: 1px 4px;
+  line-height: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ever-notedown-preview .emoji {
+  height: 20px;
+  width: 20px;
+}
+.ever-notedown-preview .table-of-contents {
+  list-style-type: none;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.ever-notedown-preview .table-of-contents ul {
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 0;
+  border-left: 1px solid #ccc;
+}
+.ever-notedown-preview .table-of-contents li {
+  list-style-type: none;
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px dashed #ccc;
+}
+.ever-notedown-preview .table-of-contents li:last-child {
+  border-bottom: 1px dashed #ccc;
+}
+.ever-notedown-preview .table-of-contents span a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 80%;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.ever-notedown-preview .table-of-contents span a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+.ever-notedown-preview .evnd-toc-div {
+  display: block;
+  width: 100%;
+}
+.ever-notedown-preview .toc-level-1 > li {
+  border-left: none;
+  border-bottom: 1px solid #ccc;
+}
+.ever-notedown-preview ul.toc-level-1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ever-notedown-preview .footnotes {
+  margin-top: 60px;
+}
+.ever-notedown-preview .footnotes hr {
+  border-top: 1px solid #000000;
+  color: #000000;
+}
+.ever-notedown-preview table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.ever-notedown-preview table {
+  max-width: 100%;
+  background-color: transparent;
+}
+.ever-notedown-preview th {
+  text-align: left;
+}
+.ever-notedown-preview table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+.ever-notedown-preview table td[class*="col-"],
+.ever-notedown-preview table th[class*="col-"] {
+  float: none;
+  display: table-cell;
+}
+.ever-notedown-preview .evnd-function-buttons {
+  display: inline-block;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 470px;
+  height: 50px;
+  padding-left: 20px;
+  margin: 15px 10px 20px 0px;
+  vertical-align: middle;
+  background: transparent;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div > span {
+  font-style: normal;
+  text-align: center;
+  color: #fcfcfc;
+  background: #33373c;
+  background-clip: padding-box;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  min-width: 110px;
+  right: 20%;
+  padding: 5px 0;
+  top: 87%;
+  margin-top: 5px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s linear;
+  -moz-transition: opacity 0.25s linear;
+  -ms-transition: opacity 0.25s linear;
+  -o-transition: opacity 0.25s linear;
+  transition: opacity 0.25s linear;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div > span:before,
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div > i:after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 100%;
+  left: 80%;
+  margin-left: -10px;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div > span:before {
+  border-bottom: 10px solid #33373c;
+  z-index: 1;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div:hover > span {
+  visibility: visible;
+  opacity: 0.85;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div-disabled:hover > span {
+  opacity: 0.5;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div-hidden {
+  visibility: hidden;
+}
+.ever-notedown-preview .evnd-function-buttons .evnd-button-div-hidden > button {
+  visibility: hidden;
+}
+.ever-notedown-preview .evnd-function-buttons button {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  padding: 8px 9px;
+  color: #6e7681;
+}
+.ever-notedown-preview .evnd-function-buttons button:hover {
+  background: rgba(211, 216, 220, 0.7);
+  border: 1px solid rgba(211, 216, 220, 0.85);
+  opacity: 0.95;
+  color: #3F4142;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-yellow {
+  color: #fadb60;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-yellow:hover {
+  color: #edbe07;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-red {
+  color: #b25656;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-red:hover {
+  color: #6f3333;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div {
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div .button-icon {
+  font-size: 100%;
+  opacity: 0.85;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-evernote {
+  font-size: 120%;
+  position: absolute;
+  top: -18%;
+  left: -18%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-pull {
+  font-size: 125%;
+  position: absolute;
+  top: 17%;
+  left: 18%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-info::before {
+  font-size: 20px;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-eye::before,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-home::before {
+  font-size: 19px;
+  position: absolute;
+  top: 18%;
+  left: 15%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-html::before,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-enml::before,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-folder::before {
+  font-size: 19px;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-html,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-enml,
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-folder {
+  position: absolute;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-html {
+  left: 18%;
+  top: 0%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-enml {
+  left: 10%;
+  top: 15%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div #button-icon-folder {
+  left: 15%;
+  top: 20%;
+}
+.ever-notedown-preview .evnd-function-buttons button .button-icon-div .faded {
+  opacity: 0.3;
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-button-disabled {
+  color: #b2b6bd;
+  background: rgba(255, 255, 255, 0.5);
+}
+.ever-notedown-preview .evnd-function-buttons button.evnd-button-disabled:hover {
+  color: #b2b6bd;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.ever-notedown-preview .evnd-function-buttons #evernote-syncing,
+.ever-notedown-preview .evnd-function-buttons #pull-syncing {
+  visibility: hidden;
+}
+.ever-notedown-preview .note-meta-info {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+.ever-notedown-preview .note-meta-info .note-meta-info-content {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+}
+.ever-notedown-preview .note-meta-info .note-tag {
+  background-color: #6e7681;
+  color: #fcfcfc;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+.ever-notedown-preview .note-meta-info .note-title {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border-bottom: 1px dashed;
+}
+.ever-notedown-preview .en-media,
+.ever-notedown-preview .attachments {
+  display: inline-block;
+  width: 350px;
+  height: 50px;
+  padding: 0 0;
+  margin: 5px 5px;
+  text-align: left;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: #f6f6f6;
+  white-space: normal;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.ever-notedown-preview .en-media span.icon:before,
+.ever-notedown-preview .attachments span.icon:before {
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  float: left;
+  margin: 12px 2px 12px 10px;
+}
+.ever-notedown-preview .en-media embed,
+.ever-notedown-preview .attachments embed {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin: 2px 3px;
+}
+.ever-notedown-preview .en-media span.file-path,
+.ever-notedown-preview .attachments span.file-path,
+.ever-notedown-preview .en-media p,
+.ever-notedown-preview .attachments p {
+  vertical-align: middle;
+  margin-top: 2px;
+  margin-left: 40px;
+  margin-bottom: 2px;
+  padding: 0 0;
+  width: 250px;
+  height: 30px;
+  white-space: normal;
+  word-wrap: break-word;
+  position: absolute;
+}
+.ever-notedown-preview .en-media span.file-path a,
+.ever-notedown-preview .attachments span.file-path a,
+.ever-notedown-preview .en-media p a,
+.ever-notedown-preview .attachments p a {
+  white-space: normal;
+  word-wrap: break-word;
+  width: 250px;
+}
+.ever-notedown-preview [tooltip]:before {
+  content: attr(tooltip);
+  position: absolute;
+  opacity: 0;
+  height: 30px;
+  min-width: 110px;
+  width: auto;
+  transition: all 0.15s ease;
+  padding: 5px;
+  color: #fcfcfc;
+  border-radius: 5px;
+}
+.ever-notedown-preview [tooltip]:hover:before {
+  opacity: 1;
+  background: #575d65;
+  margin-top: 20px;
+  margin-left: -80px;
+}
+.ever-notedown-preview [tooltip]:not([tooltip-persistent]):before {
+  pointer-events: none;
+}

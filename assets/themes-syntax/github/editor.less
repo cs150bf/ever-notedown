@@ -1,0 +1,55 @@
+@import "syntax-variables";
+
+.evnd-fenced-code-block {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number.cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
+      color: @syntax-gutter-text-color-selected;
+    }
+
+    .line-number.cursor-line-no-selection {
+      color: @syntax-gutter-text-color-selected;
+    }
+  }
+
+  .wrap-guide {
+    color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: @syntax-result-marker-color;
+  }
+
+  .search-results .marker.current-result .region {
+    border: @syntax-result-marker-color-selected;
+  }
+
+  &.is-focused .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  &.is-focused .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  &.is-focused .line-number.cursor-line-no-selection,
+  &.is-focused .line.cursor-line{
+    background-color: rgba(0, 0, 0, 0.07);
+  }
+}
+
