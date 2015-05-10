@@ -1,5 +1,5 @@
 {
-  "name": "EVND (Ever Notedown)",
+  "name": "ever-notedown",
   "main": "./lib/ever-notedown",
   "version": "0.0.0",
   "description": "Edit Evernote notes in Atom with Markdown via AppleScript (OSX only)",
