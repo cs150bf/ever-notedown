@@ -34,7 +34,7 @@
     "temp": "^0.7.0",
     "underscore-plus": "^1.0.0",
     "cheerio": "^0.18.0",
-    "inline-css": "cs150bf/inline-css",
+    "inline-css": "git://github.com/cs150bf/ever-notedown",
     "mime": "*",
     "season": "^5.0.2"
   }
