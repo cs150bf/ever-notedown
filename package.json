@@ -1,7 +1,7 @@
 {
   "name": "ever-notedown",
   "main": "./lib/ever-notedown",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Edit Evernote notes in Atom with Markdown via AppleScript (OSX only)",
   "repository": "https://github.com/cs150bf/ever-notedown",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "productivity"
   ],
   "dependencies": {
-    "moment" : "^2.9.0",
+    "moment": "^2.9.0",
     "git-utils": "^3.0.0",
     "atom-space-pen-views": "^2.0.3",
     "fs-plus": "^2.0.0",
