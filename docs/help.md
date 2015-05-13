@@ -1,6 +1,6 @@
 
 This is an Atom plugin for editing Evernote notes in Markdown format that works with the Evernote Mac client via AppleScript.
-> This doc is intended to be viewed in Atom with EVND. To see the result as a rendered note in Evernote, see [this sample note](https://www.evernote.com/l/AER4LWAANh9JY7PBhP9q8rYllx9Znkw5zY8). If you are currently viewing this note on `www.evernote.com`, it's recommended that you use `View in Evernote` to view with your Evernote Mac Client.    
+> This doc is intended to be viewed in Atom with EVND. To see the result as a rendered note in Evernote, see [this sample note](https://www.evernote.com/l/AER4LWAANh9JY7PBhP9q8rYllx9Znkw5zY8). If you are currently viewing this note on `www.evernote.com`, it's recommended that you use `Save to Evernote` to view with your Evernote Mac Client.   
 
 
 [TOC]
@@ -17,7 +17,7 @@ This is an Atom plugin for editing Evernote notes in Markdown format.
 
 - **OS X only** (See `Installation` and `Status` section for more info)
 - **Local note editing**: 
-  - This plugin works by communicating to the Evernote OSX Client via AppleScript, so all the work is done on your local machine, no authorization required.
+  - This plugin works by communicating with the Evernote OSX Client via AppleScript, so all the work is done on your local machine, no authorization required.
 - **2-way editing (...ish)**
   - Edit notes in EVND or in Evernote, and sync changes... to some extend.
   - Import notes from Evernote and convert to Markdown format.
