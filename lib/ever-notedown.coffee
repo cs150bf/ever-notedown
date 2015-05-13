@@ -1617,10 +1617,14 @@ module.exports =
                 editor.setText(textContent)
               else
                 openNewNoteOptions = {addPreview:false, split: "right", activatePane: true}
+                visibleScreenRowRange = editor.getVisibleRowRange()
                 @openNewNote textContent, openNewNoteOptions, (newEditor) =>
-                  row1 = parseInt(editor.getFirstVisibleScreenRow())
-                  row2 = parseInt(editor.getLastVisibleScreenRow())
-                  newEditor.scrollToScreenPosition [(row1 + row2)/2, 0], {center: true}
+                  row1 = visibleScreenRowRange[0]
+                  row2 = visibleScreenRowRange[1]
+                  try
+                    newEditor.scrollToScreenPosition [parseInt((row1 + row2)/2), 0], {center: true}
+                  catch e
+                    console.log e
               break
 
             if openNoteOptions.addPreview
