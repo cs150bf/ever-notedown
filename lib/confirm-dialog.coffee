@@ -128,14 +128,6 @@ class ConfirmDialog extends View
     resolve = =>
       @editor = @editorForId(editorId)
 
-      if @editor?
-        @emitter.emit 'did-change-title' if @editor?
-        #@handleEvents()
-      else
-        # The editor this preview was created for has been closed so close
-        # this preview since a preview cannot be rendered without an editor
-        @parents('.pane').view()?.destroyItem(this)
-
     if atom.workspace?
       resolve()
     else
