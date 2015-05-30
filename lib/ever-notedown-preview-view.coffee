@@ -222,12 +222,12 @@ class EVNDPreviewView extends ScrollView
     if @file?
       @disposables.add @file.onDidChange(changeHandler)
     else if @editor?
-      @disposables.add @editor.getBuffer().onDidStopChanging =>
+      @disposables.add @editor.getBuffer().onDidStopChanging ->
         changeHandler() if atom.config.get 'ever-notedown.liveUpdate'
       @disposables.add @editor.onDidChangePath => @emitter.emit 'did-change-title'
-      @disposables.add @editor.getBuffer().onDidSave =>
+      @disposables.add @editor.getBuffer().onDidSave ->
         changeHandler() unless atom.config.get 'ever-notedown.liveUpdate'
-      @disposables.add @editor.getBuffer().onDidReload =>
+      @disposables.add @editor.getBuffer().onDidReload ->
         changeHandler() unless atom.config.get 'ever-notedown.liveUpdate'
       # TODO: add tracking for editor
       #       add editor.onDidChangeScrollTop?? (see Minimap for reference)

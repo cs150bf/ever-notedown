@@ -401,7 +401,7 @@ module.exports =
     @subscriptions.add atom.commands.add 'atom-workspace',
       'ever-notedown:toggle-break-on-single-newline': =>
         keyPath = 'ever-notedown.breakOnSingleNewline'
-        atom.config.set(keyPath, !atom.config.get(keyPath))
+        atom.config.set(keyPath, not atom.config.get(keyPath))
 
     @subscriptions.add atom.commands.add 'atom-workspace',
       'ever-notedown:view-current-note-template': =>
