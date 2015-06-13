@@ -97,6 +97,12 @@ This is an Atom plugin for editing Evernote notes in Markdown format.
 #### First Time
 If you haven't already set up the EVND local storage, it will try to create a folder at `~/.atom/evnd/` for you... or so I think. 
 
+> **Enabling spell-check:**   
+> By default, the Atom **`spell-check`** core package activates only for these grammars: `source.asciidoc`, `source.gfm`, `text.git-commit`, `text.plain`, `text.plain.null-grammar`. To enable spellcheck for custom EVND grammars, go to Atom -> Preferences -> Packages -> spell-check, and set _`Grammars`_ to:   
+>> [source.asciidoc, source.gfm, text.git-commit, text.plain, text.plain.null-grammar, source.litcoffee, text.markdown.evnd.mathjax.source.litcoffee.inline.html, text.markdown.evnd.mathjax.source.gfm.inline.html, text.markdown.evnd.source.gfm.inline.html]
+>   
+
+
 #### Activating EVND
 
 To save Atom start up time, EVND will only be automatically loaded partially when you open Atom, so there might be times when you see that elements such as `[TOC]` and mathjax equations are not rendered in preview. There are many ways to fully activate EVND, e.g.: toggling the EVND panel, opening up the drop-down EVND note list, etc. 
@@ -385,13 +391,20 @@ Barring some rare exceptions, users should not see this in EVND...
 &nbsp;  
 &nbsp;
 
+## Tips
+
+- Disable `live update` for better performance (preview will refresh upon save)
+- Consider disable auto-complete for better performance
+- Use key-bindings and snippets for faster input
+
+&nbsp;
 
 ## Credits
 
 ### Inspired by
 
-- Evernote Plugin for Sublime Text
-- MacDown
+- [Evernote Plugin for Sublime Text](https://github.com/bordaigorl/sublime-evernote)
+- [MacDown](https://github.com/uranusjr/macdown)
 - Mou Editor
 - Atom Markdown Preview
 - Markdown Preview Plus

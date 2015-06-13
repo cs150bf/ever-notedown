@@ -6,7 +6,7 @@
   "repository": "https://github.com/cs150bf/ever-notedown",
   "license": "MIT",
   "engines": {
-    "atom": ">0.197.0"
+    "atom": ">=0.202.0"
   },
   "keywords": [
     "markdown",

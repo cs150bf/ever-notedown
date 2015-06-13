@@ -3,19 +3,20 @@ Title: EVND (Ever Notedown) Notes for Developers
 
 
 
+
 Draft for EVND - Notes for Developers  
 
 &nbsp;
 
+
 [TOC]
 
-# EVND (Ever Notedown) Notes for Developers
-
+# EVND (Ever Notedown)- Notes for Developers
 
 ## Intro to Atom
 
 > **TODO:**
-> - [ ] Why Atom
+> - [ ] Why Atom?
 > - [ ] AppleScript, windows scriptibility
 > - [ ] Atom Package developement
 
@@ -33,6 +34,13 @@ Draft for EVND - Notes for Developers
 
 ### Feature Implementations
 
+- [ ] Decide whether to move to [Pagedown](https://code.google.com/p/pagedown/wiki/PageDown)
+  - Reasons to use [roaster](https://github.com/gjtorikian/roaster):
+    - It's used in the [official Atom Markdown Preview plugin](https://github.com/atom/markdown-preview)
+    - Atom/Github people will continue to work on this
+  - Reasons to use [pagedown](https://code.google.com/p/pagedown/wiki/PageDown):
+    - Used by Stack Overflow / StackEdit
+    - More features (e.g. MMD)
 - [ ] Diagrams & flowcharts
 - [ ] Syncronized scrolling (of editor pane and preview pane)
   - [ ] Ues `diff-match-patch`?
@@ -55,10 +63,26 @@ Draft for EVND - Notes for Developers
   - Extended literal Coffee:
     - [ ] Inline math equations!
     - [ ] Attachments
+- [ ] Spellcheck? 
+  - Currently the spellcheck package won't activate for files of EVND grammar [(code for spellcheck package)](https://github.com/atom/spell-check/blob/master/lib/spell-check-view.coffee)
 - [ ] UI
   - [ ] use bootstrap
   - [ ] write sane CSS
+- [ ] Use `notification` instead of `window.alert`
 - [ ] Use `cson` instead of `json` for the main EVND notes index
+- [ ] Different kind of local note storage structure?
+
+&nbsp;
+
+### Progress
+
+
+#### Spell-check
+
+The Atom core [spell-check](https://atom.io/packages/spell-check) package only activates for specific grammars. Since EVND re-defines grammar for Markdown files when enabled, we'll have to either
+
+- Tell users to add EVND grammar in the `spell-check` settings
+- Take advantage of package dependencies in `package.json` and use `atom.config.set` to change settings
 
 &nbsp;
 
@@ -68,6 +92,7 @@ Draft for EVND - Notes for Developers
 - [ ] Think of a better way of integrating GIT 
 - [ ] HTML->Markdown!
 - [ ] `Repository has been destroyed`?
+- [ ] Deprecation check?
 
 
 #### Bug details
@@ -118,3 +143,4 @@ Attempting to update the `HTML content` of a note with basically the same conten
 Barring some rare exceptions, users should not see this in EVND...  
 &nbsp;  
 &nbsp;
+
