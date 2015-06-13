@@ -916,6 +916,16 @@ module.exports =
         @subscriptions.add window.evnd.searchResultListView.onDidConfirmSearchResult (noteLink) =>
           @importFromEvernote({noteLink: noteLink})
 
+
+  handleToEvernoteError: (error, noteOptions) ->
+    message = "#{error.message} when trying to send note to Evernote"
+    detail = "Note options:\n"
+    for k, v of noteOptions
+      continue if k in ["rawHTML", "text", "css"]
+      detail += "  #{k}: #{JSON.stringify(v)}\n"
+    stack = "#{error.stack}\n"
+    atom.notifications.addError(message, {stack, detail, dismissable: true})
+
   # TODO: Handles "code snippet"
   # TODO: use selection.getScreenRange() (for code annotating?)
   #
@@ -979,11 +989,13 @@ module.exports =
         format: noteFormat
         filePath: curFilePath
         renderOptions: renderOptions ? null
-      curNote = @toEvernote options, null
 
-      # TODO: Open the written file (in the default GIT repo)
-      # TODO: Async?
-      # @openNote(curNote)
+      try
+        @toEvernote options, null, (curNote) =>
+          @openNote(curNote)
+      catch error
+        @handleToEvernoteError(error, options)
+
     else
       renderer ?= require './renderer'
       renderer.toHTML newTextContent, renderOptions.mathjax, editor.getPath(),
@@ -1010,11 +1022,12 @@ module.exports =
               format: noteFormat
               filePath: curFilePath
               renderOptions: renderOptions ? null
-            curNote = @toEvernote options, null
 
-            # TODO: Open the written file (in the default GIT repo)
-            # TODO: Async?
-            #@openNote(curNote)
+            try
+              @toEvernote options, null, (curNote) =>
+                @openNote(curNote)
+            catch error
+              @handleToEvernoteError(error, options)
 
   file2Evernote: (editor, previewView) ->
     if window.evnd.init then @loadModule()
@@ -1118,18 +1131,21 @@ module.exports =
       options.fnStem = path.basename(curFilePath, path.extname(curFilePath))
 
     # Send content to Evernote Application (create a new note or update)
-    curNote = @toEvernote options, previewView
+    try
+      @toEvernote options, previewView, (curNote) =>
+        if options.moved then @openNote(curNote)
+    catch error
+      @handleToEvernoteError(error, options)
 
     # TODO: Open the written file (in the default GIT repo)
     # TODO: Async?
     if options.moved
       for editor in atom.workspace.getTextEditors() when editor.getPath() is curFilePath
         @removePreviewForEditor(editor)
-      @openNote(curNote)
     else
       @addPreviewForEditor(editor)
 
-  toEvernote: (options, previewView) ->
+  toEvernote: (options, previewView, callback) ->
     evernoteHelper ?= require './evernote-helper'
     window.evnd.enHelper ?= new evernoteHelper.EvernoteHelper()
     # Send resulting HTML to Evernote Application (create a new note)
@@ -1138,6 +1154,7 @@ module.exports =
     # TODO: tags, other implicit info encoding, etc.
     options.update ?= false
     noteHelper ?= require './note-helper'
+
     if options.update
       curNote = noteHelper.findNote(window.evnd.noteIndex, {title: options.title, fnStem: path.basename(options.filePath, path.extname(options.filePath))})
       if curNote is null
@@ -1279,7 +1296,7 @@ module.exports =
       else
         createNoteNormal()
 
-      return curNote
+      if callback? then callback(curNote)
 
   openNewNote: (initText, options, callback) ->
     # TODO: Template?
