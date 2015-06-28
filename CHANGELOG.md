@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.2.3 - Bug fix (attempt)
+- (Attempted) to fix issue https://github.com/cs150bf/ever-notedown/issues/3
+- A rather basic patch... the functionality of writing notes in plain text or html is barely there and lacks testing
+
 ## 0.2.2 - Documentation
 - Minor documentation updates (help document, notes for developers)
 - Added CHANGELOG
