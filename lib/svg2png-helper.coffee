@@ -105,7 +105,7 @@ module.exports =
           catch e
             console.error e
         svgCollection[elementID]["pngPath"] = pngFileName
-      image.src = 'data:image/svg+xml;base64,'+ btoa(svgHTML)
+      image.src = 'data:image/svg+xml;base64,'+ btoa(unescape(encodeURIComponent(svgHTML)))
 
     # Again, clean up inactive files
     for k, v of svgCollection
