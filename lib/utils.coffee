@@ -311,6 +311,15 @@ exports.isMarkdown = isMarkdown = (filePath) ->
   endsWith = this.endsWith
   endsWith(filePath, '.markdown') or endsWith(filePath, '.md') or
     endsWith(filePath, '.mdown') or endsWith(filePath, '.mkd') or endsWith(filePath, '.mkdown')
+
+#
+# TODO: Use mime to check file type!
+#       (This is particularly...ugh, needs fixing)
+#
+exports.isHTML = isHTML = (filePath) ->
+  endsWith = this.endsWith
+  endsWith(filePath, '.html') or endsWith(filePath, '.htm')
+
 #
 # TODO: Use mime to check file type!
 #
