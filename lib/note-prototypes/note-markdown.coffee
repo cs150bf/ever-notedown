@@ -19,7 +19,7 @@ class MarkdownNote extends RichNote
       if fs.isFileSync(rawHTMLFilename)
         defaultRawHTML = fs.readFileSync(rawHTMLFilename, 'utf8')
       else
-        defaultRawHTML = null
+        defaultRawHTML = "<p>The file #{rawHTMLFilename} does not exist for some reason...</p>"
       htmlFilename = path.join(@path, "#{@fnStem}.html")
       if fs.isFileSync(htmlFilename)
         defaultHTML = fs.readFileSync(htmlFilename, 'utf8')

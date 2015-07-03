@@ -345,8 +345,8 @@ class RichNote extends Note
       'tooltip-persistant'
     ]
 
-    #console.log "Beging tyding up this note..."
-    html = @rawHTML
+    #console.log "Begin tyding up this note..."
+    html = @rawHTML ? "<p>@rawHTML is null!!!!!!!!!</p>"
 
     # tidy up
     html = utils.closeTags(html, 'use')
@@ -623,9 +623,9 @@ class RichNote extends Note
     o('div').last().append("<div style=\"display: none;\" title=\"evnd-time-stamp\" id=\"evnd-time-stamp\"><p>#{timeStamp}</p></div>")
 
     # XML and HTML
-    xml = o.xml().replace(/&/g, '&amp;').replace(/nobreakspace/g, '&#160;')
+    xml = o.xml()?.replace(/&/g, '&amp;')?.replace(/nobreakspace/g, '&#160;')
     doctype = '<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">'
-    newHtml = doctype + o.html().replace(/nobreakspace/g, '&nbsp;')
+    newHtml = doctype + o.html()?.replace(/nobreakspace/g, '&nbsp;')
 
     # ENML
     # Handle images, attachements, GFM TO-DO's, etc.
@@ -662,10 +662,10 @@ class RichNote extends Note
               attachmentConverted = true
               break
 
-    enml = o.html().replace(/nobreakspace/g, '&#160;')
-    enml = enml.replace('<p>en-todo-place-holder-checked</p>', '<en-todo checked="true"/>')
-    enml = enml.replace('<p>en-todo-place-holder-unchecked</p>', '<en-todo/>')
-    if attachmentConverted then enml = enml.replace(/<img/g, '<en-media')
+    enml = o.html()?.replace(/nobreakspace/g, '&#160;')
+    enml = enml?.replace('<p>en-todo-place-holder-checked</p>', '<en-todo checked="true"/>')
+    enml = enml?.replace('<p>en-todo-place-holder-unchecked</p>', '<en-todo/>')
+    if attachmentConverted then enml = enml?.replace(/<img/g, '<en-media')
     enml = utils.closeTags(enml, 'br')
     enml = utils.closeTags(enml, 'hr')
     #enml = enml.replace(/<br>/g, '<br />').replace(/<hr>/g, '<hr />')
