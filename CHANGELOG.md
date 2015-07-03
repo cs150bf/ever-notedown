@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.2.5 - Bug fix (attempt)
+- (Attempted) to fix issue https://github.com/cs150bf/ever-notedown/issues/7
+
+## 0.2.4 - Bug fix (attempt)
+- First step in fixing issue https://github.com/cs150bf/ever-notedown/issues/4
+- Not sure about this...
+
 ## 0.2.3 - Bug fix (attempt)
 - (Attempted) to fix issue https://github.com/cs150bf/ever-notedown/issues/3
 - A rather basic patch... the functionality of writing notes in plain text or html is barely there and lacks testing
