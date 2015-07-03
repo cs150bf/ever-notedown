@@ -55,9 +55,10 @@ This is an Atom plugin for editing Evernote notes in Markdown format.
 ### Requirements
 
 - OS X `Mavericks, Yosemite`
-- Atom `>0.197.0` <sub>WFM</sub> [^wfm]
+- Atom `>=0.202.0` <sub>WFM</sub> [^wfm]
 - Evernote OSX Client `>6.0.0`
-- GIT `2.1.2` <sub>WFM</sub>[^wfm] &nbsp; (Version 2+ should work.)
+  - For EVND (particularly the <u>*import*</u> function) to work properly, you will need the EN client installed with the dmg downloaded directly from [the offical website](https://evernote.com/download/), ***not*** the one from the mac app store.[^appstore client problem]
+- GIT `2.1.2` <sub>WFM</sub>[^wfm] &nbsp; (Version 2+ should work just fine.)
 
 
 ### Preparation
@@ -431,3 +432,5 @@ Barring some rare exceptions, users should not see this in EVND...
 [^fn html2markdown]: **HTML2Markdown** -  The result might vary since the function is still in a crude state. The resulting Markdown text might contain some un-converted HTML. Changes in meta info (notebook, tags) and images & attachments should be loaded just fine.
 
 [^sample footnote]: **Sample footnote** - No big deal, just a random footnote.
+
+[^appstore client problem]: **Caveat** - Apparently the applescript support is glitchy with the app store version of EN client. Something has to do with ["the way the app is sandboxed"](https://github.com/jamietr1/evernote-backup/blob/master/README.md). See more discussion [here](https://github.com/cs150bf/ever-notedown/issues/5#issuecomment-118221171).

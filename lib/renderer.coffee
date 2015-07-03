@@ -406,9 +406,10 @@ generateFootnotes = (html) ->
         unless footnoteID in footnoteRefsArr
           footnoteRefsArr.push footnoteID
           footnoteCount += 1
+        footnoteIndex = footnoteRefsArr.indexOf(footnoteID) + 1
         footnoteRefs[footnoteID] = footnoteRefText
         #footnoteLink = "<sup><a href=\"#fn:#{footnoteID}\" id=\"fnref:#{footnoteID}\" name=\"fnref:#{footnoteID}\" class=\"footnote\">#{(footnotesArr.indexOf(footnoteID)+1).toString()}</a></sup>"
-        footnoteLink = "<sup><a href=\"#fn:#{footnoteID}\" id=\"fnref:#{footnoteID}\" name=\"fnref:#{footnoteID}\" class=\"footnote\">#{footnoteCount.toString()}</a></sup>"
+        footnoteLink = "<sup><a href=\"#fn:#{footnoteID}\" id=\"fnref:#{footnoteID}\" name=\"fnref:#{footnoteID}\" class=\"footnote\">#{footnoteIndex.toString()}</a></sup>"
         oElmHTML = o.html(elm)
         utils ?= require './utils'
         oElmHTML = utils.literalReplace(oElmHTML, footnoteRefText, footnoteLink, {lookAhead:":", negatedLookAhead:true})
