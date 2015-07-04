@@ -1156,7 +1156,7 @@ module.exports =
     noteHelper ?= require './note-helper'
 
     if options.update
-      curNote = noteHelper.findNote(window.evnd.noteIndex, {title: options.title, fnStem: path.basename(options.filePath, path.extname(options.filePath))})
+      curNote = noteHelper.findNote(window.evnd.noteIndex, {title: options.title, fnStem: path.basename(options.filePath, path.extname(options.filePath)), dir: path.basename(path.dirname(options.filePath))})
       if curNote is null
         options.update = false
         #console.log("Note not found in current note index")
@@ -1419,7 +1419,8 @@ module.exports =
       if filePath.indexOf(gitPath0) > -1 or
           filePath.indexOf(gitPath1) > -1
         fnStem = path.basename(filePath, path.extname(filePath))
-        note = noteHelper.findNote(window.evnd.noteIndex, {fnStem: fnStem})
+        dir = path.basename(path.dirname(filePath))
+        note = noteHelper.findNote(window.evnd.noteIndex, {fnStem: fnStem, dir: dir})
       else
         note = null
     else
@@ -1449,7 +1450,8 @@ module.exports =
          editor.getPath().indexOf(gitPath1) > -1)
       filePath = editor.getPath()
       fnStem = path.basename(filePath, path.extname(filePath))
-      note = noteHelper.findNote(window.evnd?.noteIndex, {fnStem: fnStem})
+      dir = path.basename(path.dirname(filePath))
+      note = noteHelper.findNote(window.evnd?.noteIndex, {fnStem: fnStem, dir: dir})
     else
       curView = atom.workspace.getActivePaneItem()
       if isEVNDPreviewView(curView)
@@ -1461,7 +1463,8 @@ module.exports =
             (curFilePath.indexOf(gitPath0) > -1 or
             curFilePath.indexOf(gitPath1) > -1)
           fnStem = path.basename(curFilePath, path.extname(curFilePath))
-          note = noteHelper.findNote(window.evnd?.noteIndex, {fnStem: fnStem})
+          dir = path.basename(path.dirname(curFilePath))
+          note = noteHelper.findNote(window.evnd?.noteIndex, {fnStem: fnStem, dir: dir})
     return note
 
   getNoteENML: ({note, noteID}={}) ->
@@ -1607,7 +1610,8 @@ module.exports =
       gitPath1 = @getRealGitPath()
       if filePath.indexOf(gitPath0) or filePath.indexOf(gitPath1)
         fnStem = path.basename(filePath, path.extname(filePath))
-        note = noteHelper.findNote(window.evnd.noteIndex, {fnStem: fnStem})
+        dir = path.basename(path.dirname(filePath))
+        note = noteHelper.findNote(window.evnd.noteIndex, {fnStem: fnStem, dir: dir})
     else
       note = @searchedOpenedNote()
     unless note?
@@ -1741,7 +1745,8 @@ module.exports =
       if isEVNDPreviewView(evNotedownPreviewView)
         filePath = editor.getPath()
         fnStem = path.basename(filePath, path.extname(filePath))
-        note ?= noteHelper?.findNote(window.evnd?.noteIndex, {fnStem: fnStem})
+        dir = path.basename(path.dirname(filePath))
+        note ?= noteHelper?.findNote(window.evnd?.noteIndex, {fnStem: fnStem, dir: dir})
         evNotedownPreviewView.note = note
         evNotedownPreviewView.noteID = note?.id
         if note? then evNotedownPreviewView.activateButtons()
@@ -2087,7 +2092,8 @@ module.exports =
             if isEVNDPreviewView(paneItem) and not paneItem.note?
               filePath = paneItem.getPath()
               fnStem = path.basename(filePath, path.extname(filePath))
-              note = noteHelper.findNote(window.evnd.noteIndex, {fnStem: fnStem})
+              dir = path.basename(path.dirname(filePath))
+              note = noteHelper.findNote(window.evnd.noteIndex, {fnStem: fnStem, dir: dir})
               if (not paneItem.noteID?) and note?
                 paneItem.noteID = note.id
               paneItem.attachNote(note)

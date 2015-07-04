@@ -86,8 +86,8 @@ class EVNDView extends View
     @added = false
 
   destroy: ->
+    window.evnd.evndView = null
     @panel?.destroy()
-    window.evnd.modalPanel = null
     @disposables.dispose()
 
   on: (eventName) ->

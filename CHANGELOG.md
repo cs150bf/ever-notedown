@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.2.7 - Bug fix
+- Fixed the confusion when two notes created on different days happen to have the same file name
+- Fixed a typo (side panel)
+
+## 0.2.6 - Bug fix
+- Footnote rendering
+
 ## 0.2.5 - Bug fix (attempt)
 - (Attempted) to fix issue https://github.com/cs150bf/ever-notedown/issues/7
 

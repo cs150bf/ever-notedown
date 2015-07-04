@@ -11,7 +11,7 @@ toMarkdown = null #
 {HTMLNote} = require './note-prototypes/note-html'
 {TextNote} = require './note-prototypes/note-text'
 
-findNote = (noteIndex, {title, id, noteLink, filePath, fnStem} = {}) ->
+findNote = (noteIndex, {title, id, noteLink, filePath, fnStem, dir} = {}) ->
   return null unless noteIndex and (title? or filePath? or id? or fnStem?)
   noteIndexJSON = noteIndex.jsonOBJ
   notes = noteIndex.notes
@@ -25,14 +25,17 @@ findNote = (noteIndex, {title, id, noteLink, filePath, fnStem} = {}) ->
           when "Text" then return new TextNote(noteOBJ)
           when "HTML" then return new HTMLNote(noteOBJ)
           else return new MarkdownNote(noteOBJ)
-  else if fnStem? or filePath?
+  else if (dir? and fnStem?) or filePath?
     unless fnStem?
       extName = path.extname(filePath)
       fnStem = path.basename(filePath, extName)
+    unless dir?
+      dir = path.basename(path.dirname(filePath))
     for noteKey, noteOBJ of notes
-      if fnStem is noteOBJ.fnStem then return noteOBJ
+      if fnStem is noteOBJ.fnStem and dir?.replace(/\/$/, '') is noteOBJ.dir?.replace(/\/$/, '')
+        return noteOBJ
     for noteKey, noteOBJ of noteIndexJSON
-      if fnStem is noteOBJ.fnStem
+      if fnStem is noteOBJ.fnStem and dir?.replace(/\/$/, '') is noteOBJ.dir?.replace(/\/$/, '')
         noteOBJ.reconstruct = true
         switch noteOBJ.format
           when "Text" then return new TextNote(noteOBJ)
