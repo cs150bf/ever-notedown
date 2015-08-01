@@ -194,9 +194,9 @@ exports.StorageManager = class StorageManager
     # Upate the JSON file
     # TODO
     # atom.notifications?.addError ErrorMsg
-    @evNotedown.noteIndex.addnote(note)
+    window.evnd.noteIndex.addnote(note)
     #console.log("Updating JSON file: " + @evNotedown.noteIndex.absfilename)
-    @evNotedown.noteIndex.update()
+    window.evnd.noteIndex.update()
 
     toWrite = {}
     if note.text?

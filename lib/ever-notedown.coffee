@@ -1054,10 +1054,10 @@ module.exports =
       return unless curFilePath? and editor?
 
     unless curFilePath?
-      if editor?
-        @saveNewNote(editor)
-      else
-        window.alert "File not saved! Cannot send to Evernote... please save first."
+      #if editor?
+      #  @saveNewNote(editor)
+      #else
+      window.alert "File has not been saved yet! Cannot send to Evernote... please save first."
       return
     #if curFilePath.indexOf(atom.config.get('ever-notedown.gitPath')) > -1
     gitPath0 = @getRealGitPath()
