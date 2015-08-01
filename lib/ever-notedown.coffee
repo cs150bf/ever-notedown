@@ -1052,6 +1052,7 @@ module.exports =
       else if curFilePath?
         editor = atom.workspace.openSync(curFilePath, {searchAllPanes: true})
       return unless curFilePath? and editor?
+
     unless curFilePath?
       if editor?
         @saveNewNote(editor)

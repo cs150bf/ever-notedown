@@ -96,6 +96,7 @@ class EVNDPreviewView extends ScrollView
 
   destroy: ->
     @disposables?.dispose()
+    #@parents('.pane').view()?.destroyItem(this)
 
   onDidChangeTitle: (callback) ->
     @emitter.on 'did-change-title', callback
@@ -473,12 +474,16 @@ class EVNDPreviewView extends ScrollView
                   @editor.setScrollTop(newEditorScrollTop)
                   if targetRow < @editor.bufferRowForScreenRow(@editor.getVisibleRowRange()[0])
                     @editor.scrollToBufferPosition([targetRow, 0], {center: false})
-                  return unless $(targetID).get(0)?
-                  $(targetID).get(0).scrollIntoView({behavior: "smooth", block: "start"})
+                  #return unless $(targetID).get(0)?
+                  return unless $(document.getElementById(targetID.slice(1))).get(0)
+                  #$(targetID).get(0).scrollIntoView({behavior: "smooth", block: "start"})
+                  $(document.getElementById(targetID.slice(1))).get(0).scrollIntoView({behavior: "smooth", block: "start"})
                   break
             else
-              return unless $(targetID).get(0)?
-              $(targetID).get(0).scrollIntoView({behavior: "smooth", block: "start"})
+              #return unless $(targetID).get(0)?
+              return unless $(document.getElementById(targetID.slice(1))).get(0)
+              #$(targetID).get(0).scrollIntoView({behavior: "smooth", block: "start"})
+              $(document.getElementById(targetID.slice(1))).get(0).scrollIntoView({behavior: "smooth", block: "start"})
           @emitter.emit 'did-change-markdown'
           utils.timeOut(200)
           @originalTrigger('ever-notedown:markdown-changed')
@@ -664,13 +669,15 @@ class EVNDPreviewView extends ScrollView
                 @bindings[rowToCheck]?.scrollTop > @bindings[prevRowToCheck]?.scrollTop))
         continue unless @bindings[rowToCheck]?.id?
         selector = "##{@bindings[rowToCheck].id.replace(/\./g, '\\.').replace(/\:/g, '\\:')}"
-        continue unless $(selector).get(0)?
+        #continue unless $(selector).get(0)?
+        continue unless $(document.getElementById(@bindings[rowToCheck].id)).get(0)
         elms = @[0].querySelectorAll("##{@bindings[rowToCheck].id.replace(/\./g, '\\.').replace(/\:/g, '\\:')}")
         continue unless elms.length > 0
         domElementOffsetTop = elms[0].offsetTop
         if (not domElementOffsetTop?) or (@bindings[prevRowToCheck]?.scrollTop? and @bindings[prevRowToCheck].scrollTop > domElementOffsetTop)
           domElementOffsetTop = elms[0].offsetParent.offsetTop
-        jQueryOffsetTop = $(selector).offset().top
+        #jQueryOffsetTop = $(selector).offset().top
+        jQueryOffsetTop = $(document.getElementById(@bindings[rowToCheck].id)).offset().top
         if @bindings[prevRowToCheck]?.scrollTop?
           if jQueryOffsetTop? and @bindings[prevRowToCheck].scrollTop < jQueryOffsetTop
             @bindings[rowToCheck].scrollTop = jQueryOffsetTop
