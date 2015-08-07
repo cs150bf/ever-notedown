@@ -1211,7 +1211,7 @@ module.exports =
               gitMessage += "#{curNote.summary()}"
               window.evnd.storageManager.addNote curNote, true, gitMessage
               #console.log(gitMessage)
-              window.alert(gitMessage.split(/[\n\r]/g)[0])
+              #window.alert(gitMessage.split(/[\n\r]/g)[0])
           else
             #console.log "Update failed!"
             window.alert "Update failed!"
@@ -1244,7 +1244,7 @@ module.exports =
               gitMessage += "#{curNote.summary()}"
               window.evnd.storageManager.addNote curNote, true, gitMessage
               #console.log(gitMessage)
-              window.alert(gitMessage.split(/[\n\r]/g)[0])
+              #window.alert(gitMessage.split(/[\n\r]/g)[0])
           else
             window.alert "Something went wrong when trying to create new note..."
             ensyncs = previewView?[0].querySelectorAll('#evernote-syncing')
