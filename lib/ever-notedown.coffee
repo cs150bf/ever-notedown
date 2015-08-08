@@ -924,7 +924,7 @@ module.exports =
       continue if k in ["rawHTML", "text", "css"]
       detail += "  #{k}: #{JSON.stringify(v)}\n"
     stack = "#{error.stack}\n"
-    atom.notifications.addError(message, {stack, detail, dismissable: true})
+    atom.notifications.addError(message, {stack: stack, detail: detail, dismissable: true})
 
   # TODO: Handles "code snippet"
   # TODO: use selection.getScreenRange() (for code annotating?)
@@ -1054,10 +1054,13 @@ module.exports =
       return unless curFilePath? and editor?
 
     unless curFilePath?
-      #if editor?
-      #  @saveNewNote(editor)
-      #else
-      window.alert "File has not been saved yet! Cannot send to Evernote... please save first."
+      if editor?
+        dMsg = "EVND will now try to save it as a new note... please try again later."
+        atom.notifications.addWarning("File is not yet saved!", {detail: dMsg, dismissable: true})
+        utils.timeOut(1000)
+        @saveNewNote(editor)
+      else
+        window.alert "File not saved! Cannot send to Evernote... please save first."
       return
     #if curFilePath.indexOf(atom.config.get('ever-notedown.gitPath')) > -1
     gitPath0 = @getRealGitPath()
@@ -1092,7 +1095,8 @@ module.exports =
         dMsg = "Please check the rendered result in preview pane first!\n"
         dMsg += "Please close this message, and wait until "
         dMsg += "the preview finishes loading before trying again."
-        window.alert(dMsg)
+        #window.alert(dMsg)
+        atom.notifications.addWarning('Content not rendered!', {detail: dMsg, dismissable: true})
         return
       if previewView.loading then utils.timeOut(500)
 
@@ -1212,6 +1216,7 @@ module.exports =
               window.evnd.storageManager.addNote curNote, true, gitMessage
               #console.log(gitMessage)
               #window.alert(gitMessage.split(/[\n\r]/g)[0])
+              atom.notifications.addSuccess(gitMessage.split(/[\n\r]/g)[0])
           else
             #console.log "Update failed!"
             window.alert "Update failed!"
@@ -1245,6 +1250,7 @@ module.exports =
               window.evnd.storageManager.addNote curNote, true, gitMessage
               #console.log(gitMessage)
               #window.alert(gitMessage.split(/[\n\r]/g)[0])
+              atom.notifications.addSuccess(gitMessage.split(/[\n\r]/g)[0])
           else
             window.alert "Something went wrong when trying to create new note..."
             ensyncs = previewView?[0].querySelectorAll('#evernote-syncing')

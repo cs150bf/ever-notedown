@@ -238,7 +238,7 @@ exports.StorageManager = class StorageManager
 
 
     # Git add and commit
-    #console.log "@gitRepo.getPath(): #{@gitRepo?.getPath()}"
+    console.log "@gitRepo.getPath(): #{@gitRepo?.getPath()}"
     repo = git.open(@gitRepo?.getPath())
     #console.log "Repo: "
     #console.log repo
@@ -267,6 +267,7 @@ exports.StorageManager = class StorageManager
           pathsToTryAgain.push("index.json")
         staged = true
       for k, v of toWrite
+        #console.log JSON.stringify(toWrite, null, 4)
         toTestPath = repo.relativize(v)
         if (repo.isPathModified(toTestPath) or repo.isPathNew(toTestPath))
           try
