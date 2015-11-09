@@ -163,10 +163,10 @@ resolveMath = (eqns) ->
   modifiedEqns = []
   for equation in eqns
     if equation.slice(0,2) is '$$' or equation.slice(0,2) is '\\['
-      equation = equation.slice(2, -2)
+      equation = equation.slice(2, -2).replace(/escapedDollarSignEVND/g, '\\$')
       equation = '<span class="math"><script type="math/tex; mode=display">' + equation
     else
-      equation = equation.slice(1, -1)
+      equation = equation.slice(1, -1).replace(/escapedDollarSignEVND/g, '\\$')
       equation = '<span class="math"><script type="math/tex">' + equation
     equation += '</script></span>'
     modifiedEqns.push(equation)
