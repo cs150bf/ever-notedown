@@ -25,7 +25,7 @@
 path = require 'path'
 
 {CompositeDisposable, Disposable} = require 'atom'
-{File, Directory} = require 'pathwatcher'
+{File, Directory} = require 'atom'
 {$} = require 'atom-space-pen-views'
 TextEditor = null
 CSON = null

@@ -1,10 +1,10 @@
 fs = require 'fs-plus'
+path = require 'path'
+{File, Directory} = require 'atom'
 git = require 'git-utils'
 exec = require('child_process').exec
 utils = require './utils'
-path = require 'path'
 temp = null # delayed require 'temp'
-{File, Directory} = require 'pathwatcher'
 
 exports.StorageManager = class StorageManager
   constructor: ({gitPath, gitPathSymlink, gitRepo, gitDir}={}) ->

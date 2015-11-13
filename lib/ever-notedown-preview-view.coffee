@@ -28,7 +28,7 @@ path = require 'path'
 {$, $$, $$$, ScrollView} = require 'atom-space-pen-views'
 _ = require 'underscore-plus'
 fs = require 'fs-plus'
-{File} = require 'pathwatcher'
+{File} = require 'atom'
 
 renderer = require './renderer'
 utils = require './utils'

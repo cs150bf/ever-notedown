@@ -5,7 +5,7 @@ renderer = null # delayed require './../renderer'
 cheerio = null # delayed require 'cheerio'
 toMarkdown = null # delayed require 'to-markdown'
 {Note} = require './note-base'
-{File, Directory} = require 'pathwatcher'
+{File, Directory} = require 'atom'
 {resourcePath} = atom.getLoadSettings()
 packagePath = path.dirname(__dirname)
 
