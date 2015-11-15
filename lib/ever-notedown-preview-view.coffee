@@ -671,7 +671,11 @@ class EVNDPreviewView extends ScrollView
         selector = "##{@bindings[rowToCheck].id.replace(/\./g, '\\.').replace(/\:/g, '\\:')}"
         #continue unless $(selector).get(0)?
         continue unless $(document.getElementById(@bindings[rowToCheck].id)).get(0)
-        elms = @[0].querySelectorAll("##{@bindings[rowToCheck].id.replace(/\./g, '\\.').replace(/\:/g, '\\:')}")
+        try
+          elms = @[0].querySelectorAll("##{@bindings[rowToCheck].id.replace(/\./g, '\\.').replace(/\:/g, '\\:')}")
+        catch e
+          console.log e
+          elms = []
         continue unless elms.length > 0
         domElementOffsetTop = elms[0].offsetTop
         if (not domElementOffsetTop?) or (@bindings[prevRowToCheck]?.scrollTop? and @bindings[prevRowToCheck].scrollTop > domElementOffsetTop)
