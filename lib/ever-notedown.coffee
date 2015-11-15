@@ -582,15 +582,18 @@ module.exports =
 
   #
   # Based on the official Atom Markdown Preview package
+  # Updated Nov 15, 2015
+  # TODO: move these functions to `ever-notedown-preview-view.coffee`
   #
   getTextEditorStyles: ->
     textEditorStyles = document.createElement("atom-styles")
+    textEditorStyles.initialize(atom.styles)
     textEditorStyles.setAttribute "context", "atom-text-editor"
     document.body.appendChild textEditorStyles
 
-    Array.prototype.slice.apply(textEditorStyles).map (styleElement) -> styleElement.innerText
-
-    textEditorStyles.remove()
+    # Extract style elements content
+    Array.prototype.slice.apply(textEditorStyles.childNodes).map (styleElement) ->
+      styleElement.innerText
 
   # TODO: remove the particular {overflow-y: scroll;}?
   getMarkdownPreviewCSS: ->
