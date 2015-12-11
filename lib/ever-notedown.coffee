@@ -630,7 +630,7 @@ module.exports =
   viewSyntaxThemeCSS: ->
     @loadCSS() unless window.evnd.cssCode?
     syntaxThemeCSS = window.evnd.cssCode
-    atom.workspace.open('').done (editor) =>
+    atom.workspace.open('').then (editor) =>
       editor.setText(syntaxThemeCSS)
       cssGrammar = atom.grammars.grammarForScopeName('source.css')
       if cssGrammar then editor.setGrammar(cssGrammar)
@@ -645,7 +645,7 @@ module.exports =
   viewThemeCSS: ->
     @loadCSS() unless window.evnd.cssTheme?
     themeCSS = window.evnd.cssTheme
-    atom.workspace.open('').done (editor) =>
+    atom.workspace.open('').then (editor) =>
       editor.setText(themeCSS)
       cssGrammar = atom.grammars.grammarForScopeName('source.css')
       if cssGrammar then editor.setGrammar(cssGrammar)
@@ -696,7 +696,7 @@ module.exports =
   viewTemplate: ->
     if window.evnd.init then @loadModule()
     template = window.evnd.template ? @loadTemplate()
-    atom.workspace.open('').done (editor) =>
+    atom.workspace.open('').then (editor) =>
       editor.setText(template)
 
   editCustomTemplate: (templateName) ->
@@ -726,7 +726,7 @@ module.exports =
     console.log mathjaxHelper
     macros = mathjaxHelper.loadCustomMacros()
     console.log macros
-    atom.workspace.open('').done (editor) =>
+    atom.workspace.open('').then (editor) =>
       editor.setText(mathjaxHelper.macrosToCSONString(macros))
       grammar = atom.grammars.grammarForScopeName('source.coffee')
       if grammar? then editor.setGrammar(grammar)
@@ -850,7 +850,7 @@ module.exports =
       searchAllPanes: true
     if atom.config.get('ever-notedown.openPreviewInSplitPane')
       options.split = "left"
-    atom.workspace.open(pathToHelpDoc, options).done (editor) =>
+    atom.workspace.open(pathToHelpDoc, options).then (editor) =>
       @addPreviewForEditor(editor)
 
   openMarkdownQuickRef: ->
@@ -868,7 +868,7 @@ module.exports =
       searchAllPanes: true
     if atom.config.get('ever-notedown.openPreviewInSplitPane')
       options.split = "left"
-    atom.workspace.open(pathToDevNotes, options).done (editor) =>
+    atom.workspace.open(pathToDevNotes, options).then (editor) =>
       @addPreviewForEditor(editor)
 
   #
@@ -1323,7 +1323,7 @@ module.exports =
     options ?= {}
     if (not options.split?) and atom.config.get('ever-notedown.openPreviewInSplitPane')
       options.split = 'left'
-    atom.workspace.open('', options).done (editor) =>
+    atom.workspace.open('', options).then (editor) =>
       if initText then editor.setText(initText)
       editorElement = atom.views.getView(editor)
       window.evnd.newNoteDisposables[editor.id] = atom.commands.add editorElement,
@@ -1399,7 +1399,7 @@ module.exports =
     options ?= {searchAllPanes: true}
     if (not options.split?) and atom.config.get('ever-notedown.openPreviewInSplitPane')
       options.split = 'left'
-    atom.workspace.open(absPath, options).done (editor) =>
+    atom.workspace.open(absPath, options).then (editor) =>
       switch note.format
         when 'Text' then scopeName = 'text.plain'
         when 'Markdown' then scopeName = @getMarkdownScopeName()
@@ -1493,7 +1493,7 @@ module.exports =
         if atom.config.get('ever-notedown.openPreviewInSplitPane')
           options.split = 'left'
         atom.project.setPaths([tmpDir])
-        atom.workspace.open('', options).done (editor) =>
+        atom.workspace.open('', options).then (editor) =>
           editor.setText(enml)
           grammar = atom.grammars.grammarForScopeName('text.xml')
           if grammar? then editor.setGrammar(grammar)
@@ -1518,7 +1518,7 @@ module.exports =
         if atom.config.get('ever-notedown.openPreviewInSplitPane')
           options.split = 'left'
         atom.project.setPaths([tmpDir])
-        atom.workspace.open('', options).done (editor) =>
+        atom.workspace.open('', options).then (editor) =>
           editor.setText(html)
           grammar = atom.grammars.grammarForScopeName('text.html.basic')
           if grammar? then editor.setGrammar(grammar)
@@ -1751,7 +1751,7 @@ module.exports =
       searchAllPanes: true
     if atom.config.get('ever-notedown.openPreviewInSplitPane')
       options.split = 'right'
-    atom.workspace.open(uri, options).done (evNotedownPreviewView) =>
+    atom.workspace.open(uri, options).then (evNotedownPreviewView) =>
       if isEVNDPreviewView(evNotedownPreviewView)
         filePath = editor.getPath()
         fnStem = path.basename(filePath, path.extname(filePath))
