@@ -38,7 +38,8 @@
 .ever-notedown-preview .evnd-fenced-code-block.is-focused .line.cursor-line {
   background-color: rgba(0, 0, 0, 0.07);
 }
-.ever-notedown-preview .comment {
+.ever-notedown-preview .comment,
+.ever-notedown-preview .punctuation.definition.comment {
   color: #919191;
 }
 .ever-notedown-preview .string {

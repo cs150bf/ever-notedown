@@ -2270,7 +2270,7 @@
   word-break: break-all;
   word-wrap: break-word;
 }
-.ever-notedown-preview .evnd-fenced-code-block .line {
+.ever-notedown-preview .evnd-fenced-code-block .line:not(.comment) {
   display: block;
 }
 .ever-notedown-preview .emoji {
@@ -2978,6 +2978,9 @@
 }
 .ever-notedown-preview .punctuation.definition.tag {
   color: #121289;
+}
+.ever-notedown-preview .punctuation.definition.comment {
+  color: #999988;
 }
 .ever-notedown-preview .punctuation.section.embedded.ruby {
   font-weight: bold;

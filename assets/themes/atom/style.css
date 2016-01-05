@@ -363,7 +363,7 @@
   border-radius: 3px;
   background: #ececec;
 }
-.ever-notedown-preview .evnd-fenced-code-block .line {
+.ever-notedown-preview .evnd-fenced-code-block .line:not(.comment) {
   display: block;
 }
 .ever-notedown-preview kbd {

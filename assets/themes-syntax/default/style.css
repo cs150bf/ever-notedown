@@ -241,6 +241,9 @@
 .ever-notedown-preview .punctuation.definition.tag {
   color: #121289;
 }
+.ever-notedown-preview .punctuation.definition.comment {
+  color: #999988;
+}
 .ever-notedown-preview .punctuation.section.embedded.ruby {
   font-weight: bold;
   color: #999999;

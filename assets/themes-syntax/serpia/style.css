@@ -49,6 +49,9 @@
 .ever-notedown-preview .comment {
   color: #765615;
 }
+.ever-notedown-preview .comment.punctuation.definition.comment {
+  color: #765615;
+}
 .ever-notedown-preview .entity.name.type {
   color: #765615;
   text-decoration: underline;

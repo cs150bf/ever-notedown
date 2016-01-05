@@ -33,7 +33,8 @@
   background-color: #93a1a1;
   opacity: 0.5;
 }
-.ever-notedown-preview .comment {
+.ever-notedown-preview .comment,
+.ever-notedown-preview .punctuation.definition.comment {
   color: #93a1a1;
   font-style: italic;
 }

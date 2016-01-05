@@ -67,7 +67,8 @@
 .ever-notedown-preview .string.unquoted.heredoc .string {
   color: #3AD900;
 }
-.ever-notedown-preview .comment {
+.ever-notedown-preview .comment,
+.ever-notedown-preview .punctuation.definition.comment {
   font-style: italic;
   color: #0088FF;
 }

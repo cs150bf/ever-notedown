@@ -2269,7 +2269,7 @@
   word-break: break-all;
   word-wrap: break-word;
 }
-.ever-notedown-preview .evnd-fenced-code-block .line {
+.ever-notedown-preview .evnd-fenced-code-block .line:not(.comment) {
   display: block;
 }
 .ever-notedown-preview .emoji {
