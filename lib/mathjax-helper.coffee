@@ -188,7 +188,7 @@ configureMathJax = ->
       Macros: macros
     }
     SVG: {
-      font: "Gyre-Pagella"
+      font: "Gyre-Termes"
       undefinedFamily: ["STIXGeneral", 'Arial Unicode MS', "serif"]
       linebreaks:
         automatic: false
