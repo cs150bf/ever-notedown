@@ -188,7 +188,7 @@ configureMathJax = ->
       Macros: macros
     }
     SVG: {
-      font: "Asana-Math"
+      font: "Neo-Euler"
       undefinedFamily: ["STIXGeneral", 'Arial Unicode MS', "serif"]
       linebreaks:
         automatic: false
