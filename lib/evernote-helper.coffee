@@ -596,20 +596,25 @@ exports.EvernoteHelper = class EvernoteHelper
     exec fullcmd, (err, stdout, stderr) =>
       if err
         console.error(err)
+        window.alert "Something happened and creating new note failed..."
+        callback(false)
+        return
       else
         console.log("stdout: " + stdout)
         console.log("stderr: " + stderr)
         stdoutTrimmed = stdout.trim()
+        defaultQueryOptions = {id: false, notebook: true}
         if stdoutTrimmed.indexOf("(notebook does not exist)") > -1
-          window.alert "Notebook #{note.notebook.name} does not exist!"
+          window.alert "Notebook #{note.notebook.name} does not exist! The note should be in default notebook"
           stdoutTrimmed = stdoutTrimmed.replace("(notebook does not exist)", "")
+          defaultQueryOptions.notebook = false
         if stdoutTrimmed is ""
           window.alert "Something happened and creating new note failed..."
           callback(false)
           return
-        note.enCreationDate = stdout.trim()
-        note.queryString = note.makeQueryString({id: false})
-        #console.log("Evernote Note Creation time: " + stdout.trim())
+        note.enCreationDate = stdoutTrimmed
+        note.queryString = note.makeQueryString(defaultQueryOptions)
+        console.log("Evernote Note Creation time: " + stdoutTrimmed)
         utils.timeOut(200)
         @getNoteInfo note, {queryString: note.queryString, noteLink: null}, (newNoteInfo) =>
           #console.log newNoteInfo
