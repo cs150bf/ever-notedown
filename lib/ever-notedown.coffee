@@ -841,7 +841,7 @@ module.exports =
       searchAllPanes: true
     if atom.config.get('ever-notedown.openPreviewInSplitPane')
       options.split = "left"
-    atom.workspace.open 'atom://config/packages', options
+    atom.workspace.open 'atom://config/packages/ever-notedown/', options
 
   openHelpDoc: ->
     if window.evnd.init then @loadModule()
