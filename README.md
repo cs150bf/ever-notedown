@@ -16,17 +16,17 @@ This branch is made for those who wants to use different fonts for MathJax. See 
 How to:   
 0) Exit Atom.   
 1) Move your `~/.atom/packages/ever-notedown/` folder to somewhere else;   
-2) Clone branch `morefonts` of the repo  
+2) Clone branch `morefonts` of the repo
 ```bash
 $ cd ~/.atom/packages
 $ git clone --branch morefonts https://github.com/cs150bf/ever-notedown
 ```   
-3) Re-install the package  
+3) Re-install the package
 ```bash
 $ cd ~/.atom/packages/ever-notedown
 $ apm install
 ```   
-4) Choose your favorite MathJax font BEFORE starting Atom by modifying the `lib/mathjax-helper.coffee` file. For example:   
+4) Choose your favorite MathJax font BEFORE starting Atom by modifying the `lib/mathjax-helper.coffee` file. For example:
 ```bash
 $ cd ~/.atom/packages/ever-notedown/lib
 ```
@@ -39,12 +39,12 @@ Open `mathjax-helper.coffee` with your favorite text editor. Scroll down to the 
         automatic: false
         width: "75%"
     }
-```  
+```
 Now if you start Atom and try again you should see MathJax font is now set to `Gyre Pagella`.   
 
 5) If you want to change the font, you need to first exit Atom, do the modify `lib/mathjax-helper.coffee` thing again, and restart Atom. I know, it's quite painful...   
 
-6) For now these fonts are available.   
+6) For now these fonts are available.
 ```
 Asana-Math
 Gyre-Pagella
