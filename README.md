@@ -1,6 +1,6 @@
 #   EVND (Ever Notedown) 
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/cs150bf/ever-notedown/master/LICENSE.md) [![Version 0.2.22](https://img.shields.io/badge/apm-v0.2.22-green.svg)](https://github.com/cs150bf/ever-notedown/releases)  
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/cs150bf/ever-notedown/master/LICENSE.md) [![Version 0.2.23](https://img.shields.io/badge/apm-v0.2.23-green.svg)](https://github.com/cs150bf/ever-notedown/releases)  
 
 ## About
 
