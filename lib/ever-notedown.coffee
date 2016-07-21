@@ -1483,7 +1483,7 @@ module.exports =
       if noteID?
         note = noteHelper.findNote(window.evnd.noteIndex, {id: noteID})
       else
-        note = searchOpenedNote()
+        note = @searchOpenedNote()
     return unless note?
     window.evnd.enHelper ?= new evernoteHelper.EvernoteHelper()
     window.evnd.enHelper.getENML note, null, (enml) =>
