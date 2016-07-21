@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## 0.2.23 - Bug fix 
+- Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/72
+
+## 0.2.22 - oops typo
+
+## 0.2.21 - Very minor improvement
+- openConfig button in EVND panel now opens specific config page of EVND package
+- license year update
+
+## 0.2.20 - Very minor improvement
+- Added some shields.io badges to README
+
+## 0.2.19 - Bug fix
+- More proper warning when designated notebook does not exist
+
+## 0.2.18 - Bug fix attempt (inline commenting line breaks)
+- Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/43
+
+## 0.2.17 - Bug fix - deprecations
+- Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/34
+
+## 0.2.16 - Bug fix
+- Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/16
+
+## 0.2.15 - Bug fix (attempt)
+- Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/26   
+- Update July 2016: apparently this bug is not completely fixed yet!
+
+## 0.2.14 - Minor improvements
+- Temporarily addressing issue https://github.com/cs150bf/ever-notedown/issues/21
+    - explicitly set default text color to black
+
 ## 0.2.13 - Bug fix
 - Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/23 and possibly https://github.com/cs150bf/ever-notedown/issues/20 ?
     - Steps to take:
