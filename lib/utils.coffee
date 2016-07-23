@@ -175,6 +175,9 @@ exports.stringEscape = (rawString) ->
   escapedStr = escapedStr.replace(/\t/g, "\\t").replace(/\r/g, "\\r")
   escapedStr
 
+exports.mathEscape = (rawMath) ->
+  escapedMath = rawMath.replace(/</g, ' \\lt ').replace(/>/g, ' \\gt ')
+
 exports.htmlEncode = (rawHTML) ->
   escapedHTML = rawHTML.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
   escapedHTML = escapedHTML.replace(/</g, '&lt;').replace(/>/g, '&gt;')

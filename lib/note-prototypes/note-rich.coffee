@@ -449,6 +449,7 @@ class RichNote extends Note
       o(newElement).attr("class", "hidden-script-mathjax")
       o(newElement).append("<span style=\"display: none;\" title=\"raw_mathjax_script\">#{dlm}#{o(oScript).html()}#{dlm}</span>")
       o(oScript).parent().append(o.html(newElement))
+      o(oScript).html(utils.mathEscape(o(oScript).html()))
 
     for elm in o('.table-of-contents, h1, h2, h3, h4, h5, h6')
       for oScript in o(elm).find('script')
