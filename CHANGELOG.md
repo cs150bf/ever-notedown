@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.2.24 - Bug fix
+- Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/68
+
 ## 0.2.23 - Bug fix 
 - Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/72
 
