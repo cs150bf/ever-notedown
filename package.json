@@ -27,7 +27,7 @@
     "moment": "^2.9.0",
     "atom-space-pen-views": "^2.0.3",
     "fs-plus": ">=2.0.0",
-    "git-utils": ">=3.0.0",
+    "git-utils": ">=4.0.0",
     "highlights-native": "^2.1.0",
     "roaster": "^1.1.2",
     "temp": "^0.7.0",
