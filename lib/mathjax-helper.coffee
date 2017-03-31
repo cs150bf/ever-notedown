@@ -189,7 +189,7 @@ configureMathJax = ->
     }
     SVG: {
       font: "Tex"
-      undefinedFamily: ["STIXGeneral", 'Arial Unicode MS', "serif"]
+      undefinedFamily: "STIXGeneral, 'Arial Unicode MS', serif"
       linebreaks:
         automatic: false
         width: "75%"
