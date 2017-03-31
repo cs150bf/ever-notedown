@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## 0.2.26 - Bug fix
+- Trying to fix issues https://github.com/cs150bf/ever-notedown/issues/87, https://github.com/cs150bf/ever-notedown/issues/88 and https://github.com/cs150bf/ever-notedown/issues/89
 
 ## 0.2.25 - minor fixup
 - in `package.json` change version requirement for git-utils
