@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 0.2.27 - enhancement
+- Scale mathjax output font size (trying to address https://github.com/cs150bf/ever-notedown/issues/63)
+
 ## 0.2.26 - Bug fix
 - Trying to fix issues https://github.com/cs150bf/ever-notedown/issues/87, https://github.com/cs150bf/ever-notedown/issues/88 and https://github.com/cs150bf/ever-notedown/issues/89
 
