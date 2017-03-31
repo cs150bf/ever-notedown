@@ -1,5 +1,10 @@
 # CHANGELOG
 
+
+## 0.2.25 - minor fixup
+- in `package.json` change version requirement for git-utils
+- in `lib/mathjax-helper.coffee` change config option for the SVG output processor so it fits what's given in the official mathjax doc
+
 ## 0.2.24 - Bug fix
 - Trying to fix issue https://github.com/cs150bf/ever-notedown/issues/68
 
