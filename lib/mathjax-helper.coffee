@@ -189,10 +189,16 @@ configureMathJax = ->
     }
     SVG: {
       font: "Tex"
+      scale: 100
       undefinedFamily: "STIXGeneral, 'Arial Unicode MS', serif"
       linebreaks:
         automatic: false
         width: "75%"
+      #styles: {
+      #  ".MathJax_SVG, .MathJax_SVG_Display": {
+      #    "font-size": "100% !important"
+      #  }
+      #}
     }
     messageStyle: "none"
     showMathMenu: false
