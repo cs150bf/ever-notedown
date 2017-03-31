@@ -471,8 +471,8 @@ class EVNDPreviewView extends ScrollView
                 if "##{v.id.replace(/\./g, '\\.').replace(/\:/g, '\\:')}" is targetID
                   targetRow = parseInt(k) + parseInt(metaEndRow)
                   @editor.scrollToBufferPosition([targetRow, 0], {center: true})
-                  newEditorScrollTop = @editor.getScrollTop() + @editor.getHeight()/2.2
-                  @editor.setScrollTop(newEditorScrollTop)
+                  newEditorScrollTop = @editor.element.getScrollTop() + @editor.element.getHeight()/2.2
+                  @editor.element.setScrollTop(newEditorScrollTop)
                   if targetRow < @editor.bufferRowForScreenRow(@editor.getVisibleRowRange()[0])
                     @editor.scrollToBufferPosition([targetRow, 0], {center: false})
                   #return unless $(targetID).get(0)?
