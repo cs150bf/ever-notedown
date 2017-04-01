@@ -13,7 +13,7 @@
 #
 #  The above copyright notice and this permission notice shall be
 #  included in all copies or substantial portions of the Software.
-#  
+#
 #  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 #  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 #  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -440,9 +440,11 @@ module.exports =
       'ever-notedown:edit-macros-custom2': =>
         @editCustomMacros('Custom 2')
 
-    @subscriptions.add atom.commands.add 'atom-text-editor', 'drop': (event) =>
-      #console.log 'Dropping item!'
-      @onDrop(event)
+    @subscriptions.add atom.workspace.observeTextEditors (textEditor) =>
+      textEditorElement = atom.views.getView textEditor
+      textEditorElement.addEventListener "drop", (event) =>
+        #console.log 'Dropping item!'
+        @onDrop(event)
 
     @subscriptions.add atom.commands.add 'atom-text-editor',
       'core:paste': (event) =>
